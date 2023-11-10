@@ -49,7 +49,7 @@ const GeoLayout castle_geo_000FD0[] = {
         GEO_DISPLAY_LIST(LAYER_OPAQUE, inside_castle_seg7_dl_07032FC0),
         GEO_DISPLAY_LIST(LAYER_ALPHA, inside_castle_seg7_dl_07033158),
         GEO_ASM(  0, geo_painting_update),
-        GEO_ASM(PAINTING_ID(0, 1), geo_painting_draw),
+        GEO_ASM(PAINTING_ID(14, 1), geo_painting_draw),
     GEO_CLOSE_NODE(),
     GEO_RETURN(),
 };

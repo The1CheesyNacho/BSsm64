@@ -39,8 +39,28 @@ struct ZDebugLevelSelect {
 struct ZDebugLevelSelect gZDbgLevelSelectInit;
 struct ZDebugLevelSelect *gZDbgLevelSelect = &gZDbgLevelSelectInit;
 
+typedef struct {
+    char* name;
+    s16 id;
+    u8 stub;
+} LevelSelectEntry;
+
+#define STUB_LEVEL(_0, _id, _2, _3, _4, _5, _6, _7, _8) (LevelSelectEntry){ .name = "stub", .id = _id, .stub = TRUE },
+#define DEFINE_LEVEL(_name, _id, _2, _3, _4, _5, _6, _7, _8, _9, _10) (LevelSelectEntry){ .name = _name, .id = _id, .stub = FALSE },
+
+const LevelSelectEntry level_select_entries[] = {
+#include "levels/level_defines.h"
+};
+
+#undef DEFINE_LEVEL
+
+s16 cursorPos = 0;
+s16 currPage = 0;
+
+#define LEVELS_PER_PAGE 13
+
 void print_debug_level_select_menu(struct ZDebugLevelSelect *this) {
-    s32 scene;
+    /*s32 scene;
     s32 i;
     char *levelName;
     s32 courseNum;
@@ -108,7 +128,36 @@ void print_debug_level_select_menu(struct ZDebugLevelSelect *this) {
         }
         gDPSetEnvColor(gDisplayListHead++, 255, 255, 255, 255);
         print_generic_string_ascii(60, 194, chrTemp);
+    }*/
+    gDPSetEnvColor(gDisplayListHead++, 255, 255, 255, 255);
+    u8* title = "Level Select";
+    u8* numStr[4];
+    u8* pageStr[4];
+    s32 xPos = get_str_x_pos_from_center_custom_ascii(LUT_TYPE_STR_ASCII, SCREEN_WIDTH / 2, title, FALSE, 0);
+    print_generic_string_ascii(xPos, 210, title);
+    s16 pos = 0;
+    s16 page = -1;
+    for (s16 i = 0; i < LEVEL_MAX; i++) {
+        if (level_select_entries[i].stub) continue;
+        if (pos % LEVELS_PER_PAGE == 0) page++;
+        if (pos / LEVELS_PER_PAGE != currPage) {
+            pos++;
+            continue;
+        }
+        if (cursorPos == i) { gDPSetEnvColor(gDisplayListHead++, 255, 255, 0, 255); }
+        else { gDPSetEnvColor(gDisplayListHead++, 255, 255, 255, 255); }
+        int_to_str(i + 1, numStr);
+        u8* name = level_select_entries[i].name;
+        print_generic_string(72, 180 - (pos - page * LEVELS_PER_PAGE) * 11, numStr);
+        print_generic_string_ascii(100, 180 - (pos - page * LEVELS_PER_PAGE) * 11, name);
+        pos++;
     }
+    gDPSetEnvColor(gDisplayListHead++, 255, 255, 255, 255);
+    int_to_str(currPage + 1, pageStr);
+    u8* pageText = "- Page    out of 3 -";
+    xPos = get_str_x_pos_from_center_custom_ascii(LUT_TYPE_STR_ASCII, SCREEN_WIDTH / 2, pageText, FALSE, 0);
+    print_generic_string_ascii(xPos, 180 - (LEVELS_PER_PAGE + 1) * 11, pageText);
+    print_generic_string(xPos + 5 * 8, 180 - (LEVELS_PER_PAGE + 1) * 11, pageStr);
 }
 
 void print_debug_level_select_settings(struct ZDebugLevelSelect *this) {
@@ -189,11 +238,11 @@ void print_debug_level_select_strings(struct ZDebugLevelSelect *this) {
 
     print_debug_level_select_menu(this);
 
-    if (this->toggleControlsView) {
+    /*if (this->toggleControlsView) {
         print_debug_level_select_controls();
     } else {
         print_debug_level_select_settings(this);
-    }
+    }*/
     gSPDisplayList(gDisplayListHead++, dl_ia_text_end);
 }
 
@@ -205,7 +254,7 @@ Gfx *geo_debug_level_select_strings(s16 callContext, UNUSED struct GraphNode *no
 }
 
 void debug_level_select_update(struct ZDebugLevelSelect *this) {
-    if (this->verticalInputAccumulator == 0) {
+    /*if (this->verticalInputAccumulator == 0) {
         gCurrLevelNum = this->currentScene + 1;
 
         if (gPlayer1Controller->buttonPressed & D_CBUTTONS) {
@@ -338,7 +387,35 @@ void debug_level_select_update(struct ZDebugLevelSelect *this) {
 
     if (this->timerDown == 0) {
         this->lockDown = FALSE;
+    }*/
+
+    s16 prevCursorPos = cursorPos;
+
+    if (gPlayer1Controller->buttonPressed & U_CBUTTONS) cursorPos--;
+    if (gPlayer1Controller->buttonPressed & D_CBUTTONS) cursorPos++;
+
+    if (gPlayer1Controller->buttonPressed & (U_CBUTTONS | D_CBUTTONS)) play_sound(SOUND_MENU_CHANGE_SELECT, gGlobalSoundSource);
+
+    if (cursorPos < 0) cursorPos = 0;
+    if (cursorPos >= LEVEL_MAX) cursorPos = LEVEL_MAX - 1;
+
+    s16 dir = signum_positive(cursorPos - prevCursorPos);
+
+    // skip all stub levels
+    for (s16 i = cursorPos; level_select_entries[cursorPos].stub && i >= 0 && i <= LEVEL_MAX; i += dir) cursorPos = i;
+
+    // there is a possibility that the first or last level is a stub. if thats the case, go in reverse direction to find a non-stub level
+    for (s16 i = cursorPos; level_select_entries[cursorPos].stub && i >= 0 && i <= LEVEL_MAX; i -= dir) cursorPos = i;
+
+    s16 page = -1;
+    s16 pos = 0;
+    for (s16 i = 0; i < LEVEL_MAX; i++) {
+        if (level_select_entries[i].stub) continue;
+        if (pos % LEVELS_PER_PAGE == 0) page++;
+        if (i == cursorPos) break;
+        pos++;
     }
+    currPage = page;
 }
 
 s32 lvl_init_intro_level_select(UNUSED s32 arg, UNUSED s32 unused) {
@@ -389,7 +466,7 @@ s16 intro_level_select(void) {
     // Starts level selected
     if (gPlayer1Controller->buttonPressed & (A_BUTTON | START_BUTTON)) {
         play_sound(SOUND_MENU_STAR_SOUND, gGlobalSoundSource);
-        return gCurrLevelNum;
+        return cursorPos + 1;
     }
 
     return 0;
