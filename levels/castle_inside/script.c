@@ -252,6 +252,8 @@ const LevelScript level_castle_inside_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_CASTLE_STAR_DOOR_70_STARS, castle_geo_000F00),
 
     AREA(/*index*/ 1, castle_geo_001400),
+		WARP_NODE(/*id*/ 0x07, /*destLevel*/ LEVEL_REC_ROOM, /*destArea*/ 0x01, /*destNode*/ 0x0A, /*flags*/ WARP_NO_CHECKPOINT),
+    	OBJECT(/*model*/ MODEL_CASTLE_DOOR_1_STAR, /*pos*/ 650, 614, -1475, /*angle*/ 0, -45, 0, /*behParam*/ 0x00070000, /*beh*/ bhvDoorWarp),
         OBJECT(/*model*/ MODEL_NONE,       /*pos*/ -5513,  717, -4324, /*angle*/ 0,  45, 0, /*bhvParam*/ BPARAM2(0x14), /*bhv*/ bhvCastleFloorTrap),
         OBJECT(/*model*/ MODEL_NONE,       /*pos*/  2477,  307, -2000, /*angle*/ 0,   0, 0, /*bhvParam*/ 0, /*bhv*/ bhvFishGroup),
         OBJECT(/*model*/ MODEL_NONE,       /*pos*/  2774,  507, -1716, /*angle*/ 0,  90, 0, /*bhvParam*/ 0, /*bhv*/ bhvTankFishGroup),
