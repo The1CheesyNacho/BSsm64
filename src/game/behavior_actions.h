@@ -552,6 +552,7 @@ void bhv_intro_scene_loop(void);
 void bhv_dust_smoke_loop(void);
 void bhv_yoshi_loop(void);
 void bhv_volcano_trap_loop(void);
+void bhv_luggy_loop(void);
 
 void bhv_2d_physics_loop(void);
 void uv_update_scroll(void);
