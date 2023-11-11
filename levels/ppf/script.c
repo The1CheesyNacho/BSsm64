@@ -3,6 +3,7 @@
 #include "behavior_data.h"
 #include "model_ids.h"
 #include "seq_ids.h"
+#include "dialog_ids.h"
 #include "segment_symbols.h"
 #include "level_commands.h"
 
@@ -11,10 +12,6 @@
 #include "levels/scripts.h"
 
 #include "actors/common1.h"
-
-#include "make_const_nonconst.h"
-#include "levels/scripts.h"
-
 
 /* Fast64 begin persistent block [includes] */
 /* Fast64 end persistent block [includes] */
@@ -29,18 +26,12 @@ const LevelScript level_ppf_entry[] = {
 	INIT_LEVEL(),
 	LOAD_MIO0(0x7, _ppf_segment_7SegmentRomStart, _ppf_segment_7SegmentRomEnd), 
 	LOAD_MIO0(0xa, _water_skybox_mio0SegmentRomStart, _water_skybox_mio0SegmentRomEnd), 
-    LOAD_MIO0        (/*seg*/ 0x05, _group11_mio0SegmentRomStart, _group11_mio0SegmentRomEnd),
-    LOAD_RAW         (/*seg*/ 0x0C, _group11_geoSegmentRomStart,  _group11_geoSegmentRomEnd),
-    LOAD_MIO0        (/*seg*/ 0x06, _group14_mio0SegmentRomStart, _group14_mio0SegmentRomEnd),
-    LOAD_RAW         (/*seg*/ 0x0D, _group14_geoSegmentRomStart,  _group14_geoSegmentRomEnd),
-    LOAD_MIO0        (/*seg*/ 0x08, _common0_mio0SegmentRomStart, _common0_mio0SegmentRomEnd),
-    LOAD_RAW         (/*seg*/ 0x0F, _common0_geoSegmentRomStart,  _common0_geoSegmentRomEnd),
 	ALLOC_LEVEL_POOL(),
 	MARIO(MODEL_MARIO, 0x00000001, bhvMario), 
-    LOAD_MODEL_FROM_GEO(MODEL_THI_WARP_PIPE,       warp_pipe_geo),
-    JUMP_LINK(script_func_global_1),
-    JUMP_LINK(script_func_global_12),
-    JUMP_LINK(script_func_global_15),
+	JUMP_LINK(script_func_global_1), 
+	JUMP_LINK(script_func_global_12), 
+	JUMP_LINK(script_func_global_15), 
+	LOAD_MODEL_FROM_GEO(MODEL_THI_WARP_PIPE, warp_pipe_geo), 
 
 	/* Fast64 begin persistent block [level commands] */
 	/* Fast64 end persistent block [level commands] */
@@ -64,7 +55,7 @@ const LevelScript level_ppf_entry[] = {
 		WARP_NODE(0x0A, LEVEL_PPF, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF0, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF1, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
-		OBJECT(MODEL_NONE, -989, -200, 307, 0, 0, 0, (0X0A << 16), bhvSpinAirborneWarp),
+		OBJECT(MODEL_NONE, 3676, 7712, 2478, 0, 0, 0, (0X0A << 16), bhvSpinAirborneWarp),
 		TERRAIN(ppf_area_2_collision),
 		MACRO_OBJECTS(ppf_area_2_macro_objs),
 		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_UNDERGROUND),
