@@ -3,10 +3,8 @@
 const GeoLayout ppf_area_1_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, -7572, -3365, 2547, ppf_dl_Cylinder_001_mesh_layer_1),
-		GEO_OPEN_NODE(),
-			GEO_DISPLAY_LIST(LAYER_TRANSPARENT, ppf_dl_Cylinder_001_mesh_layer_5),
-		GEO_CLOSE_NODE(),
+		GEO_DISPLAY_LIST(LAYER_OPAQUE, ppf_dl_ppf_mesh_layer_1),
+		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, ppf_dl_ppf_mesh_layer_5),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };

@@ -26,7 +26,7 @@ const LevelScript level_ppf_entry[] = {
 	LOAD_MIO0(0x7, _ppf_segment_7SegmentRomStart, _ppf_segment_7SegmentRomEnd), 
 	LOAD_MIO0(0xa, _water_skybox_mio0SegmentRomStart, _water_skybox_mio0SegmentRomEnd), 
 	ALLOC_LEVEL_POOL(),
-	MARIO(MODEL_MARIO, 0x00000001, bhvMario),
+	MARIO(MODEL_MARIO, 0x00000001, bhvMario), 
 
 	/* Fast64 begin persistent block [level commands] */
 	/* Fast64 end persistent block [level commands] */
@@ -35,8 +35,8 @@ const LevelScript level_ppf_entry[] = {
 		WARP_NODE(0x0A, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF0, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF1, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
-		OBJECT(MODEL_NONE, -5069, -3565, 9322, 0, 0, 0, 0x000A0000, bhvSpinAirborneWarp),
-		MARIO_POS(0x01, 0, -5069, -3565, 9322),
+		OBJECT(MODEL_NONE, -2042, -454, 5669, 0, 0, 0, 0x000A0000, bhvSpinAirborneWarp),
+		MARIO_POS(0x01, 0, -2042, -454, 5669),
 		TERRAIN(ppf_area_1_collision),
 		MACRO_OBJECTS(ppf_area_1_macro_objs),
 		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_GRASS),
@@ -46,7 +46,7 @@ const LevelScript level_ppf_entry[] = {
 	END_AREA(),
 
 	FREE_LEVEL_POOL(),
-	MARIO_POS(0x01, 0, -5069, -3565, 9322),
+	MARIO_POS(0x01, 0, -2042, -454, 5669),
 	CALL(0, lvl_init_or_update),
 	CALL_LOOP(1, lvl_init_or_update),
 	CLEAR_LEVEL(),
