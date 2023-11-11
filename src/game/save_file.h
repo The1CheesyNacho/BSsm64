@@ -64,17 +64,16 @@ struct MainMenuSaveData {
 #define SUBTRAHEND 6
 #endif
 
-    // Pad to match the EEPROM size of 0x200 (10 bytes on JP/US, 8 bytes on EU)
-    u8 filler[EEPROM_SIZE / 2 - SUBTRAHEND - NUM_SAVE_FILES * (4 + sizeof(struct SaveFile))];
-
     struct SaveBlockSignature signature;
 };
 
 struct SaveBuffer {
     // Each of the four save files has two copies. If one is bad, the other is used as a backup.
-    struct SaveFile files[NUM_SAVE_FILES][2];
+    struct SaveFile files[NUM_SAVE_FILES][1];
     // The main menu data has two copies. If one is bad, the other is used as a backup.
-    struct MainMenuSaveData menuData[2];
+    struct MainMenuSaveData menuData[1];
+
+    u8 filler[EEPROM_SIZE - sizeof(struct MainMenuSaveData) - sizeof(struct SaveFile) * NUM_SAVE_FILES];
 };
 
 STATIC_ASSERT(sizeof(struct SaveBuffer) == EEPROM_SIZE, "eeprom buffer size must match");
