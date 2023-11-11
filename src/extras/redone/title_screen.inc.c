@@ -45,7 +45,7 @@ typedef struct {
     u8 stub;
 } LevelSelectEntry;
 
-#define STUB_LEVEL(_0, _id, _2, _3, _4, _5, _6, _7, _8) (LevelSelectEntry){ .name = "stub", .id = _id, .stub = TRUE },
+#define STUB_LEVEL(_name, _id, _2, _3, _4, _5, _6, _7, _8) (LevelSelectEntry){ .name = _name, .id = _id, .stub = FALSE },
 #define DEFINE_LEVEL(_name, _id, _2, _3, _4, _5, _6, _7, _8, _9, _10) (LevelSelectEntry){ .name = _name, .id = _id, .stub = FALSE },
 
 const LevelSelectEntry level_select_entries[] = {
