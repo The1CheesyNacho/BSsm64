@@ -28,6 +28,7 @@
 #include "engine/graph_node.h"
 #include "level_table.h"
 #include "pc/configfile.h"
+#include "levels/menu/header.h"
 
 #ifdef BETTERCAMERA
 #include "extras/bettercamera.h"
@@ -3373,6 +3374,14 @@ void update_camera(struct Camera *c) {
 #ifdef BETTERCAMERA
     }
 #endif
+
+    if (c->cutscene == 142 /* peach intro */) {
+        if (gMarioState->controller->buttonPressed & START_BUTTON) {
+            save_file_set_flags(SAVE_FLAG_FILE_EXISTS);
+            save_file_do_save(gCurrSaveFileNum - 1);
+            level_script_execute(level_main_menu_entry_1_skip);
+        }
+    }
 
     // Start any Mario-related cutscenes
     start_cutscene(c, get_cutscene_from_mario_status(c));

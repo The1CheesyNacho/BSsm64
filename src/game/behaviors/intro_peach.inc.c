@@ -58,4 +58,5 @@ void bhv_intro_peach_loop(void) {
             }
             break;
     }
+    if (gCamera->cutscene == 0) obj_mark_for_deletion(o);
 }

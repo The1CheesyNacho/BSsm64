@@ -6183,3 +6183,10 @@ const BehaviorScript bhvLuisNpc[] = {
         CALL_NATIVE(bhv_luggy_loop),
     END_LOOP(),
 };
+
+const BehaviorScript bhvKingBoo[] = {
+    BEGIN(OBJ_LIST_DEFAULT),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    BEGIN_LOOP(),
+    END_LOOP(),
+};

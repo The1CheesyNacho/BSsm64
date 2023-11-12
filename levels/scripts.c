@@ -32,6 +32,7 @@
 #include "levels/menu/header.h"
 #include "levels/intro/header.h"
 #include "levels/ppf/header.h"
+#include "levels/REC_ROOM/header.h"
 
 #include "level_headers.h"
 
