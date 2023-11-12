@@ -27,3 +27,5 @@
 #include "sparkle_animation/model.inc.c"
 
 #include "luigi/model.inc.c"
+#include "luigi/anims/data.inc.c"
+#include "luigi/anims/table.inc.c"

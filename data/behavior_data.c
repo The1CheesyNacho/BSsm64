@@ -15,6 +15,7 @@
 
 #include "actors/common0.h"
 #include "actors/common1.h"
+#include "actors/group0.h"
 #include "actors/group1.h"
 #include "actors/group2.h"
 #include "actors/group3.h"
@@ -6175,6 +6176,8 @@ const BehaviorScript editor_Scroll_Texture[] = {
 const BehaviorScript bhvLuisNpc[] = {
     BEGIN(OBJ_LIST_DEFAULT),
     OR_INT(oFlags, OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    LOAD_ANIMATIONS(oAnimations, luigi_anims),
+    ANIMATE(0),
     DROP_TO_FLOOR(),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_luggy_loop),

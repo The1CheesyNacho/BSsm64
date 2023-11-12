@@ -60,12 +60,12 @@ Lights1 luigi_shoes_001_lights = gdSPDefLights1(
 
 Gfx luigi_mario_overalls_button_rgba16_aligner[] = {gsSPEndDisplayList()};
 u8 luigi_mario_overalls_button_rgba16[] = {
-	#include "actors/mario/mario_overalls_button.rgba16.inc.c"
+	#include "actors/luigi/mario_overalls_button.rgba16.inc.c"
 };
 
 Gfx luigi_mario_env_txt_rgba16_aligner[] = {gsSPEndDisplayList()};
 u8 luigi_mario_env_txt_rgba16[] = {
-	#include "actors/mario/mario_metal.rgba16.inc.c"
+	#include "actors/luigi/mario_env_txt.rgba16.inc.c"
 };
 
 Gfx luigi_mario_gold_rgba16_rgba16_aligner[] = {gsSPEndDisplayList()};
@@ -108,14 +108,19 @@ u8 luigi_luigi_eyes_dead_rgba16_rgba16[] = {
 	#include "actors/luigi/luigi_eyes_dead.rgba16.inc.c"
 };
 
+Gfx luigi_mario_wing_tip_rgba16_ia8_aligner[] = {gsSPEndDisplayList()};
+u8 luigi_mario_wing_tip_rgba16_ia8[] = {
+	#include "actors/luigi/mario_wing_tip.rgba16.ia8.inc.c"
+};
+
 Gfx luigi_mario_wing_rgba16_aligner[] = {gsSPEndDisplayList()};
 u8 luigi_mario_wing_rgba16[] = {
-	#include "actors/mario/mario_wing.rgba16.inc.c"
+	#include "actors/luigi/mario_wing.rgba16.inc.c"
 };
 
 Gfx luigi_mario_wing_tip_rgba16_aligner[] = {gsSPEndDisplayList()};
 u8 luigi_mario_wing_tip_rgba16[] = {
-	#include "actors/mario/mario_wing_tip.rgba16.inc.c"
+	#include "actors/luigi/mario_wing_tip.rgba16.inc.c"
 };
 
 Vtx luigi_000_offset_pelvis_mesh_layer_1_vtx_0[76] = {
@@ -3451,14 +3456,13 @@ Gfx mat_luigi_luigi_hair_001[] = {
 
 Gfx mat_luigi_wing_tip_001[] = {
 	gsDPPipeSync(),
-	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0),
+	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsSPClearGeometryMode(G_CULL_BACK),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsSPSetLights1(luigi_wings_half_2_001_lights),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, luigi_mario_wing_tip_rgba16),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadBlock(7, 0, 0, 2047, 256),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 6, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, luigi_mario_wing_tip_rgba16_ia8),
+	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 1023, 512),
+	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 6, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 252),
 	gsSPEndDisplayList(),
 };
