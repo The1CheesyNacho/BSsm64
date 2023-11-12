@@ -114,6 +114,8 @@ extern s8 gLevelToCourseNumTable[];
 #define SAVE_FLAG_COLLECTED_MIPS_STAR_1  /* 0x08000000 */ (1 << 27)
 #define SAVE_FLAG_COLLECTED_MIPS_STAR_2  /* 0x10000000 */ (1 << 28)
 #define SAVE_FLAG_UNLOCKED_LOUIS         /* 0x20000000 */ (1 << 29)
+#define SAVE_FLAG_UNLOCKED_WARIO         /* 0x40000000 */ (1 << 30)
+#define SAVE_FLAG_UNLOCKED_WALUIS        /* 0x80000000 */ (1 << 31)
 
 #define SAVE_FLAG_TO_STAR_FLAG(cmd) (((cmd) >> 24) & 0x7F)
 #define STAR_FLAG_TO_SAVE_FLAG(cmd) ((cmd) << 24)
