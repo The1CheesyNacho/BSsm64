@@ -5,6 +5,7 @@ const GeoLayout ppf_area_1_geo[] = {
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, ppf_dl_ppf_mesh_layer_1),
 		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, ppf_dl_ppf_mesh_layer_5),
+		GEO_TRANSLATE_NODE_WITH_DL(LAYER_TRANSPARENT, 1791, -1782, 1164, ppf_dl_Water_Box_Mesh_mesh_layer_5),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };

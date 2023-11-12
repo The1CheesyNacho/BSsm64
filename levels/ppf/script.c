@@ -11,6 +11,7 @@
 
 #include "levels/scripts.h"
 
+
 /* Fast64 begin persistent block [includes] */
 /* Fast64 end persistent block [includes] */
 
@@ -34,8 +35,9 @@ const LevelScript level_ppf_entry[] = {
 		WARP_NODE(0x0A, LEVEL_PPF, 0x02, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF0, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF1, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
+		OBJECT(MODEL_NONE, -2042, -454, 5669, 0, 0, 0, 0x000A0000, bhvSpinAirborneWarp),
 		MARIO_POS(0x01, 0, -2042, -454, 5669),
-		OBJECT(MODEL_NONE, -1559, -1654, 5160, 0, 0, 0, (0X0A << 16), bhvWarp),
+		OBJECT(MODEL_THI_WARP_PIPE, -1559, -1654, 5160, 0, 0, 0, (0X0A << 16), bhvWarpPipe),
 		TERRAIN(ppf_area_1_collision),
 		MACRO_OBJECTS(ppf_area_1_macro_objs),
 		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_GRASS),
