@@ -9,7 +9,7 @@ void cap_switch_act_0(void) {
 
     spawn_object_relative_with_scale(0, 0, -71, 0, 0.5f, o, MODEL_CAP_SWITCH_BASE, bhvCapSwitchBase);
 
-    if (gCurrLevelNum != LEVEL_UNKNOWN_32) {
+    if (gCurrLevelNum != LEVEL_CT) {
         if (save_file_get_flags() & sCapSaveFlags[o->oBhvParams2ndByte]) {
             o->oAction = 3;
             o->header.gfx.scale[1] = 0.1f;

@@ -24,7 +24,7 @@ extern u8 ppf_dl_ppf_dl_ppf_dl_bob_textures_02000_rgba16_ci8_ci8_001_pal_rgba16[
 extern u8 ppf_dl_ppf_dl_ppf_dl__2_rgba16_rgba16_rgba16_001_rgba16[];
 extern u8 ppf_dl_segment2_11C58_rgba16_rgba16[];
 extern u8 ppf_dl_ccm_textures_03000_rgba16_rgba16[];
-extern Vtx ppf_dl_ppf_mesh_layer_1_vtx_0[909];
+extern Vtx ppf_dl_ppf_mesh_layer_1_vtx_0[906];
 extern Gfx ppf_dl_ppf_mesh_layer_1_tri_0[];
 extern Vtx ppf_dl_ppf_mesh_layer_1_vtx_1[201];
 extern Gfx ppf_dl_ppf_mesh_layer_1_tri_1[];

@@ -22,7 +22,7 @@ DEFINES :=
 # Manual target defines
 
 # Build for original N64
-TARGET_N64 ?= 0
+TARGET_N64 ?= 1
 # Build and optimize for Raspberry Pi(s)
 TARGET_RPI ?= 0
 # Build for Emscripten/WebGL

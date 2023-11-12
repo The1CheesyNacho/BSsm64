@@ -5,7 +5,7 @@ const GeoLayout ppf_area_1_geo[] = {
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, ppf_dl_ppf_mesh_layer_1),
 		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, ppf_dl_ppf_mesh_layer_5),
-		GEO_TRANSLATE_NODE_WITH_DL(LAYER_TRANSPARENT, 1791, -1782, 1164, ppf_dl_Water_Box_Mesh_mesh_layer_5),
+		GEO_TRANSLATE_NODE_WITH_DL(LAYER_TRANSPARENT, 1783, -1856, 1127, ppf_dl_Water_Box_Mesh_mesh_layer_5),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -27,7 +27,7 @@ const GeoLayout ppf_area_1[] = {
 				GEO_OPEN_NODE(),
 					GEO_BRANCH(1, ppf_area_1_geo),
 					GEO_RENDER_OBJ(),
-					GEO_ASM(ENVFX_MODE_NONE, geo_envfx_main),
+					GEO_ASM(ENVFX_FLOWERS, geo_envfx_main),
 				GEO_CLOSE_NODE(),
 			GEO_CLOSE_NODE(),
 		GEO_CLOSE_NODE(),

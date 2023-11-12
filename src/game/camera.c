@@ -6425,6 +6425,69 @@ struct CameraTrigger sCamPpf[] = {
 struct CameraTrigger sCamRecRoom[] = {
 	NULL_TRIGGER
 };
+struct CameraTrigger sCamYi[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamBbf[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamBbf2[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamEf[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamDbd[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamBhb[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamTc[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamMmm[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamDdc[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamTsss[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamLl[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamFaf[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamGf[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamCt[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamWww[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamAc[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamKbs[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamBowser4[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamBowser5[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamBitft[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamHh[] = {
+	NULL_TRIGGER
+};
 struct CameraTrigger *sCameraTriggers[LEVEL_COUNT + 1] = {
     NULL,
     #include "levels/level_defines.h"
@@ -10862,7 +10925,7 @@ u8 sDanceCutsceneIndexTable[][4] = {
  */
 u8 sZoomOutAreaMasks[] = {
 	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 1, 0, 0), // Unused         | Unused
-	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 0, 0, 0, 0), // Unused         | Unused
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // Unused         | Unused
 	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 0, 0, 0), // BBH            | CCM
 	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 0, 0, 0, 0), // CASTLE_INSIDE  | HMC
 	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // SSL            | BOB
@@ -10877,16 +10940,17 @@ u8 sZoomOutAreaMasks[] = {
 	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 0, 0, 0, 0), // COURTYARD      | PSS
 	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 0, 0, 0), // COTMC          | TOTWC
 	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // BOWSER_1       | WMOTR
-	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 0, 0, 0), // Unused         | BOWSER_2
-	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 0, 0, 0, 0), // BOWSER_3       | Unused
-	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 0, 0, 0, 0), // TTM            | Unused
-	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 0, 0, 0, 0), // Unused         | Unused
-	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 0, 0, 0, 0), // Unused         | Unused
-	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 0, 0, 0, 0), // Unused         | Unused
-	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 0, 0, 0, 0), // Unused         | Unused
-	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 0, 0, 0, 0), // Unused         | Unused
-	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 0, 0, 0, 0), // Unused         | Unused
-	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 0, 0, 0, 0), // Unused         | Unused
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // Unused         | BOWSER_2
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // BOWSER_3       | Unused
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // TTM            | Unused
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // Unused         | Unused
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // Unused         | Unused
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // Unused         | Unused
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // Unused         | Unused
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // Unused         | Unused
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // Unused         | Unused
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // Unused         | Unused
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // Unused         | Unused
 	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 0, 0, 0), // Unused         | Unused
 };
 
