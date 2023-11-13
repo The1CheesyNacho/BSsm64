@@ -1,10 +1,10 @@
 Lights1 luigi_luigi_yellow_button_001_lights = gdSPDefLights1(
-	0x2E, 0x0, 0x7F,
-	0x64, 0x0, 0xFF, 0x28, 0x28, 0x28);
+	0x0, 0x0, 0x7F,
+	0x0, 0x0, 0xFF, 0x28, 0x28, 0x28);
 
 Lights1 luigi_luigi_logo_001_lights = gdSPDefLights1(
-	0x0, 0x4D, 0x0,
-	0x0, 0xA0, 0x0, 0x28, 0x28, 0x28);
+	0x0, 0x7F, 0x0,
+	0x0, 0xFF, 0x0, 0x28, 0x28, 0x28);
 
 Lights1 luigi_luigi_mustache_001_lights = gdSPDefLights1(
 	0x7F, 0x5F, 0x39,
@@ -46,36 +46,28 @@ Lights1 luigi_cap_inside_lights = gdSPDefLights1(
 	0x0, 0x2D, 0x0,
 	0x0, 0x63, 0x0, 0x28, 0x28, 0x28);
 
-Lights1 luigi_wings_half_2_001_lights = gdSPDefLights1(
-	0x3F, 0x3F, 0x3F,
-	0xFF, 0xFF, 0xFF, 0x49, 0x49, 0x49);
-
-Lights1 luigi_wings_half_1_001_lights = gdSPDefLights1(
-	0x3F, 0x3F, 0x3F,
-	0xFF, 0xFF, 0xFF, 0x49, 0x49, 0x49);
-
 Lights1 luigi_shoes_001_lights = gdSPDefLights1(
 	0x35, 0x8, 0x3,
 	0x72, 0x1C, 0xE, 0x28, 0x28, 0x28);
 
 Gfx luigi_mario_overalls_button_rgba16_aligner[] = {gsSPEndDisplayList()};
 u8 luigi_mario_overalls_button_rgba16[] = {
-	#include "actors/luigi/mario_overalls_button.rgba16.inc.c"
+	#include "actors/mario/mario_overalls_button.rgba16.inc.c"
 };
 
 Gfx luigi_mario_env_txt_rgba16_aligner[] = {gsSPEndDisplayList()};
 u8 luigi_mario_env_txt_rgba16[] = {
-	#include "actors/luigi/mario_env_txt.rgba16.inc.c"
+	#include "actors/mario/mario_metal.rgba16.inc.c"
 };
 
 Gfx luigi_mario_gold_rgba16_rgba16_aligner[] = {gsSPEndDisplayList()};
 u8 luigi_mario_gold_rgba16_rgba16[] = {
-	#include "actors/luigi/mario_gold.rgba16.inc.c"
+	#include "actors/mario/mario_gold.rgba16.inc.c"
 };
 
-Gfx luigi_luigi_cap_logo_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 luigi_luigi_cap_logo_rgba16[] = {
-	#include "actors/luigi/luigi_cap_logo.rgba16.inc.c"
+Gfx luigi_luigi_logo_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 luigi_luigi_logo_rgba16[] = {
+	#include "actors/luigi/luigi_logo.rgba16.inc.c"
 };
 
 Gfx luigi_luigi_mustache_rgba16_aligner[] = {gsSPEndDisplayList()};
@@ -83,24 +75,24 @@ u8 luigi_luigi_mustache_rgba16[] = {
 	#include "actors/luigi/luigi_mustache.rgba16.inc.c"
 };
 
-Gfx luigi_luigi_eye_center_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 luigi_luigi_eye_center_rgba16[] = {
-	#include "actors/luigi/luigi_eye_center.rgba16.inc.c"
+Gfx luigi_mario_eyes_center_rgba16_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 luigi_mario_eyes_center_rgba16_rgba16[] = {
+	#include "actors/mario/mario_eyes_center.rgba16.inc.c"
 };
 
-Gfx luigi_luigi_sideburn_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 luigi_luigi_sideburn_rgba16[] = {
+Gfx luigi_luigi_sideburn_rgba16_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 luigi_luigi_sideburn_rgba16_rgba16[] = {
 	#include "actors/luigi/luigi_sideburn.rgba16.inc.c"
 };
 
-Gfx luigi_luigi_eye_half_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 luigi_luigi_eye_half_rgba16[] = {
-	#include "actors/luigi/luigi_eye_half.rgba16.inc.c"
+Gfx luigi_mario_eyes_half_closed_rgba16_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 luigi_mario_eyes_half_closed_rgba16_rgba16[] = {
+	#include "actors/mario/mario_eyes_half_closed.rgba16.inc.c"
 };
 
-Gfx luigi_luigi_eyes_closed_rgba16_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 luigi_luigi_eyes_closed_rgba16_rgba16[] = {
-	#include "actors/luigi/luigi_eyes_closed.rgba16.inc.c"
+Gfx luigi_mario_eyes_closed_rgba16_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 luigi_mario_eyes_closed_rgba16_rgba16[] = {
+	#include "actors/mario/mario_eyes_closed.rgba16.inc.c"
 };
 
 Gfx luigi_luigi_eyes_dead_rgba16_rgba16_aligner[] = {gsSPEndDisplayList()};
@@ -108,19 +100,14 @@ u8 luigi_luigi_eyes_dead_rgba16_rgba16[] = {
 	#include "actors/luigi/luigi_eyes_dead.rgba16.inc.c"
 };
 
-Gfx luigi_mario_wing_tip_rgba16_ia8_aligner[] = {gsSPEndDisplayList()};
-u8 luigi_mario_wing_tip_rgba16_ia8[] = {
-	#include "actors/luigi/mario_wing_tip.rgba16.ia8.inc.c"
+Gfx luigi_mario_wing_tip_rgba16_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 luigi_mario_wing_tip_rgba16_rgba16[] = {
+	#include "actors/mario/mario_wing_tip.rgba16.inc.c"
 };
 
 Gfx luigi_mario_wing_rgba16_aligner[] = {gsSPEndDisplayList()};
 u8 luigi_mario_wing_rgba16[] = {
-	#include "actors/luigi/mario_wing.rgba16.inc.c"
-};
-
-Gfx luigi_mario_wing_tip_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 luigi_mario_wing_tip_rgba16[] = {
-	#include "actors/luigi/mario_wing_tip.rgba16.inc.c"
+	#include "actors/mario/mario_wing.rgba16.inc.c"
 };
 
 Vtx luigi_000_offset_pelvis_mesh_layer_1_vtx_0[76] = {
@@ -565,12 +552,12 @@ Gfx luigi_000_offset_chest_mesh_layer_1_tri_1[] = {
 };
 
 Vtx luigi_000_displaylist_head_cap_mesh_layer_1_vtx_0[24] = {
-	{{ {46, 88, -26}, 0, {314, 556}, {187, 65, 171, 255} }},
-	{{ {17, 79, -20}, 0, {218, 1051}, {179, 99, 235, 255} }},
-	{{ {35, 85, 0}, 0, {505, 885}, {153, 74, 0, 255} }},
-	{{ {46, 88, 27}, 0, {312, 559}, {186, 65, 84, 255} }},
-	{{ {35, 85, 0}, 0, {503, 887}, {153, 74, 0, 255} }},
-	{{ {17, 79, 20}, 0, {224, 1043}, {179, 99, 21, 255} }},
+	{{ {46, 88, -26}, 0, {244, 610}, {187, 65, 171, 255} }},
+	{{ {17, 79, -20}, 0, {148, 1105}, {179, 99, 235, 255} }},
+	{{ {35, 85, 0}, 0, {435, 939}, {153, 74, 0, 255} }},
+	{{ {46, 88, 27}, 0, {242, 613}, {186, 65, 84, 255} }},
+	{{ {35, 85, 0}, 0, {433, 941}, {153, 74, 0, 255} }},
+	{{ {17, 79, 20}, 0, {154, 1097}, {179, 99, 21, 255} }},
 	{{ {72, 69, 68}, 0, {841, 116}, {23, 76, 99, 255} }},
 	{{ {89, 71, 59}, 0, {741, -53}, {18, 99, 78, 255} }},
 	{{ {91, 82, 20}, 0, {365, 108}, {71, 72, 77, 255} }},
@@ -3352,7 +3339,7 @@ Gfx mat_luigi_luigi_logo_001[] = {
 	gsDPSetCombineLERP(TEXEL0, SHADE, TEXEL0_ALPHA, SHADE, 0, 0, 0, ENVIRONMENT, TEXEL0, SHADE, TEXEL0_ALPHA, SHADE, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsSPSetLights1(luigi_luigi_logo_001_lights),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, luigi_luigi_cap_logo_rgba16),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, luigi_luigi_logo_rgba16),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 1023, 256),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
@@ -3378,7 +3365,7 @@ Gfx mat_luigi_luigi_eyes_001[] = {
 	gsDPSetCombineLERP(TEXEL0, SHADE, TEXEL0_ALPHA, SHADE, 0, 0, 0, ENVIRONMENT, TEXEL0, SHADE, TEXEL0_ALPHA, SHADE, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsSPSetLights1(luigi_luigi_eyes_001_lights),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, luigi_luigi_eye_center_rgba16),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, luigi_mario_eyes_center_rgba16_rgba16),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 1023, 256),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
@@ -3391,7 +3378,7 @@ Gfx mat_luigi_luigi_sideburns_001[] = {
 	gsDPSetCombineLERP(TEXEL0, SHADE, TEXEL0_ALPHA, SHADE, 0, 0, 0, ENVIRONMENT, TEXEL0, SHADE, TEXEL0_ALPHA, SHADE, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsSPSetLights1(luigi_luigi_sideburns_001_lights),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, luigi_luigi_sideburn_rgba16),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, luigi_luigi_sideburn_rgba16_rgba16),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 1023, 256),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
@@ -3412,7 +3399,7 @@ Gfx mat_luigi_eyes_half[] = {
 	gsDPSetCombineLERP(TEXEL0, SHADE, TEXEL0_ALPHA, SHADE, 0, 0, 0, ENVIRONMENT, TEXEL0, SHADE, TEXEL0_ALPHA, SHADE, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsSPSetLights1(luigi_eyes_half_lights),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, luigi_luigi_eye_half_rgba16),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, luigi_mario_eyes_half_closed_rgba16_rgba16),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 1023, 256),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
@@ -3425,7 +3412,7 @@ Gfx mat_luigi_eyes_closed[] = {
 	gsDPSetCombineLERP(TEXEL0, SHADE, TEXEL0_ALPHA, SHADE, 0, 0, 0, ENVIRONMENT, TEXEL0, SHADE, TEXEL0_ALPHA, SHADE, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsSPSetLights1(luigi_eyes_closed_lights),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, luigi_luigi_eyes_closed_rgba16_rgba16),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, luigi_mario_eyes_closed_rgba16_rgba16),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 1023, 256),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
@@ -3459,10 +3446,10 @@ Gfx mat_luigi_wing_tip_001[] = {
 	gsDPSetCombineLERP(0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0, 0, 0, 0, TEXEL0),
 	gsSPClearGeometryMode(G_CULL_BACK),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, luigi_mario_wing_tip_rgba16_ia8),
-	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadBlock(7, 0, 0, 1023, 512),
-	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 4, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 6, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, luigi_mario_wing_tip_rgba16_rgba16),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
+	gsDPLoadBlock(7, 0, 0, 2047, 256),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 6, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 252),
 	gsSPEndDisplayList(),
 };
@@ -3506,46 +3493,6 @@ Gfx mat_luigi_cap_inside[] = {
 	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetEnvColor(0, 127, 0, 255),
 	gsSPSetLights1(luigi_cap_inside_lights),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_luigi_wings_half_2_001[] = {
-	gsDPPipeSync(),
-	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0),
-	gsSPClearGeometryMode(G_CULL_BACK),
-	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsSPSetLights1(luigi_wings_half_2_001_lights),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, luigi_mario_wing_tip_rgba16),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadBlock(7, 0, 0, 2047, 256),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 6, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
-	gsDPSetTileSize(0, 0, 0, 124, 252),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_revert_luigi_wings_half_2_001[] = {
-	gsDPPipeSync(),
-	gsSPSetGeometryMode(G_CULL_BACK),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_luigi_wings_half_1_001[] = {
-	gsDPPipeSync(),
-	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0, TEXEL0, 0, SHADE, 0, TEXEL0, 0, ENVIRONMENT, 0),
-	gsSPClearGeometryMode(G_CULL_BACK),
-	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsSPSetLights1(luigi_wings_half_1_001_lights),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, luigi_mario_wing_rgba16),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
-	gsDPLoadBlock(7, 0, 0, 2047, 256),
-	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 6, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
-	gsDPSetTileSize(0, 0, 0, 124, 252),
-	gsSPEndDisplayList(),
-};
-
-Gfx mat_revert_luigi_wings_half_1_001[] = {
-	gsDPPipeSync(),
-	gsSPSetGeometryMode(G_CULL_BACK),
 	gsSPEndDisplayList(),
 };
 
@@ -4071,30 +4018,32 @@ Gfx luigi_001_switch_000_offset_right_hand_wing_cap_mesh_layer_1_mat_override_go
 };
 
 Gfx luigi_001_switch_000_displaylist_wings_mesh_layer_4[] = {
-	gsSPDisplayList(mat_luigi_wings_half_2_001),
+	gsSPDisplayList(mat_luigi_wing_tip_001),
 	gsSPDisplayList(luigi_001_switch_000_displaylist_wings_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_luigi_wings_half_2_001),
-	gsSPDisplayList(mat_luigi_wings_half_1_001),
+	gsSPDisplayList(mat_revert_luigi_wing_tip_001),
+	gsSPDisplayList(mat_luigi_wing_001),
 	gsSPDisplayList(luigi_001_switch_000_displaylist_wings_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_luigi_wings_half_1_001),
+	gsSPDisplayList(mat_revert_luigi_wing_001),
 	gsSPEndDisplayList(),
 };
 
 Gfx luigi_001_switch_000_displaylist_wings_mesh_layer_4_mat_override_metal_001_0[] = {
-	gsSPDisplayList(mat_luigi_wings_half_2_001),
+	gsSPDisplayList(mat_luigi_wing_tip_001),
 	gsSPDisplayList(luigi_001_switch_000_displaylist_wings_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_luigi_wings_half_2_001),
-	gsSPDisplayList(mat_luigi_wings_half_1_001),
+	gsSPDisplayList(mat_revert_luigi_wing_tip_001),
+	gsSPDisplayList(mat_luigi_wing_001),
 	gsSPDisplayList(luigi_001_switch_000_displaylist_wings_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_luigi_wings_half_1_001),
+	gsSPDisplayList(mat_revert_luigi_wing_001),
 	gsSPEndDisplayList(),
 };
 
 Gfx luigi_001_switch_000_displaylist_wings_mesh_layer_4_mat_override_gold_001_1[] = {
-	gsSPDisplayList(mat_luigi_gold_001),
+	gsSPDisplayList(mat_luigi_wing_tip_001),
 	gsSPDisplayList(luigi_001_switch_000_displaylist_wings_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_luigi_wing_tip_001),
+	gsSPDisplayList(mat_luigi_wing_001),
 	gsSPDisplayList(luigi_001_switch_000_displaylist_wings_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_luigi_gold_001),
+	gsSPDisplayList(mat_revert_luigi_wing_001),
 	gsSPEndDisplayList(),
 };
 
