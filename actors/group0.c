@@ -29,4 +29,3 @@
 #include "luigi/model.inc.c"
 #include "luigi/anims/data.inc.c"
 #include "luigi/anims/table.inc.c"
-#include "king_boo/model.inc.c"
