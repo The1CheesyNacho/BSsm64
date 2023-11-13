@@ -349,4 +349,6 @@ extern const Gfx white_particle_small_unused_dl[];
 
 #include "luigi/anim_header.h"
 
+
+#include "mario/anim_header.h"
 #endif

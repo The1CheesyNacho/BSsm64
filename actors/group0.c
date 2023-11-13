@@ -29,3 +29,6 @@
 #include "luigi/model.inc.c"
 #include "luigi/anims/data.inc.c"
 #include "luigi/anims/table.inc.c"
+
+#include "mario/anims/data.inc.c"
+#include "mario/anims/table.inc.c"
