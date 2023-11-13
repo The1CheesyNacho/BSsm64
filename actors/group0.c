@@ -34,3 +34,5 @@
 #include "mario/anims/table.inc.c"
 #include "wario/model.inc.c"
 #include "waluigi/model.inc.c"
+#include "statue/model.inc.c"
+#include "statue/collision.inc.c"

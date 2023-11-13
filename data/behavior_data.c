@@ -6190,3 +6190,14 @@ const BehaviorScript bhvKingBoo[] = {
     BEGIN_LOOP(),
     END_LOOP(),
 };
+
+const BehaviorScript bhvPushableStatue[] = {
+    BEGIN(OBJ_LIST_SURFACE),
+    OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
+    LOAD_COLLISION_DATA(statue_collision),
+    SET_HOME(),
+    BEGIN_LOOP(),
+        CALL_NATIVE(bhv_pushable_loop),
+        CALL_NATIVE(load_object_collision_model),
+    END_LOOP(),
+};

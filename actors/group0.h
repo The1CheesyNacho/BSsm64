@@ -356,4 +356,10 @@ extern const Gfx white_particle_small_unused_dl[];
 #include "waluigi/geo_header.h"
 
 
+#include "statue/header.h"
+
+#include "statue/collision_header.h"
+
+#include "statue/geo_header.h"
+
 #endif

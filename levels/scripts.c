@@ -148,6 +148,7 @@ const LevelScript level_main_scripts_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_EXPLOSION,               explosion_geo),
     LOAD_MODEL_FROM_GEO(MODEL_DIRT_ANIMATION,          dirt_animation_geo),
     LOAD_MODEL_FROM_GEO(MODEL_CARTOON_STAR,            cartoon_star_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_STATUE,                  statue_geo),
 #ifdef PORT_MOP_OBJS
     LOAD_MODEL_FROM_GEO(MODEL_MOP_NOTEBLOCK,                Noteblock_MOP),
     LOAD_MODEL_FROM_GEO(MODEL_MOP_CHECKPOINT_FLAG,          Checkpoint_Flap_MOP),

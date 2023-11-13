@@ -20,3 +20,4 @@
 
 #include "wario/geo.inc.c"
 #include "waluigi/geo.inc.c"
+#include "statue/geo.inc.c"

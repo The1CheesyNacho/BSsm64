@@ -78,6 +78,7 @@
 #define MODEL_CASTLE_GROUNDS_METAL_DOOR        0x29        // metal_door_geo
 #define MODEL_UNKNOWN_DOOR_2A                  0x2A        // referenced in special presets, undefined
 #define MODEL_UNKNOWN_DOOR_2B                  0x2B        // referenced in special presets, undefined
+#define MODEL_STATUE                           0xCD        // referenced in special presets, undefined
 // Model 0x2C-0x2F were WF model so they were moved to 0x3B-0x3E
 
 // Level model IDs

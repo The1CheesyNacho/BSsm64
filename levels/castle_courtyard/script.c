@@ -3,6 +3,7 @@
 #include "behavior_data.h"
 #include "model_ids.h"
 #include "seq_ids.h"
+#include "dialog_ids.h"
 #include "segment_symbols.h"
 #include "level_commands.h"
 
@@ -11,63 +12,63 @@
 #include "levels/scripts.h"
 
 #include "actors/common1.h"
+#include "actors/group0.h"
+
+/* Fast64 begin persistent block [includes] */
+/* Fast64 end persistent block [includes] */
 
 #include "make_const_nonconst.h"
 #include "levels/castle_courtyard/header.h"
 
-static const LevelScript script_func_local_1[] = {
-    OBJECT(/*model*/ MODEL_NONE, /*pos*/     0, 200, -1652, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvAmbientSounds),
-    OBJECT(/*model*/ MODEL_NONE, /*pos*/ -2700,   0, -1652, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(0x00), /*bhv*/ bhvBirdsSoundLoop),
-    OBJECT(/*model*/ MODEL_NONE, /*pos*/  2700,   0, -1652, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(0x01), /*bhv*/ bhvBirdsSoundLoop),
-    RETURN(),
-};
-
-static const LevelScript script_func_local_2[] = {
-    OBJECT(/*model*/ MODEL_BOO, /*pos*/ -3217, 100,  -101, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvCourtyardBooTriplet),
-    OBJECT(/*model*/ MODEL_BOO, /*pos*/  3317, 100, -1701, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvCourtyardBooTriplet),
-    OBJECT(/*model*/ MODEL_BOO, /*pos*/   -71,   1, -1387, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvCourtyardBooTriplet),
-    RETURN(),
-};
+/* Fast64 begin persistent block [scripts] */
+/* Fast64 end persistent block [scripts] */
 
 const LevelScript level_castle_courtyard_entry[] = {
-    INIT_LEVEL(),
-    LOAD_MIO0        (/*seg*/ 0x07, _castle_courtyard_segment_7SegmentRomStart, _castle_courtyard_segment_7SegmentRomEnd),
-    LOAD_MIO0        (/*seg*/ 0x0A, _water_skybox_mio0SegmentRomStart, _water_skybox_mio0SegmentRomEnd),
-    LOAD_MIO0_TEXTURE(/*seg*/ 0x09, _outside_mio0SegmentRomStart, _outside_mio0SegmentRomEnd),
-    LOAD_MIO0        (/*seg*/ 0x05, _group9_mio0SegmentRomStart, _group9_mio0SegmentRomEnd),
-    LOAD_RAW         (/*seg*/ 0x0C, _group9_geoSegmentRomStart,  _group9_geoSegmentRomEnd),
-    LOAD_MIO0        (/*seg*/ 0x08, _common0_mio0SegmentRomStart, _common0_mio0SegmentRomEnd),
-    LOAD_RAW         (/*seg*/ 0x0F, _common0_geoSegmentRomStart,  _common0_geoSegmentRomEnd),
-    ALLOC_LEVEL_POOL(),
+	INIT_LEVEL(),
+	LOAD_MIO0_TEXTURE(0x09, _outside_mio0SegmentRomStart, _outside_mio0SegmentRomEnd), 
+	LOAD_MIO0(0x7, _castle_courtyard_segment_7SegmentRomStart, _castle_courtyard_segment_7SegmentRomEnd), 
+	LOAD_MIO0(0xa, _water_skybox_mio0SegmentRomStart, _water_skybox_mio0SegmentRomEnd), 
+	ALLOC_LEVEL_POOL(),
     MARIO(/*model*/ MODEL_MARIO, /*bhvParam*/ BPARAM4(0x01), /*bhv*/ bhvMario),
-    JUMP_LINK(script_func_global_1),
-    JUMP_LINK(script_func_global_10),
-    LOAD_MODEL_FROM_GEO(MODEL_COURTYARD_SPIKY_TREE,  spiky_tree_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_COURTYARD_WOODEN_DOOR, wooden_door_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_LEVEL_GEOMETRY_03,     castle_courtyard_geo_000200),
+	JUMP_LINK(script_func_global_1), 
+	JUMP_LINK(script_func_global_10), 
+	LOAD_MODEL_FROM_GEO(MODEL_COURTYARD_SPIKY_TREE, spiky_tree_geo), 
+	LOAD_MODEL_FROM_GEO(MODEL_COURTYARD_WOODEN_DOOR, wooden_door_geo), 
+	LOAD_MODEL_FROM_GEO(MODEL_LEVEL_GEOMETRY_03, castle_courtyard_geo_000200), 
 
-    AREA(/*index*/ 1, castle_courtyard_geo_000218),
-        OBJECT(/*model*/ MODEL_BOO,  /*pos*/ -2360, -100, -2712, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM1(1) | BPARAM2(WARP_NODE_05), /*bhv*/ bhvBooWithCage),
-        OBJECT(/*model*/ MODEL_NONE, /*pos*/     0,   51, -1000, /*angle*/ 0, 180, 0, /*bhvParam*/ BPARAM2(WARP_NODE_0A), /*bhv*/ bhvLaunchStarCollectWarp),
-        OBJECT(/*model*/ MODEL_NONE, /*pos*/     0,   51, -1000, /*angle*/ 0, 180, 0, /*bhvParam*/ BPARAM2(WARP_NODE_0B), /*bhv*/ bhvLaunchDeathWarp),
-        WARP_NODE(/*id*/ WARP_NODE_05,    /*destLevel*/ LEVEL_BBH,              /*destArea*/ 1, /*destNode*/ WARP_NODE_0A, /*flags*/ WARP_NO_CHECKPOINT),
-        WARP_NODE(/*id*/ WARP_NODE_0A,    /*destLevel*/ LEVEL_CASTLE_COURTYARD, /*destArea*/ 1, /*destNode*/ WARP_NODE_0A, /*flags*/ WARP_NO_CHECKPOINT),
-        WARP_NODE(/*id*/ WARP_NODE_0B,    /*destLevel*/ LEVEL_CASTLE_COURTYARD, /*destArea*/ 1, /*destNode*/ WARP_NODE_0B, /*flags*/ WARP_NO_CHECKPOINT),
-        WARP_NODE(/*id*/ WARP_NODE_01,    /*destLevel*/ LEVEL_CASTLE,           /*destArea*/ 1, /*destNode*/ WARP_NODE_02, /*flags*/ WARP_NO_CHECKPOINT),
-        WARP_NODE(/*id*/ WARP_NODE_DEATH, /*destLevel*/ LEVEL_CASTLE_GROUNDS,   /*destArea*/ 1, /*destNode*/ WARP_NODE_03, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_1),
-        JUMP_LINK(script_func_local_2),
-        TERRAIN(/*terrainData*/ castle_courtyard_seg7_collision),
-        MACRO_OBJECTS(/*objList*/ castle_courtyard_seg7_macro_objs),
-        SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0000, /*seq*/ SEQ_SOUND_PLAYER),
-        TERRAIN_TYPE(/*terrainType*/ TERRAIN_STONE),
-    END_AREA(),
+	/* Fast64 begin persistent block [level commands] */
+	/* Fast64 end persistent block [level commands] */
 
-    FREE_LEVEL_POOL(),
-    MARIO_POS(/*area*/ 1, /*yaw*/ 0, /*pos*/ -14, 0, -201),
-    CALL(/*arg*/ 0, /*func*/ lvl_init_or_update),
-    CALL_LOOP(/*arg*/ 1, /*func*/ lvl_init_or_update),
-    CLEAR_LEVEL(),
-    SLEEP_BEFORE_EXIT(/*frames*/ 1),
-    EXIT(),
+	AREA(1, castle_courtyard_area_1),
+		WARP_NODE( WARP_NODE_DEATH, LEVEL_CASTLE_GROUNDS,     1,   WARP_NODE_03, WARP_NO_CHECKPOINT),
+		WARP_NODE( WARP_NODE_01, LEVEL_CASTLE,             1,   WARP_NODE_02, WARP_NO_CHECKPOINT),
+		WARP_NODE( WARP_NODE_0B, LEVEL_CASTLE_COURTYARD,   1,   WARP_NODE_0B, WARP_NO_CHECKPOINT),
+		WARP_NODE( WARP_NODE_0A, LEVEL_CASTLE_COURTYARD,   1,   WARP_NODE_0A, WARP_NO_CHECKPOINT),
+		WARP_NODE( WARP_NODE_05, LEVEL_BBH,                1,   WARP_NODE_0A, WARP_NO_CHECKPOINT),
+		WARP_NODE( WARP_NODE_06, LEVEL_PPF,                1,   WARP_NODE_0A, WARP_NO_CHECKPOINT),
+		OBJECT(MODEL_STATUE, 7, -49, -1736, 0, 0, 0,   0, bhvPushableMetalBox),
+		OBJECT( MODEL_NONE, 6, -370, -1713, 0, 0, 0, ( WARP_NODE_06 << 16), bhvWarp),
+		OBJECT( MODEL_NONE, -2700, 0, -1652, 0, 0, 0,   BPARAM2(0x00), bhvBirdsSoundLoop),
+		OBJECT( MODEL_NONE, 2700, 0, -1652, 0, 0, 0,   BPARAM2(0x01), bhvBirdsSoundLoop),
+		OBJECT( MODEL_BOO, -2360, -100, -2712, 0, 0, 0,   BPARAM1(1) | BPARAM2(WARP_NODE_05), bhvBooWithCage),
+		OBJECT( MODEL_BOO, -3217, 100, -101, 0, 0, 0,   0, bhvCourtyardBooTriplet),
+		OBJECT( MODEL_BOO, 3317, 100, -1701, 0, 0, 0,   0, bhvCourtyardBooTriplet),
+		OBJECT( MODEL_BOO, -71, 1, -1387, 0, 0, 0,   0, bhvCourtyardBooTriplet),
+		OBJECT( MODEL_NONE, 0, 51, -1000, 0, -180, 0,   BPARAM2(WARP_NODE_0B), bhvLaunchDeathWarp),
+		OBJECT( MODEL_NONE, 0, 51, -1000, 0, -180, 0,   BPARAM2(WARP_NODE_0A), bhvLaunchStarCollectWarp),
+		TERRAIN(castle_courtyard_area_1_collision),
+		MACRO_OBJECTS(castle_courtyard_area_1_macro_objs),
+		SET_BACKGROUND_MUSIC(0x00, SEQ_SOUND_PLAYER),
+		TERRAIN_TYPE(TERRAIN_STONE),
+		/* Fast64 begin persistent block [area commands] */
+		/* Fast64 end persistent block [area commands] */
+	END_AREA(),
+
+	FREE_LEVEL_POOL(),
+	MARIO_POS(1, 0, 0, 0, 0),
+	CALL(0, lvl_init_or_update),
+	CALL_LOOP(1, lvl_init_or_update),
+	CLEAR_LEVEL(),
+	SLEEP_BEFORE_EXIT(1),
+	EXIT(),
 };
