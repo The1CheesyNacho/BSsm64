@@ -43,4 +43,6 @@ extern const GeoLayout water_bomb_shadow_geo[];
 extern const Gfx water_bubble_seg5_dl_05010D30[];
 extern const Gfx water_bubble_seg5_dl_05011000[];
 
+#include "king_boo/geo_header.h"
+
 #endif
