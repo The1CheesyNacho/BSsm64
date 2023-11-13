@@ -34,4 +34,3 @@
 #include "mario/anims/table.inc.c"
 #include "wario/model.inc.c"
 #include "waluigi/model.inc.c"
-#include "king_boo/model.inc.c"

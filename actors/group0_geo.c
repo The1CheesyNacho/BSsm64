@@ -20,4 +20,3 @@
 
 #include "wario/geo.inc.c"
 #include "waluigi/geo.inc.c"
-#include "king_boo/geo.inc.c"
