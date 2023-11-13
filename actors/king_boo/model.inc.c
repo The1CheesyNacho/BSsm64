@@ -10,10 +10,6 @@ Lights1 king_boo_f3dlite_material_003_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x49, 0x49, 0x49);
 
-Lights1 king_boo_f3dlite_material_004_lights = gdSPDefLights1(
-	0x7F, 0x7F, 0x7F,
-	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
-
 Lights1 king_boo_f3dlite_material_lights = gdSPDefLights1(
 	0x7F, 0x0, 0x40,
 	0xFF, 0x0, 0x85, 0x28, 0x28, 0x28);
@@ -28,7 +24,7 @@ u8 king_boo_king_boo_king_bob_omb_crown_rim_rgba16_ci8_rgba16[] = {
 	#include "actors/king_boo/king_boo_king_bob_omb_crown_rim_rgba16_ci8.rgba16.inc.c"
 };
 
-Vtx king_boo_000_displaylist_mesh_layer_1_vtx_0[88] = {
+Vtx king_boo_000_displaylist_mesh_layer_1_vtx_0[110] = {
 	{{ {3, -231, -169}, 0, {-16, -16}, {0, 135, 217, 254} }},
 	{{ {3, -183, -251}, 0, {-16, -16}, {0, 146, 192, 254} }},
 	{{ {146, -231, -169}, 0, {-16, -16}, {33, 141, 214, 254} }},
@@ -117,6 +113,28 @@ Vtx king_boo_000_displaylist_mesh_layer_1_vtx_0[88] = {
 	{{ {142, 268, 212}, 0, {1682, -174}, {41, 100, 67, 254} }},
 	{{ {307, 89, 230}, 0, {2484, 818}, {81, 0, 97, 254} }},
 	{{ {145, 52, 291}, 0, {1701, 1023}, {47, 172, 83, 254} }},
+	{{ {-160, 111, 177}, 0, {-16, 1008}, {184, 163, 208, 255} }},
+	{{ {-225, 5, 204}, 0, {-16, 1008}, {152, 183, 5, 255} }},
+	{{ {-209, 127, 125}, 0, {-16, 1008}, {196, 0, 144, 255} }},
+	{{ {-234, 14, 221}, 0, {-16, 1008}, {204, 11, 115, 255} }},
+	{{ {-190, 88, 241}, 0, {-16, 1008}, {198, 202, 99, 255} }},
+	{{ {-250, 19, 204}, 0, {-16, 1008}, {240, 124, 20, 255} }},
+	{{ {-239, 104, 190}, 0, {-16, 1008}, {14, 126, 3, 255} }},
+	{{ {-241, 10, 188}, 0, {-16, 1008}, {178, 41, 165, 255} }},
+	{{ {-241, 10, 188}, 0, {-16, 1008}, {178, 41, 165, 255} }},
+	{{ {-225, 5, 204}, 0, {-16, 1008}, {152, 183, 5, 255} }},
+	{{ {-241, 5, 205}, 0, {-16, 1008}, {144, 57, 19, 255} }},
+	{{ {-234, 14, 221}, 0, {-16, 1008}, {204, 11, 115, 255} }},
+	{{ {-250, 19, 204}, 0, {-16, 1008}, {240, 124, 20, 255} }},
+	{{ {209, 127, 125}, 0, {-16, 1008}, {34, 207, 144, 255} }},
+	{{ {239, 104, 190}, 0, {-16, 1008}, {95, 84, 3, 255} }},
+	{{ {241, 10, 188}, 0, {-16, 1008}, {79, 216, 165, 255} }},
+	{{ {250, 19, 204}, 0, {-16, 1008}, {111, 58, 20, 255} }},
+	{{ {190, 88, 241}, 0, {-16, 1008}, {246, 177, 99, 255} }},
+	{{ {234, 14, 221}, 0, {-16, 1008}, {39, 219, 115, 255} }},
+	{{ {160, 111, 177}, 0, {-16, 1008}, {221, 144, 208, 255} }},
+	{{ {225, 5, 204}, 0, {-16, 1008}, {0, 129, 5, 255} }},
+	{{ {241, 5, 205}, 0, {-16, 1008}, {111, 197, 20, 255} }},
 };
 
 Gfx king_boo_000_displaylist_mesh_layer_1_tri_0[] = {
@@ -195,13 +213,38 @@ Gfx king_boo_000_displaylist_mesh_layer_1_tri_0[] = {
 	gsSP1Triangle(9, 10, 11, 0),
 	gsSP1Triangle(12, 13, 14, 0),
 	gsSP1Triangle(15, 13, 12, 0),
-	gsSPVertex(king_boo_000_displaylist_mesh_layer_1_vtx_0 + 80, 8, 0),
+	gsSPVertex(king_boo_000_displaylist_mesh_layer_1_vtx_0 + 80, 16, 0),
 	gsSP1Triangle(0, 1, 2, 0),
 	gsSP1Triangle(2, 1, 3, 0),
 	gsSP1Triangle(3, 1, 4, 0),
 	gsSP1Triangle(5, 4, 1, 0),
 	gsSP1Triangle(6, 5, 1, 0),
 	gsSP1Triangle(1, 7, 6, 0),
+	gsSP1Triangle(8, 9, 10, 0),
+	gsSP1Triangle(11, 9, 8, 0),
+	gsSP1Triangle(12, 11, 8, 0),
+	gsSP1Triangle(13, 11, 12, 0),
+	gsSP1Triangle(14, 13, 12, 0),
+	gsSP1Triangle(15, 13, 14, 0),
+	gsSP1Triangle(10, 15, 14, 0),
+	gsSP1Triangle(9, 15, 10, 0),
+	gsSPVertex(king_boo_000_displaylist_mesh_layer_1_vtx_0 + 96, 14, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(2, 1, 3, 0),
+	gsSP1Triangle(4, 2, 3, 0),
+	gsSP1Triangle(4, 0, 2, 0),
+	gsSP1Triangle(5, 6, 7, 0),
+	gsSP1Triangle(7, 6, 8, 0),
+	gsSP1Triangle(6, 9, 8, 0),
+	gsSP1Triangle(8, 9, 10, 0),
+	gsSP1Triangle(9, 11, 10, 0),
+	gsSP1Triangle(10, 11, 12, 0),
+	gsSP1Triangle(11, 5, 12, 0),
+	gsSP1Triangle(12, 5, 7, 0),
+	gsSP1Triangle(7, 13, 12, 0),
+	gsSP1Triangle(8, 13, 7, 0),
+	gsSP1Triangle(8, 10, 13, 0),
+	gsSP1Triangle(13, 10, 12, 0),
 	gsSPEndDisplayList(),
 };
 
@@ -339,62 +382,6 @@ Gfx king_boo_000_displaylist_mesh_layer_1_tri_2[] = {
 	gsSP1Triangle(1, 3, 2, 0),
 	gsSP1Triangle(1, 4, 3, 0),
 	gsSP1Triangle(2, 5, 6, 0),
-	gsSPEndDisplayList(),
-};
-
-Vtx king_boo_000_displaylist_mesh_layer_1_vtx_3[23] = {
-	{{ {-181, 91, 183}, 0, {-16, 1008}, {184, 163, 208, 255} }},
-	{{ {-224, 20, 202}, 0, {-16, 1008}, {152, 183, 5, 255} }},
-	{{ {-214, 101, 149}, 0, {-16, 1008}, {196, 0, 144, 255} }},
-	{{ {-230, 25, 213}, 0, {-16, 1008}, {204, 11, 115, 255} }},
-	{{ {-200, 76, 226}, 0, {-16, 1008}, {198, 202, 99, 255} }},
-	{{ {-241, 29, 201}, 0, {-16, 1008}, {240, 124, 20, 255} }},
-	{{ {-233, 86, 192}, 0, {-16, 1008}, {14, 126, 3, 255} }},
-	{{ {-235, 23, 190}, 0, {-16, 1008}, {178, 41, 165, 255} }},
-	{{ {-235, 19, 202}, 0, {-16, 1008}, {144, 57, 19, 255} }},
-	{{ {214, 101, 149}, 0, {-16, 1008}, {34, 207, 144, 255} }},
-	{{ {233, 86, 192}, 0, {-16, 1008}, {95, 84, 3, 255} }},
-	{{ {235, 23, 190}, 0, {-16, 1008}, {79, 216, 165, 255} }},
-	{{ {241, 29, 201}, 0, {-16, 1008}, {111, 58, 20, 255} }},
-	{{ {200, 76, 226}, 0, {-16, 1008}, {246, 177, 99, 255} }},
-	{{ {230, 25, 213}, 0, {-16, 1008}, {39, 219, 115, 255} }},
-	{{ {181, 91, 183}, 0, {-16, 1008}, {221, 144, 208, 255} }},
-	{{ {230, 25, 213}, 0, {-16, 1008}, {39, 219, 115, 255} }},
-	{{ {181, 91, 183}, 0, {-16, 1008}, {221, 144, 208, 255} }},
-	{{ {224, 20, 202}, 0, {-16, 1008}, {0, 129, 5, 255} }},
-	{{ {214, 101, 149}, 0, {-16, 1008}, {34, 207, 144, 255} }},
-	{{ {235, 23, 190}, 0, {-16, 1008}, {79, 216, 165, 255} }},
-	{{ {235, 19, 202}, 0, {-16, 1008}, {111, 197, 20, 255} }},
-	{{ {241, 29, 201}, 0, {-16, 1008}, {111, 58, 20, 255} }},
-};
-
-Gfx king_boo_000_displaylist_mesh_layer_1_tri_3[] = {
-	gsSPVertex(king_boo_000_displaylist_mesh_layer_1_vtx_3 + 0, 16, 0),
-	gsSP1Triangle(0, 1, 2, 0),
-	gsSP1Triangle(3, 1, 0, 0),
-	gsSP1Triangle(4, 3, 0, 0),
-	gsSP1Triangle(5, 3, 4, 0),
-	gsSP1Triangle(6, 5, 4, 0),
-	gsSP1Triangle(7, 5, 6, 0),
-	gsSP1Triangle(2, 7, 6, 0),
-	gsSP1Triangle(1, 7, 2, 0),
-	gsSP1Triangle(7, 1, 8, 0),
-	gsSP1Triangle(8, 1, 3, 0),
-	gsSP1Triangle(5, 8, 3, 0),
-	gsSP1Triangle(5, 7, 8, 0),
-	gsSP1Triangle(9, 10, 11, 0),
-	gsSP1Triangle(11, 10, 12, 0),
-	gsSP1Triangle(10, 13, 12, 0),
-	gsSP1Triangle(12, 13, 14, 0),
-	gsSP1Triangle(13, 15, 14, 0),
-	gsSPVertex(king_boo_000_displaylist_mesh_layer_1_vtx_3 + 16, 7, 0),
-	gsSP1Triangle(0, 1, 2, 0),
-	gsSP1Triangle(1, 3, 2, 0),
-	gsSP1Triangle(2, 3, 4, 0),
-	gsSP1Triangle(4, 5, 2, 0),
-	gsSP1Triangle(6, 5, 4, 0),
-	gsSP1Triangle(6, 0, 5, 0),
-	gsSP1Triangle(5, 0, 2, 0),
 	gsSPEndDisplayList(),
 };
 
@@ -616,14 +603,6 @@ Gfx mat_king_boo_f3dlite_material_003[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_king_boo_f3dlite_material_004[] = {
-	gsDPPipeSync(),
-	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
-	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsSPSetLights1(king_boo_f3dlite_material_004_lights),
-	gsSPEndDisplayList(),
-};
-
 Gfx mat_king_boo_f3dlite_material[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
@@ -639,8 +618,6 @@ Gfx king_boo_000_displaylist_mesh_layer_1[] = {
 	gsSPDisplayList(king_boo_000_displaylist_mesh_layer_1_tri_1),
 	gsSPDisplayList(mat_king_boo_f3dlite_material_003),
 	gsSPDisplayList(king_boo_000_displaylist_mesh_layer_1_tri_2),
-	gsSPDisplayList(mat_king_boo_f3dlite_material_004),
-	gsSPDisplayList(king_boo_000_displaylist_mesh_layer_1_tri_3),
 	gsSPEndDisplayList(),
 };
 

@@ -1377,6 +1377,9 @@ void update_mario_button_inputs(struct MarioState *m) {
         m->marioObj->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_WARIO]; 
     } 
 
+    if (Character == 3) {
+        m->marioObj->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_WALUIGI]; 
+    } 
 
     // Don't update for these buttons if squished.
     if (m->squishTimer == 0) {
