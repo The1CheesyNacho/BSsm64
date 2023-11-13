@@ -20,6 +20,8 @@
 
 #define MODEL_MARIO                       0x01        // mario_geo
 #define MODEL_LUIGI                       0x02        // unused
+#define MODEL_WARIO                       0x8D        // mario_geo
+#define MODEL_WALUIGI                     0x7E        // unused
 
 /* Various static level geometry, the geo layout differs but terrain object presets treat them the same.*/
 
@@ -344,6 +346,7 @@
 #define MODEL_WATER_BOMB                  0x54        // water_bomb_geo
 #define MODEL_WATER_BOMB_SHADOW           0x55        // water_bomb_shadow_geo
 #define MODEL_KING_BOBOMB                 0x56        // king_bobomb_geo
+#define MODEL_KING_BOO                    0xBD        // water_bomb_geo
 
 // group 4
 #define MODEL_MANTA_RAY                   0x54        // manta_seg5_geo_05008D14
