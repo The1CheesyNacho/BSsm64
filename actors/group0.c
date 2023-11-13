@@ -32,3 +32,4 @@
 
 #include "mario/anims/data.inc.c"
 #include "mario/anims/table.inc.c"
+#include "wario/model.inc.c"

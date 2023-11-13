@@ -1364,15 +1364,6 @@ void update_mario_button_inputs(struct MarioState *m) {
         m->input |= INPUT_A_DOWN;
     }
 
-    if (m->controller->buttonPressed & L_TRIG) {
-        play_sound(SOUND_MENU_STAR_SOUND, gGlobalSoundSource);
-        m->particleFlags |= PARTICLE_MIST_CIRCLE;
-        if (Character == 0) {
-            Character = 1;
-        } else {
-            Character = 0;
-        }
-    }
 
     if (Character == 0) {
         m->marioObj->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_MARIO];
@@ -1381,6 +1372,11 @@ void update_mario_button_inputs(struct MarioState *m) {
     if (Character == 1) {
         m->marioObj->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_LUIGI]; 
     } 
+
+    if (Character == 2) {
+        m->marioObj->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_WARIO]; 
+    } 
+
 
     // Don't update for these buttons if squished.
     if (m->squishTimer == 0) {
