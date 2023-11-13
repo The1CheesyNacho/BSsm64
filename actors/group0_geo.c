@@ -16,6 +16,4 @@
 #include "water_splash/geo.inc.c"
 #include "sparkle_animation/geo.inc.c"
 #include "mario/geo.inc.c"
-
 #include "luigi/geo.inc.c"
-#include "king_boo/geo.inc.c"
