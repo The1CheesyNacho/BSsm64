@@ -24,6 +24,7 @@
 /* Fast64 begin persistent block [scripts] */
 /* Fast64 end persistent block [scripts] */
 
+
 const LevelScript level_ppf_entry[] = {
 	INIT_LEVEL(),
 	LOAD_MIO0(0x7, _ppf_segment_7SegmentRomStart, _ppf_segment_7SegmentRomEnd), 
@@ -41,17 +42,18 @@ const LevelScript level_ppf_entry[] = {
 	LOAD_MODEL_FROM_GEO(MODEL_CHAIN_CHOMP, chain_chomp_geo), 
 	LOAD_MODEL_FROM_GEO(MODEL_GOOMBA, goomba_geo), 
 
+
 	/* Fast64 begin persistent block [level commands] */
 	/* Fast64 end persistent block [level commands] */
 
 	AREA(1, ppf_area_1),
 		WARP_NODE(0x0A, LEVEL_PPF, 0x01, 0x0A, WARP_NO_CHECKPOINT),
-		WARP_NODE(0x02, LEVEL_PPF, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF0, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF1, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
+		WARP_NODE(0x0B, LEVEL_PPF, 0x02, 0x0A, WARP_NO_CHECKPOINT),
 		OBJECT(MODEL_NONE, -2042, -454, 5669, 0, 0, 0, 0x000A0000, bhvSpinAirborneWarp),
 		MARIO_POS(0x01, 0, -2042, -454, 5669),
-		OBJECT(MODEL_THI_WARP_PIPE, -1112, 3719, -1762, 0, 0, 0, 0x000A0000, bhvWarpPipe),
+		OBJECT(MODEL_THI_WARP_PIPE, -1112, 3719, -1762, 0, 0, 0, 0x000B0000, bhvWarpPipe),
 		OBJECT(MODEL_STAR, -94, 3905, -2525, 0, 0, 0, 0x00000000, bhvStar),
 		OBJECT(MODEL_GOOMBA, -120, -1713, 6160, 0, 0, 0, 0x00000000, bhvGoomba),
 		OBJECT(MODEL_CHAIN_CHOMP, -3181, 3490, -107, 0, 0, 0, 0x00000000, bhvChainChomp),
@@ -66,7 +68,7 @@ const LevelScript level_ppf_entry[] = {
 	END_AREA(),
 
 	AREA(2, ppf_area_2),
-		WARP_NODE(0x0A, LEVEL_PPF, 0x01, 0x02, WARP_NO_CHECKPOINT),
+		WARP_NODE(0x0A, LEVEL_PPF, 0x01, 0x0B, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF0, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF1, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		OBJECT(MODEL_NONE, 3676, 7712, 2478, 0, 0, 0, (0X0A << 16), bhvSpinAirborneWarp),
