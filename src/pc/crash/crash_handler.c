@@ -26,10 +26,6 @@
 #define ENABLE_CRASH_HANDLER
 #endif
 
-#if defined(i386) || defined(__i386__) || defined(__i386) || defined(_M_IX86) // 32 bit
-#define ENABLE_CRASH_HANDLER
-#endif
-
 #if (defined(_WIN32) || defined(__linux__)) && !defined(WAPI_DUMMY) && defined(ENABLE_CRASH_HANDLER)
 
 // Graphics and textures
