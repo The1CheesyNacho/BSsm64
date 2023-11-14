@@ -26,7 +26,7 @@
 #define ENABLE_CRASH_HANDLER
 #endif
 
-#if (defined(_WIN32) || defined(__linux__)) && !defined(WAPI_DUMMY) && defined(ENABLE_CRASH_HANDLER)
+#if (defined(_WIN32) || defined(__linux__)) && defined(ENABLE_CRASH_HANDLER)
 
 // Graphics and textures
 #include "pc/crash/crash_graphics.h"
