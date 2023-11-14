@@ -99,6 +99,6 @@ static struct SpecialPreset sSpecialObjectPresets[] = {
     { special_unknown1_door_warp,                 SPTYPE_PARAMS_AND_YROT,    0x00, MODEL_UNKNOWN_DOOR_28, bhvDoorWarp },
     { special_metal_door_warp,                    SPTYPE_PARAMS_AND_YROT,    0x00, MODEL_CASTLE_METAL_DOOR, bhvDoorWarp },
     { special_unknown2_door_warp,                 SPTYPE_PARAMS_AND_YROT,    0x00, MODEL_UNKNOWN_DOOR_2A, bhvDoorWarp },
-    { special_unknown3_door_warp,                 SPTYPE_PARAMS_AND_YROT,    0x00, MODEL_UNKNOWN_DOOR_2B, bhvDoorWarp },
+    { special_unknown3_door_warp,                 SPTYPE_DEF_PARAM_AND_YROT,    0x03, MODEL_CASTLE_DOOR_3_STARS, bhvDoorWarp },
     { special_null_end,                           SPTYPE_NO_YROT_OR_PARAMS,  0x00, MODEL_NONE, NULL },
 };
