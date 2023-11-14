@@ -13,6 +13,7 @@
 #include "geo_misc.h"
 #include "rendering_graph_node.h"
 #include "object_list_processor.h"
+#include "level_update.h"
 
 /**
  * This file contains functions for generating display lists with moving textures
@@ -628,6 +629,7 @@ void movtex_change_texture_format(u32 quadCollectionId, Gfx **gfx) {
  * collection is drawn, see moving_texture.h.
  */
 Gfx *geo_movtex_draw_water_regions(s32 callContext, struct GraphNode *node, UNUSED Mat4 mtx) {
+    if (gCurrLevelNum == LEVEL_CASTLE_COURTYARD && gMarioState->numStars >= 6) return;
     Gfx *gfxHead = NULL;
     Gfx *gfx = NULL;
     Gfx *subList;
