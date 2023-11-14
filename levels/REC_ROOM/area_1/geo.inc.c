@@ -3,7 +3,7 @@
 const GeoLayout REC_ROOM_area_1_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
-		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -2540, 154, 4052, 90, 0, 0, REC_ROOM_dl_rec_room_mesh_layer_1),
+		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, -842, 154, 4505, 90, 0, -45, REC_ROOM_dl_rec_room_mesh_layer_1),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
