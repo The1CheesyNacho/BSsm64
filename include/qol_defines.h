@@ -19,7 +19,7 @@
 /// Adds Zelda level select used on OOT, MM and Animal Forest
 #define ZELDA_STYLE_LEVEL_SELECT (0 || QOL_REDONE)
 /// Adds improved platform displacement with intertia
-#define PLATFORM_DISPLACEMENT_2 (0 || QOL_REDONE)
+#define PLATFORM_DISPLACEMENT_2 (1 || QOL_REDONE)
 /// Uses optimized shadows which are faster than vanilla
 #define OPTIMIZED_SHADOWS (0 || QOL_REDONE)
 
@@ -29,9 +29,9 @@
 /// Adds Mario's Face Easter Egg (Originally defined in SH)
 #define QOL_FEATURE_MARIO_HEAD_EASTER_EGG (0 || VERSION_SH || (QOL_FEATURES && GODDARD_MFACE && HAS_FRAMEBUFFER))
 /// Makes ending screen go back to title screen when pressing start
-#define QOL_FEATURE_ENDING_SCREEN_START (0 || QOL_FEATURES)
+#define QOL_FEATURE_ENDING_SCREEN_START (1 || QOL_FEATURES)
 /// Makes skybox have better precision movement and fixes fov
-#define QOL_FEATURE_BETTER_SKYBOX (0 || QOL_FEATURES)
+#define QOL_FEATURE_BETTER_SKYBOX (1 || QOL_FEATURES)
 
 // --| Quality of life fixes
 // --| Code Fixes
@@ -51,8 +51,8 @@
 
 // --| Assets Fixes (Mostly on vanilla levels)
 /// Fixes impossible coins (also fixes impossible Goomba since it's related)
-#define QOL_FIX_ASSET_IMPOSSIBLE_COINS (0 || QOL_FIXES)
+#define QOL_FIX_ASSET_IMPOSSIBLE_COINS (1 || QOL_FIXES)
 /// Fixes 1up locations in CCM slide
-#define QOL_FIX_ASSET_CCM_SLIDE_1UPS (0 || QOL_FIXES)
+#define QOL_FIX_ASSET_CCM_SLIDE_1UPS (1 || QOL_FIXES)
 
 #endif // QOL_DEFINES_H

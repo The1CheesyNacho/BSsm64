@@ -56,7 +56,7 @@ TARGET_ARCH ?= native
 TARGET_BITS ?= 0
 
 # PC Port defines
-PC_PORT_DEFINES ?= 1
+PC_PORT_DEFINES ?= 0
 # PC Port defines from a ported console device
 TARGET_PORT_CONSOLE ?= 0
 
