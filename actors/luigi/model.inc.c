@@ -82,7 +82,7 @@ u8 luigi_luigi_mustache_rgba16[] = {
 
 Gfx luigi_luigi_sideburn_rgba16_aligner[] = {gsSPEndDisplayList()};
 u8 luigi_luigi_sideburn_rgba16[] = {
-	#include "actors/luigi/luigi_sideburn.rgba16.inc.c"
+	#include "actors/luigi/luigi_mustache.rgba16.inc.c"
 };
 
 Gfx luigi_luigi_eye_half_rgba16_aligner[] = {gsSPEndDisplayList()};
