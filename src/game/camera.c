@@ -6490,6 +6490,42 @@ struct CameraTrigger sCamHh[] = {
 struct CameraTrigger sCamCastleCourtyard[] = {
 	NULL_TRIGGER
 };
+struct CameraTrigger sCamMmv[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamPo[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamBov[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamPpv[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamSss[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamDdd[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamDdd2[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamCcb[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamEt[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamSs[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamCw[] = {
+	NULL_TRIGGER
+};
+struct CameraTrigger sCamPop[] = {
+	NULL_TRIGGER
+};
 struct CameraTrigger *sCameraTriggers[LEVEL_COUNT + 1] = {
     NULL,
     #include "levels/level_defines.h"
@@ -10937,7 +10973,7 @@ u8 sZoomOutAreaMasks[] = {
 	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // CASTLE_GROUNDS | BITDW
 	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 0, 0, 0), // VCUTM          | BITFS
 	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 0, 0, 0), // SA             | BITS
-	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 0, 0, 0, 0), // LLL            | DDD
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // LLL            | DDD
 	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 0, 0, 0, 0), // WF             | ENDING
 	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 0, 0, 0, 0), // COURTYARD      | PSS
 	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 0, 0, 0), // COTMC          | TOTWC
@@ -10953,6 +10989,10 @@ u8 sZoomOutAreaMasks[] = {
 	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // Unused         | Unused
 	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // Unused         | Unused
 	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), // Unused         | Unused
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), 
+	ZOOMOUT_AREA_MASK(0, 0, 0, 0, 1, 0, 0, 0), 
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), 
+	ZOOMOUT_AREA_MASK(1, 0, 0, 0, 1, 0, 0, 0), 
 };
 
 STATIC_ASSERT(ARRAY_COUNT(sZoomOutAreaMasks) - 1 == LEVEL_MAX / 2, "Make sure you edit sZoomOutAreaMasks when adding / removing courses.");

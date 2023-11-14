@@ -1,0 +1,10 @@
+extern const GeoLayout mmv_area_1_geo[];
+extern const GeoLayout mmv_area_1[];
+extern const Collision mmv_area_1_collision[];
+extern const MacroObject mmv_area_1_macro_objs[];
+extern Lights1 mmv_dl_f3dlite_material_lights;
+extern Vtx mmv_dl_Cube_mesh_layer_1_vtx_0[24];
+extern Gfx mmv_dl_Cube_mesh_layer_1_tri_0[];
+extern Gfx mat_mmv_dl_f3dlite_material[];
+extern Gfx mmv_dl_Cube_mesh_layer_1[];
+extern Gfx mmv_dl_material_revert_render_settings[];
