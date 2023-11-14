@@ -22,10 +22,6 @@
 #include "pc/gfx/gfx_pc.h"
 #include "pc/gfx/gfx_rendering_api.h"
 
-#if defined(__x86_64__) || defined(_M_X64) // 64 bit
-#define ENABLE_CRASH_HANDLER
-#endif
-
 // Graphics and textures
 #include "pc/crash/crash_graphics.h"
 
