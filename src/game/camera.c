@@ -3379,7 +3379,6 @@ void update_camera(struct Camera *c) {
         if (gMarioState->controller->buttonPressed & START_BUTTON) {
             save_file_set_flags(SAVE_FLAG_FILE_EXISTS);
             save_file_do_save(gCurrSaveFileNum - 1);
-            level_script_execute(level_main_menu_entry_1_skip);
         }
     }
 
