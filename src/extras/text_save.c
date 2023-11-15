@@ -28,7 +28,7 @@ const char *sav_flags[NUM_FLAGS] = {
 };
 
 const char *sav_courses[NUM_COURSES] = {
-    "bob", "wf", "jrb", "ccm", "ppf", "mmv", "bbh", "hmc","bbf","lll",
+    "bob", "wf", "jrb", "ccm", "ppf", "bbh", "hmc","bbf","lll",
     "ssl", "ddd", "bhb", "tc", "dbd", "sl", "wdw", "ttm", "thi", "ttc", "rr"
 };
 

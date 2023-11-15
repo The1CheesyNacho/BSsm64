@@ -18,7 +18,7 @@
 // NOTE: Be sure to edit sZoomOutAreaMasks in camera.c, as there isnt a good way to macro those right now.
 // TODO: Figure something out for sZoomOutAreaMasks?
 DEFINE_LEVEL("TANOSHI TAKI", LEVEL_PPF, COURSE_PPF, ppf, generic, 20000, 0x00, 0x00, 0x00, _, sCamPpf) 
-DEFINE_LEVEL("MISUTIBARE", LEVEL_MMV, COURSE_MMV, mmv, generic, 20000, 0x00, 0x00, 0x00, _, sCamMmv) 
+DEFINE_LEVEL("AA", LEVEL_AA, COURSE_AA, aa, generic, 20000, 0x00, 0x00, 0x00, _, sCamAa) 
 DEFINE_LEVEL("BURA SUTO KOJO", LEVEL_BBF, COURSE_BBF, bbf, generic, 20000, 0x00, 0x00, 0x00, _, sCamBbf) 
 DEFINE_LEVEL("TERESA OBAKE", LEVEL_BBH, COURSE_BBH, bbh, spooky, 28000, 0x28, 0x28, 0x28, sDynBBH, sCamBBH) 
 DEFINE_LEVEL("YYAMA1 % YSLD1", LEVEL_CCM, COURSE_CCM, ccm, snow, 17000, 0x10, 0x38, 0x38, _, sCamCCM) 
@@ -78,3 +78,4 @@ DEFINE_LEVEL("DDC", LEVEL_DDC, COURSE_DDC, ddc, generic, 20000, 0x00, 0x00, 0x00
 DEFINE_LEVEL("SS", LEVEL_SS, COURSE_SS, ss, generic, 20000, 0x00, 0x00, 0x00, _, sCamSs) 
 DEFINE_LEVEL("CW", LEVEL_CW, COURSE_CW, cw, generic, 20000, 0x00, 0x00, 0x00, _, sCamCw) 
 DEFINE_LEVEL("POP", LEVEL_POP, COURSE_POP, pop, generic, 20000, 0x00, 0x00, 0x00, _, sCamPop) 
+DEFINE_LEVEL("DELICIOUS_CAKE", LEVEL_DELICIOUS_CAKE, COURSE_DELICIOUS_CAKE, delicious_cake, generic, 20000, 0x00, 0x00, 0x00, _, sCamDeliciousCake) 
