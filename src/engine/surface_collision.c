@@ -1020,7 +1020,7 @@ f32 find_water_level(f32 x, f32 z) {
     {
         numRegions = *p++;
 
-        for (i = 0; i < numRegions; i++) {
+        for (i = 0; i < (gCurrLevelNum == LEVEL_CASTLE_COURTYARD && gMarioState->numStars >= 6 ? 0 : numRegions); i++) {
             val = *p++;
             loX = *p++;
             loZ = *p++;
@@ -1056,7 +1056,7 @@ f32 find_poison_gas_level(f32 x, f32 z) {
     if (p != NULL) {
         numRegions = *p++;
 
-        for (i = 0; i < numRegions; i++) {
+        for (i = 0; i < (gCurrLevelNum == LEVEL_CASTLE_COURTYARD && gMarioState->numStars >= 6 ? 0 : numRegions); i++) {
             val = *p;
 
             if (val >= 50) {
