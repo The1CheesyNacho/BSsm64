@@ -13,7 +13,7 @@ const GeoLayout king_boo_geo[] = {
 					GEO_NODE_START(),
 					GEO_OPEN_NODE(),
 						GEO_DISPLAY_LIST(LAYER_OPAQUE, king_boo_000_displaylist_mesh_layer_1),
-						GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, 4, -24, 97, 82, 0, 0),
+						GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, 4, 60, 97, 82, 0, 0),
 						GEO_OPEN_NODE(),
 							GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, king_boo_tounge1_mesh_layer_1),
 							GEO_OPEN_NODE(),
