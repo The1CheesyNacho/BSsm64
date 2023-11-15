@@ -40,12 +40,12 @@ const LevelScript level_castle_courtyard_entry[] = {
 	/* Fast64 end persistent block [level commands] */
 
 	AREA(1, castle_courtyard_area_1),
-		WARP_NODE( WARP_NODE_DEATH, LEVEL_CASTLE_GROUNDS,     1,   WARP_NODE_03, WARP_NO_CHECKPOINT),
-		WARP_NODE( WARP_NODE_01, LEVEL_CASTLE,             1,   WARP_NODE_02, WARP_NO_CHECKPOINT),
-		WARP_NODE( WARP_NODE_0B, LEVEL_CASTLE_COURTYARD,   1,   WARP_NODE_0B, WARP_NO_CHECKPOINT),
-		WARP_NODE( WARP_NODE_0A, LEVEL_CASTLE_COURTYARD,   1,   WARP_NODE_0A, WARP_NO_CHECKPOINT),
-		WARP_NODE( WARP_NODE_05, LEVEL_BBH,                1,   WARP_NODE_0A, WARP_NO_CHECKPOINT),
-		WARP_NODE( WARP_NODE_06, LEVEL_PPF,                1,   WARP_NODE_0A, WARP_NO_CHECKPOINT),
+        WARP_NODE(/*id*/ WARP_NODE_05,    /*destLevel*/ LEVEL_BBH,              /*destArea*/ 1, /*destNode*/ WARP_NODE_0A, /*flags*/ WARP_NO_CHECKPOINT),
+        WARP_NODE(/*id*/ WARP_NODE_0A,    /*destLevel*/ LEVEL_CASTLE_COURTYARD, /*destArea*/ 1, /*destNode*/ WARP_NODE_0A, /*flags*/ WARP_NO_CHECKPOINT),
+        WARP_NODE(/*id*/ WARP_NODE_0B,    /*destLevel*/ LEVEL_CASTLE_COURTYARD, /*destArea*/ 1, /*destNode*/ WARP_NODE_0B, /*flags*/ WARP_NO_CHECKPOINT),
+        WARP_NODE(/*id*/ WARP_NODE_01,    /*destLevel*/ LEVEL_CASTLE,           /*destArea*/ 1, /*destNode*/ WARP_NODE_02, /*flags*/ WARP_NO_CHECKPOINT),
+        WARP_NODE(/*id*/ WARP_NODE_DEATH, /*destLevel*/ LEVEL_CASTLE_GROUNDS,   /*destArea*/ 1, /*destNode*/ WARP_NODE_03, /*flags*/ WARP_NO_CHECKPOINT),
+		WARP_NODE( WARP_NODE_06, LEVEL_PPF,                1, 0x0A, WARP_NO_CHECKPOINT),
 		OBJECT(MODEL_STATUE, 7, -49, -1736, 0, 0, 0,   0, bhvPushableMetalBox),
 		OBJECT( MODEL_NONE, 6, -370, -1713, 0, 0, 0, ( WARP_NODE_06 << 16), bhvWarp),
 		OBJECT( MODEL_NONE, -2700, 0, -1652, 0, 0, 0,   BPARAM2(0x00), bhvBirdsSoundLoop),

@@ -2106,3 +2106,8 @@ Oh, Mario! There you are!\n\
 Where have you been?\n\
 I've been looking for-a you."))
 
+DEFINE_DIALOG(DIALOG_171, 1, 4, 30, 200, _("\
+You Hear Something in the\n\
+Castle Courtyard, Perhaps \n\
+Try Pushing The Statue."))
+

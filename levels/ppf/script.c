@@ -44,8 +44,8 @@ const LevelScript level_ppf_entry[] = {
 
 	AREA(1, ppf_area_1),
 		WARP_NODE(0x0A, LEVEL_PPF, 0x01, 0x0A, WARP_NO_CHECKPOINT),
-		WARP_NODE(0xF0, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
-		WARP_NODE(0xF1, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
+		WARP_NODE(0xF0, LEVEL_PPF, 0x01, 0x0A, WARP_NO_CHECKPOINT),
+		WARP_NODE(0xF1, LEVEL_PPF, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0x0B, LEVEL_PPF, 0x02, 0x0A, WARP_NO_CHECKPOINT),
 		OBJECT(MODEL_NONE, -2042, -454, 5669, 0, 0, 0, 0x000A0000, bhvSpinAirborneWarp),
 		MARIO_POS(0x01, 0, -2042, -454, 5669),
@@ -58,6 +58,7 @@ const LevelScript level_ppf_entry[] = {
 		TERRAIN(ppf_area_1_collision),
 		MACRO_OBJECTS(ppf_area_1_macro_objs),
 		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_PPF),
+		SHOW_DIALOG(0x00, DIALOG_000),
 		TERRAIN_TYPE(TERRAIN_GRASS),
 		/* Fast64 begin persistent block [area commands] */
 		/* Fast64 end persistent block [area commands] */

@@ -834,5 +834,5 @@ const Collision castle_courtyard_area_1_collision[] = {
     SPECIAL_OBJECT_WITH_YAW_AND_PARAM(/*preset*/ special_wooden_door_warp, /*pos*/     0,    0,   461, /*yaw*/   0, /*bhvParam2*/ 1),
     COL_WATER_BOX_INIT(1),
     COL_WATER_BOX(0, -656, -2405, 674, -1074, 51),
-    COL_END(),
+	COL_END()
 };
