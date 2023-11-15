@@ -11,7 +11,7 @@
 #define FAST_VERTICAL_CAMERA_MOVEMENT (0 || QOL_FIXES)
 
 /// Fixes up checks when vanilla camera rotates to a wall 
-#define CORRECT_ROTATE_CAMERA_AROUND_WALLS (0 || QOL_FIXES)
+#define CORRECT_ROTATE_CAMERA_AROUND_WALLS (1 || QOL_FIXES)
 
 /// Fixes up checks when vanilla camera collides to a wall 
 #define CORRECT_COLLIDE_WITH_WALLS (1 || QOL_FIXES)
@@ -20,10 +20,10 @@
 #define FIX_CAMERA_BOSS_FIGHT_POS (1 || QOL_FIXES || !VANILLA_CHECKS)
 
 /// Changes C-Up vanilla camera similar to the DS version
-#define DS_CAM_MOVEMENT_C_UP (1 || QOL_FEATURES)
+#define DS_CAM_MOVEMENT_C_UP (0 || QOL_FEATURES)
 
 /// Adds parallel lakitu camera, star road mario camera and some reonucam stuff, all configurable
-#define MORE_VANILLA_CAM_STUFF (1 || (EXT_OPTIONS_MENU && QOL_FEATURES))
+#define MORE_VANILLA_CAM_STUFF (0 || (EXT_OPTIONS_MENU && QOL_FEATURES))
 
 /// The number of steps between Mario and the camera to check for walls obstructing Mario. Vanilla is 8.
 #define CAMERA_NUM_OBSTRUCTION_CHECKS   8
@@ -42,4 +42,4 @@
 #define MIDAIR_STAR_DANCE (0 || QOL_FEATURES)
 
 /// Makes cutscene object camera correctly focus an object in a room
-#define ROOM_OBJECT_CAMERA_FOCUS (0 || QOL_FEATURES || !VANILLA_CHECKS)
+#define ROOM_OBJECT_CAMERA_FOCUS (1 || QOL_FEATURES || !VANILLA_CHECKS)

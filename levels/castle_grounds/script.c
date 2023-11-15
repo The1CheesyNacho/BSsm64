@@ -181,9 +181,6 @@ const LevelScript level_castle_grounds_entry[] = {
         JUMP_LINK(script_func_local_2),
         JUMP_LINK(script_func_local_3),
         JUMP_LINK(script_func_local_4),
-#ifdef PORT_MOP_OBJS
-        JUMP_LINK(script_func_local_mop),
-#endif
         TERRAIN(/*terrainData*/ castle_grounds_seg7_collision_level),
         MACRO_OBJECTS(/*objList*/ castle_grounds_seg7_macro_objs),
         SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0000, /*seq*/ SEQ_SOUND_PLAYER),
