@@ -2107,7 +2107,8 @@ Where have you been?\n\
 I've been looking for-a you."))
 
 DEFINE_DIALOG(DIALOG_171, 1, 4, 30, 200, _("\
-You Hear Something in the\n\
-Castle Courtyard, Perhaps \n\
-Try Pushing The Statue."))
+A loud noise came from the \n\
+Castle Courtyard, Perhaps  \n\
+it was something with the  \n\
+ Statue."))
 
