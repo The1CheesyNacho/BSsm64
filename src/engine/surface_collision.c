@@ -975,7 +975,7 @@ s32 find_water_level_and_floor(s32 x, s32 z, struct Surface **pfloor) {
     if (p != NULL && waterLevel == FLOOR_LOWER_LIMIT) {
         s32 numRegions = *p++;
 
-        for (i = 0; i < numRegions; i++) {
+        for (i = 0; i < (gCurrLevelNum == LEVEL_CASTLE_COURTYARD && gMarioState->numStars >= 6 ? 0 : numRegions); i++) {
             val = *p++;
             loX = *p++;
             loZ = *p++;
