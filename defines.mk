@@ -11,7 +11,7 @@ EXT_DEBUG_MENU ?= 0
 # Enable better camera (Puppycam 2)
 BETTERCAMERA ?= 0
 # Enable cheats
-CHEATS_ACTIONS ?= 1
+CHEATS_ACTIONS ?= 0
 # Enable rumble functions (Originally in Shindou)
 RUMBLE_FEEDBACK ?= 1
 # Disable no drawing distance by default
@@ -32,11 +32,11 @@ RM2C ?= 0
 # --------------------------------------
 
 # Quality of life fixes
-QOL_FIXES ?= 1
+QOL_FIXES ?= 0
 # Quality of life features
-QOL_FEATURES ?= 1
+QOL_FEATURES ?= 0
 # Quality of life redone files
-QOL_REDONE ?= 1
+QOL_REDONE ?= 0
 
 # --------------------------------------
 # Port Only Defines

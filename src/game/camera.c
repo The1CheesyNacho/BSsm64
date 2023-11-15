@@ -5558,11 +5558,7 @@ void set_camera_mode_8_directions(struct Camera *c) {
     if (c->mode != CAMERA_MODE_8_DIRECTIONS) {
         c->mode = CAMERA_MODE_8_DIRECTIONS;
         sStatusFlags &= ~CAM_FLAG_SMOOTH_MOVEMENT;
-#if MORE_VANILLA_CAM_STUFF
-        s8DirModeBaseYaw = snap_to_45_degrees(s8DirModeBaseYaw);
-#else
         s8DirModeBaseYaw = 0;
-#endif
         s8DirModeYawOffset = 0;
     }
 }
@@ -6718,7 +6714,6 @@ s16 camera_course_processing(struct Camera *c) {
         }
     }
 
-#if CAMERA_VANILLA_DEFINES
     // Area-specific camera processing
     if (!(sStatusFlags & CAM_FLAG_BLOCK_AREA_PROCESSING)) {
         switch (gCurrLevelArea) {
@@ -6826,7 +6821,6 @@ s16 camera_course_processing(struct Camera *c) {
                 break;
         }
     }
-#endif
 
     sStatusFlags &= ~CAM_FLAG_BLOCK_AREA_PROCESSING;
     if (oldMode == CAMERA_MODE_C_UP) {
