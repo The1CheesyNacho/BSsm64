@@ -116,6 +116,7 @@ extern s8 gLevelToCourseNumTable[];
 #define SAVE_FLAG_UNLOCKED_LOUIS         /* 0x20000000 */ (1 << 29)
 #define SAVE_FLAG_UNLOCKED_WARIO         /* 0x40000000 */ (1 << 30)
 #define SAVE_FLAG_UNLOCKED_WALUIS        /* 0x80000000 */ (1 << 31)
+#define SAVE_FLAG_CAKE_BEATEAN           /* 0x80000000 */ (1 << 32)
 
 #define SAVE_FLAG_TO_STAR_FLAG(cmd) (((cmd) >> 24) & 0x7F)
 #define STAR_FLAG_TO_SAVE_FLAG(cmd) ((cmd) << 24)

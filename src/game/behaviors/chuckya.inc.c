@@ -123,6 +123,7 @@ void chuckya_act_0(void) {
                     || abs_angle_diff(o->oMoveAngleYaw, o->oAngleToMario) < 0x1000) {
                     o->oSubAction = 1;
                 }
+                 cur_obj_init_animation_with_sound(4);
             } else {
                 o->oSubAction = 3;
             }
@@ -136,13 +137,16 @@ void chuckya_act_0(void) {
             if (cur_obj_lateral_dist_from_mario_to_home() > 2000.0f) {
                 o->oSubAction = 3;
             }
-            break;
 
+            cur_obj_init_animation_with_sound(4);
+            break; 
         case 2:
             approach_forward_vel(&o->oForwardVel, 0, 4.0f);
             if (o->oChuckyaUnkFC > 48) {
                 o->oSubAction = 0;
             }
+             
+            cur_obj_init_animation_with_sound(5);
             break;
 
         case 3:
@@ -156,6 +160,8 @@ void chuckya_act_0(void) {
             if (cur_obj_lateral_dist_from_mario_to_home() < 1900.0f) {
                 o->oSubAction = 0;
             }
+             
+            cur_obj_init_animation_with_sound(4);
             break;
     }
 
@@ -165,7 +171,6 @@ void chuckya_act_0(void) {
         o->oChuckyaUnkFC++;
     }
 
-    cur_obj_init_animation_with_sound(4);
 
     if (o->oForwardVel > 1.0f) {
         cur_obj_play_sound_1(SOUND_AIR_CHUCKYA_MOVE);

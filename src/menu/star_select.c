@@ -29,7 +29,7 @@
  */
 
 // Star Selector count models printed in the act selector menu.
-static struct Object *sStarSelectorModels[8];
+static struct Object *sStarSelectorModels[6];
 
 // The act the course is loaded as, affects whether some objects spawn.
 static s8 sLoadedActNum;
