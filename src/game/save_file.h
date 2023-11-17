@@ -63,6 +63,7 @@ struct MainMenuSaveData {
 #else
 #define SUBTRAHEND 6
 #endif
+    u32 gflags;
 
     struct SaveBlockSignature signature;
 };
@@ -116,10 +117,11 @@ extern s8 gLevelToCourseNumTable[];
 #define SAVE_FLAG_UNLOCKED_LOUIS         /* 0x20000000 */ (1 << 29)
 #define SAVE_FLAG_UNLOCKED_WARIO         /* 0x40000000 */ (1 << 30)
 #define SAVE_FLAG_UNLOCKED_WALUIS        /* 0x80000000 */ (1 << 31)
-#define SAVE_FLAG_CAKE_BEATEAN           /* 0x80000000 */ (1 << 32)
 
 #define SAVE_FLAG_TO_STAR_FLAG(cmd) (((cmd) >> 24) & 0x7F)
 #define STAR_FLAG_TO_SAVE_FLAG(cmd) ((cmd) << 24)
+
+#define SAVE_GFLAG_CAKE_BEATEN /* 0x00000001 */ (1 << 0)
 
 // Variable for setting a warp checkpoint.
 
@@ -137,7 +139,7 @@ extern struct WarpCheckpoint gWarpCheckpoint;
 extern s8 gMainMenuDataModified;
 extern s8 gSaveFileModified;
 
-void save_file_do_save(s32 fileIndex);
+void save_file_do_save();
 void save_file_erase(s32 fileIndex);
 void save_file_copy(s32 srcFileIndex, s32 destFileIndex);
 void save_file_load_all(void);
@@ -161,6 +163,8 @@ s32 save_file_get_cap_pos(Vec3s capPos);
 void save_file_set_sound_mode(u16 mode);
 u16 save_file_get_sound_mode(void);
 void save_file_move_cap_to_default_location(void);
+void save_file_set_gflags(u32 flags);
+u32 save_file_get_gflags(void);
 
 void disable_warp_checkpoint(void);
 void check_if_should_set_warp_checkpoint(struct WarpNode *warpNode);

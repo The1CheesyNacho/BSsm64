@@ -959,7 +959,7 @@ void update_hud_values(void) {
         }
 #endif
 
-        gHudDisplay.stars = gMarioState->numStars;
+        gHudDisplay.stars = gCurrLevelNum == LEVEL_DELICIOUS_CAKE ? 120 : gMarioState->numStars;
         gHudDisplay.lives = gMarioState->numLives;
         gHudDisplay.keys = gMarioState->numKeys;
 

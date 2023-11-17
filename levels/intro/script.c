@@ -54,6 +54,7 @@ const LevelScript level_intro_splash_screen[] = {
     // Start animation
     LOAD_AREA(/*area*/ 1),
 
+    CALL(/*arg*/ 0, lvl_should_start_delicious_cake),
     GET_OR_SET(/*op*/ OP_GET, /*var*/ VAR_CURR_GAME_SKIPS),
     JUMP_IF(/*op*/ OP_AND, /*arg*/ GAME_SKIP_TITLE_SCREEN, level_intro_mario_head_regular),
 

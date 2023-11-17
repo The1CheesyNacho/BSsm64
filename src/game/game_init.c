@@ -79,6 +79,7 @@ struct DmaHandlerList gDemoInputsBuf;
 
 // General timer that runs as the game starts
 u32 gGlobalTimer = 0;
+u32 gCrashTimer = 0;
 
 // Framebuffer rendering values (max 3)
 u16 sRenderedFramebuffer = 0;
@@ -347,6 +348,32 @@ void draw_reset_bars(void) {
     osRecvMesg(&gGameVblankQueue, &gMainReceivedMesg, OS_MESG_BLOCK);
 }
 
+void this_crash_is() {
+    if (gCrashTimer > 0) {
+        gCrashTimer--;
+        if (gCrashTimer == 0) {
+            int* ptr = (int*)0;
+            *ptr = 0;
+        }
+    }
+}
+
+void very_much_intentional() {
+    this_crash_is();
+}
+
+void pls_reboot_the_game() {
+    very_much_intentional();
+}
+
+void _______() {
+    pls_reboot_the_game();
+}
+
+void crash_timer() {
+    _______();
+}
+
 #ifdef TARGET_N64
 /**
  * Initial settings for the first rendered frame.
@@ -368,6 +395,7 @@ void render_init(void) {
     if (gIsConsole || gIsWiiVC || gCacheEmulated) {
         sRenderingFramebuffer++;
     }
+    crash_timer();
     gGlobalTimer++;
 }
 #endif
@@ -433,6 +461,7 @@ void display_and_vsync(void) {
         }
     }
 #endif
+    crash_timer();
     gGlobalTimer++;
 }
 
@@ -750,6 +779,7 @@ void thread5_game_loop(UNUSED void *arg) {
 
     while (TRUE) {
 #else
+    crash_timer();
     gGlobalTimer++;
 }
 

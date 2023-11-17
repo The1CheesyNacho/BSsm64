@@ -780,6 +780,7 @@ u32 interact_water_ring(struct MarioState *m, UNUSED u32 interactType, struct Ob
 }
 
 u32 interact_star_or_key(struct MarioState *m, UNUSED u32 interactType, struct Object *o) {
+
     u32 starIndex;
     u32 starGrabAction = ACT_STAR_DANCE_EXIT;
     u32 noExit = (o->oInteractionSubtype & INT_SUBTYPE_NO_EXIT) != 0;
@@ -828,7 +829,11 @@ u32 interact_star_or_key(struct MarioState *m, UNUSED u32 interactType, struct O
         m->usedObj = o;
 
         starIndex = (o->oBhvParams >> 24) & 0x1F;
-        save_file_collect_star_or_key(m->numCoins, starIndex);
+        if (gCurrLevelNum != LEVEL_DELICIOUS_CAKE) save_file_collect_star_or_key(m->numCoins, starIndex);
+        else {
+            save_file_set_gflags(SAVE_GFLAG_CAKE_BEATEN);
+            gCrashTimer = 15;
+        }
 
         m->numStars =
             save_file_get_total_star_count(gCurrSaveFileNum - 1, COURSE_MIN - 1, COURSE_MAX - 1);

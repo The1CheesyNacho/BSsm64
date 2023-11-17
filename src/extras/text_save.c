@@ -125,6 +125,8 @@ s32 write_text_save(s32 fileIndex) {
         printf("Undefined sound mode!");
         return -1;
     }
+
+    fprintf(file, "gflags = %d\n", menudata->gflags);
     
     fprintf(file, "\n[flags]\n");
     for (i = 1; i < NUM_FLAGS; i++) {
@@ -249,6 +251,8 @@ s32 read_text_save(s32 fileIndex) {
         printf("Invalid 'menu:sound_mode' flag!\n");
         return -1;
     }
+
+    ini_sget(savedata, "menu", "gflags", "%d", &gSaveBuffer.menuData[0].gflags);
     
     for (i = 1; i < NUM_FLAGS; i++) {
         value = ini_get(savedata, "flags", sav_flags[i]);

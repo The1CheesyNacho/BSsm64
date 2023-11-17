@@ -20,5 +20,6 @@ enum LevelScriptIntroArgs {
 #endif
 
 s32 lvl_intro_update(s16 arg, UNUSED s32 unusedArg);
+s32 lvl_should_start_delicious_cake(s16 arg1, UNUSED s32 arg2);
 
 #endif // TITLE_SCREEN_H

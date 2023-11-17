@@ -3378,7 +3378,7 @@ void update_camera(struct Camera *c) {
     if (c->cutscene == 142 /* peach intro */) {
         if (gMarioState->controller->buttonPressed & START_BUTTON) {
             save_file_set_flags(SAVE_FLAG_FILE_EXISTS);
-            save_file_do_save(gCurrSaveFileNum - 1);
+            save_file_do_save();
         }
     }
 
@@ -7085,7 +7085,7 @@ void stop_cutscene_and_retrieve_stored_info(struct Camera *c) {
 
 void cap_switch_save(s16 dummy) {
     UNUSED s16 unused = dummy;
-    save_file_do_save(gCurrSaveFileNum - 1);
+    save_file_do_save();
 }
 
 void copy_spline_point(struct CutsceneSplinePoint *splinePoint, s8 index, u8 speed, Vec3s point) {

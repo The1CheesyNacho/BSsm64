@@ -265,3 +265,9 @@ s32 lvl_intro_update(s16 arg, UNUSED s32 unusedArg) {
             return LEVEL_NONE;
     }
 }
+
+s32 lvl_should_start_delicious_cake(s16 arg1, UNUSED s32 arg2) {
+    if ((save_file_get_gflags() & SAVE_GFLAG_CAKE_BEATEN) == 0)
+        gGlobalGameSkips = GAME_SKIP_TITLE_SCREEN | GAME_SKIP_GODDARD | GAME_SKIP_FILE_SELECT | GAME_SKIP_INTRO_SCENE;
+    return 0;
+}
