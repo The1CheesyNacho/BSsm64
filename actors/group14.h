@@ -133,4 +133,39 @@ extern const Gfx whomp_seg6_dl_06020038[];
 extern const struct Animation *const whomp_seg6_anims_06020A04[];
 extern const Collision whomp_seg6_collision_06020A0C[];
 
+// dry_bones
+extern const GeoLayout dry_bones_without_shell_geo[];
+extern const GeoLayout dry_bones_with_shell_geo[];
+extern const Gfx dry_bones_seg6_dl_06007658[];
+extern const Gfx dry_bones_seg6_dl_060076B0[];
+extern const Gfx dry_bones_seg6_dl_06007850[];
+extern const Gfx dry_bones_seg6_dl_06007970[];
+extern const Gfx dry_bones_seg6_dl_06007A60[];
+extern const Gfx dry_bones_seg6_dl_06007AA0[];
+extern const Gfx dry_bones_seg6_dl_06007AF8[];
+extern const Gfx dry_bones_seg6_dl_06007B20[];
+extern const Gfx dry_bones_seg6_dl_06007FB8[];
+extern const Gfx dry_bones_seg6_dl_06008050[];
+extern const Gfx dry_bones_seg6_dl_060080F8[];
+extern const Gfx dry_bones_seg6_dl_06008250[];
+extern const Gfx dry_bones_seg6_dl_06008530[];
+extern const Gfx dry_bones_seg6_dl_060085E8[];
+extern const Gfx dry_bones_seg6_dl_06008640[];
+extern const Gfx dry_bones_seg6_dl_060086D0[];
+extern const Gfx dry_bones_seg6_dl_060089B0[];
+extern const Gfx dry_bones_seg6_dl_06008A68[];
+extern const Gfx dry_bones_seg6_dl_06008AC0[];
+extern const Gfx dry_bones_seg6_dl_06008B50[];
+extern const Gfx dry_bones_seg6_dl_0600B6E0[];
+extern const Gfx dry_bones_seg6_dl_0600B838[];
+extern const Gfx dry_bones_seg6_dl_0600B8B8[];
+extern const Gfx dry_bones_seg6_dl_0600BA10[];
+extern const Gfx dry_bones_seg6_dl_0600BA90[];
+extern const Gfx dry_bones_seg6_dl_0600BC18[];
+extern const Gfx dry_bones_seg6_dl_0600BC88[];
+extern const Gfx dry_bones_seg6_dl_0600BE10[];
+extern const Gfx dry_bones_seg6_dl_0600BE80[];
+extern const Gfx dry_bones_seg6_dl_0600C240[];
+extern const Gfx dry_bones_seg6_dl_0600C498[];
+
 #endif

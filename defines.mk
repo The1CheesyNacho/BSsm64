@@ -45,11 +45,11 @@ QOL_REDONE ?= 0
 # Enable 60 fps interpolation
 HIGH_FPS_PC ?= 0
 # Disable text-based save-files by default
-TEXTSAVES ?= 0
+TEXTSAVES ?= 1
 # Load resources from external files
 EXTERNAL_DATA ?= 0
 # Enable Discord Rich Presence
-DISCORDRPC ?= 0
+DISCORDRPC ?= 1
 # Enable Command Line Options
 COMMAND_LINE_OPTIONS ?= 1
 
