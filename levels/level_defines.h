@@ -78,4 +78,4 @@ DEFINE_LEVEL("DDC", LEVEL_DDC, COURSE_DDC, ddc, generic, 20000, 0x00, 0x00, 0x00
 DEFINE_LEVEL("SS", LEVEL_SS, COURSE_SS, ss, generic, 20000, 0x00, 0x00, 0x00, _, sCamSs) 
 DEFINE_LEVEL("CW", LEVEL_CW, COURSE_CW, cw, generic, 20000, 0x00, 0x00, 0x00, _, sCamCw) 
 DEFINE_LEVEL("POP", LEVEL_POP, COURSE_POP, pop, generic, 20000, 0x00, 0x00, 0x00, _, sCamPop) 
-DEFINE_LEVEL("DELICIOUS_CAKE", LEVEL_DELICIOUS_CAKE, COURSE_DELICIOUS_CAKE, delicious_cake, generic, 20000, 0x00, 0x00, 0x00, _, sCamDeliciousCake) 
+DEFINE_LEVEL("DELICIOUS_CAKE", LEVEL_DELICIOUS_CAKE, COURSE_NONE, delicious_cake, generic, 20000, 0x00, 0x00, 0x00, _, sCamDeliciousCake) 

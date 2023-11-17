@@ -239,7 +239,7 @@ s32 intro_play_its_a_me_mario(void) {
  */
 s32 lvl_intro_update(s16 arg, UNUSED s32 unusedArg) {
 #ifdef KEY_COMBO_LEVEL_SELECT
-    if (gPlayer1Controller->buttonDown == (L_TRIG | R_TRIG) && arg == LVL_INTRO_REGULAR) {
+    if (gPlayer1Controller->buttonDown == (R_TRIG) && arg == LVL_INTRO_REGULAR) {
         gDebugLevelSelect = TRUE;
     }
 #endif
