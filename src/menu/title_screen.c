@@ -26,7 +26,7 @@
 #define STUB_LEVEL(textname, _1, _2, _3, _4, _5, _6, _7, _8) textname,
 #define DEFINE_LEVEL(textname, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10) textname,
 
-char gLevelSelectStageNames[][16] = {
+char gLevelSelectStageNames[][25] = {
     #include "levels/level_defines.h"
 };
 #undef STUB_LEVEL
