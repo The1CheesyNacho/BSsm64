@@ -3,8 +3,8 @@
 #include "surface_terrains.h"
 #include "moving_texture_macros.h"
 #include "level_misc_macros.h"
-#include "macro_preshhhs.h"
-#include "special_preshhhs.h"
+#include "macro_presets.h"
+#include "special_presets.h"
 #include "textures.h"
 #include "dialog_ids.h"
 

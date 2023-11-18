@@ -26,7 +26,7 @@ const LevelScript level_hhh_entry[] = {
 	LOAD_MIO0(0x7, _hhh_segment_7SegmentRomStart, _hhh_segment_7SegmentRomEnd), 
 	LOAD_MIO0(0xa, _water_skybox_mio0SegmentRomStart, _water_skybox_mio0SegmentRomEnd), 
 	ALLOC_LEVEL_POOL(),
-	MARIO(MODEL_MARIO, 0x00000001, bhvMario),
+	MARIO(MODEL_MARIO, 0x00000001, bhvMario), 
 
 	/* Fast64 begin persistent block [level commands] */
 	/* Fast64 end persistent block [level commands] */
@@ -39,7 +39,7 @@ const LevelScript level_hhh_entry[] = {
 		MARIO_POS(0x01, 0, 0, 200, 0),
 		TERRAIN(hhh_area_1_collision),
 		MACRO_OBJECTS(hhh_area_1_macro_objs),
-		Shhh_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_GRASS),
+		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_GRASS),
 		TERRAIN_TYPE(TERRAIN_GRASS),
 		/* Fast64 begin persistent block [area commands] */
 		/* Fast64 end persistent block [area commands] */

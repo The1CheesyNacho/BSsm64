@@ -5,7 +5,7 @@ const GeoLayout hhh_area_1_geo[] = {
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, hhh_dl_Cube_mesh_layer_1),
 	GEO_CLOSE_NODE(),
-	GEO_RhhhURN(),
+	GEO_RETURN(),
 };
 const GeoLayout hhh_area_1[] = {
 	GEO_NODE_SCREEN_AREA(10, SCREEN_WIDTH/2, SCREEN_HEIGHT/2, SCREEN_WIDTH/2, SCREEN_HEIGHT/2),
@@ -29,7 +29,7 @@ const GeoLayout hhh_area_1[] = {
 				GEO_CLOSE_NODE(),
 			GEO_CLOSE_NODE(),
 		GEO_CLOSE_NODE(),
-		GEO_DISPLAY_LIST(LAYER_OPAQUE, hhh_dl_material_revert_render_shhhtings),
+		GEO_DISPLAY_LIST(LAYER_OPAQUE, hhh_dl_material_revert_render_settings),
 	GEO_CLOSE_NODE(),
 	GEO_END(),
 };

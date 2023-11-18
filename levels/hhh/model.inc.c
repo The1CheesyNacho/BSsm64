@@ -1,32 +1,32 @@
-Lights1 hhh_dl_f3dlite_material_lights = gdSPDefLights1(
+Lights1 hhh_dl_sm64_material_001_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
-	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
+	0xFF,0xFF,0xFF,0x28,0x28,0x28);
 
 Vtx hhh_dl_Cube_mesh_layer_1_vtx_0[24] = {
-	{{ {400, 100, -400}, 0, {624, 496}, {0, 127, 0, 255} }},
-	{{ {-400, 100, -400}, 0, {880, 496}, {0, 127, 0, 255} }},
-	{{ {-400, 100, 400}, 0, {880, 240}, {0, 127, 0, 255} }},
-	{{ {400, 100, 400}, 0, {624, 240}, {0, 127, 0, 255} }},
-	{{ {400, -100, 400}, 0, {368, 240}, {0, 0, 127, 255} }},
-	{{ {400, 100, 400}, 0, {624, 240}, {0, 0, 127, 255} }},
-	{{ {-400, 100, 400}, 0, {624, -16}, {0, 0, 127, 255} }},
-	{{ {-400, -100, 400}, 0, {368, -16}, {0, 0, 127, 255} }},
-	{{ {-400, -100, 400}, 0, {368, 1008}, {129, 0, 0, 255} }},
-	{{ {-400, 100, 400}, 0, {624, 1008}, {129, 0, 0, 255} }},
-	{{ {-400, 100, -400}, 0, {624, 752}, {129, 0, 0, 255} }},
-	{{ {-400, -100, -400}, 0, {368, 752}, {129, 0, 0, 255} }},
-	{{ {-400, -100, -400}, 0, {112, 496}, {0, 129, 0, 255} }},
-	{{ {400, -100, -400}, 0, {368, 496}, {0, 129, 0, 255} }},
-	{{ {400, -100, 400}, 0, {368, 240}, {0, 129, 0, 255} }},
-	{{ {-400, -100, 400}, 0, {112, 240}, {0, 129, 0, 255} }},
-	{{ {400, -100, -400}, 0, {368, 496}, {127, 0, 0, 255} }},
-	{{ {400, 100, -400}, 0, {624, 496}, {127, 0, 0, 255} }},
-	{{ {400, 100, 400}, 0, {624, 240}, {127, 0, 0, 255} }},
-	{{ {400, -100, 400}, 0, {368, 240}, {127, 0, 0, 255} }},
-	{{ {-400, -100, -400}, 0, {368, 752}, {0, 0, 129, 255} }},
-	{{ {-400, 100, -400}, 0, {624, 752}, {0, 0, 129, 255} }},
-	{{ {400, 100, -400}, 0, {624, 496}, {0, 0, 129, 255} }},
-	{{ {400, -100, -400}, 0, {368, 496}, {0, 0, 129, 255} }},
+	{{{400, 100, -400}, 0, {624, 496}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{-400, 100, -400}, 0, {880, 496}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{-400, 100, 400}, 0, {880, 240}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{400, 100, 400}, 0, {624, 240}, {0x0, 0x7F, 0x0, 0xFF}}},
+	{{{400, -100, 400}, 0, {368, 240}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{400, 100, 400}, 0, {624, 240}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{-400, 100, 400}, 0, {624, -16}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{-400, -100, 400}, 0, {368, -16}, {0x0, 0x0, 0x7F, 0xFF}}},
+	{{{-400, -100, 400}, 0, {368, 1008}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-400, 100, 400}, 0, {624, 1008}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-400, 100, -400}, 0, {624, 752}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-400, -100, -400}, 0, {368, 752}, {0x81, 0x0, 0x0, 0xFF}}},
+	{{{-400, -100, -400}, 0, {112, 496}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{400, -100, -400}, 0, {368, 496}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{400, -100, 400}, 0, {368, 240}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{-400, -100, 400}, 0, {112, 240}, {0x0, 0x81, 0x0, 0xFF}}},
+	{{{400, -100, -400}, 0, {368, 496}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{400, 100, -400}, 0, {624, 496}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{400, 100, 400}, 0, {624, 240}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{400, -100, 400}, 0, {368, 240}, {0x7F, 0x0, 0x0, 0xFF}}},
+	{{{-400, -100, -400}, 0, {368, 752}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{-400, 100, -400}, 0, {624, 752}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{400, 100, -400}, 0, {624, 496}, {0x0, 0x0, 0x81, 0xFF}}},
+	{{{400, -100, -400}, 0, {368, 496}, {0x0, 0x0, 0x81, 0xFF}}},
 };
 
 Gfx hhh_dl_Cube_mesh_layer_1_tri_0[] = {
@@ -47,28 +47,28 @@ Gfx hhh_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_hhh_dl_f3dlite_material[] = {
+Gfx mat_hhh_dl_sm64_material_001[] = {
 	gsDPPipeSync(),
-	gsDPShhhCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
+	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsSPShhhLights1(hhh_dl_f3dlite_material_lights),
+	gsSPSetLights1(hhh_dl_sm64_material_001_lights),
 	gsSPEndDisplayList(),
 };
 
 Gfx hhh_dl_Cube_mesh_layer_1[] = {
-	gsSPDisplayList(mat_hhh_dl_f3dlite_material),
+	gsSPDisplayList(mat_hhh_dl_sm64_material_001),
 	gsSPDisplayList(hhh_dl_Cube_mesh_layer_1_tri_0),
 	gsSPEndDisplayList(),
 };
 
-Gfx hhh_dl_material_revert_render_shhhtings[] = {
+Gfx hhh_dl_material_revert_render_settings[] = {
 	gsDPPipeSync(),
-	gsSPShhhGeomhhhryMode(G_LIGHTING),
-	gsSPClearGeomhhhryMode(G_TEXTURE_GEN),
-	gsDPShhhCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPClearGeometryMode(G_TEXTURE_GEN),
+	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 0),
-	gsDPShhhEnvColor(255, 255, 255, 255),
-	gsDPShhhAlphaCompare(G_AC_NONE),
+	gsDPSetEnvColor(255, 255, 255, 255),
+	gsDPSetAlphaCompare(G_AC_NONE),
 	gsSPEndDisplayList(),
 };
 
