@@ -6447,7 +6447,7 @@ struct CameraTrigger sCamMmm[] = {
 struct CameraTrigger sCamDdc[] = {
 	NULL_TRIGGER
 };
-struct CameraTrigger sCamTsss[] = {
+struct CameraTrigger sCamTSNS[] = {
 	NULL_TRIGGER
 };
 struct CameraTrigger sCamLl[] = {
@@ -6507,7 +6507,7 @@ struct CameraTrigger sCamDdd2[] = {
 struct CameraTrigger sCamCcb[] = {
 	NULL_TRIGGER
 };
-struct CameraTrigger sCamEt[] = {
+struct CameraTrigger sCamHHH[] = {
 	NULL_TRIGGER
 };
 struct CameraTrigger sCamSs[] = {

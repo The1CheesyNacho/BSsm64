@@ -11,7 +11,7 @@
 
 #include "make_const_nonconst.h"
 
-#include "levels/tsss/header.h"
+#include "levels/hhh/header.h"
 
 
-#include "levels/tsss/geo.inc.c"
+#include "levels/hhh/geo.inc.c"

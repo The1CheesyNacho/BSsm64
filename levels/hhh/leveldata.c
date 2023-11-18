@@ -3,12 +3,12 @@
 #include "surface_terrains.h"
 #include "moving_texture_macros.h"
 #include "level_misc_macros.h"
-#include "macro_presets.h"
-#include "special_presets.h"
+#include "macro_preshhhs.h"
+#include "special_preshhhs.h"
 #include "textures.h"
 #include "dialog_ids.h"
 
 #include "make_const_nonconst.h"
 
 
-#include "levels/tsss/leveldata.inc.c"
+#include "levels/hhh/leveldata.inc.c"
