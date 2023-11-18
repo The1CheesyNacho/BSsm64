@@ -9,18 +9,27 @@
 #define	softspriteON	1
 #define ShapeColor_motos_basedata_A(r,g,b)   {{r/4 ,g/4 ,b/4 ,0 ,r/4 ,g/4 ,b/4 ,0 },{ r,g,b,0, r,g,b,0, 40, 40, 40, 0} }
 
+Lights1 _mesh_f3d_material_004_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFE, 0xFE, 0xFE, 0x28, 0x28, 0x28);
 
-/*-------------------------------------------------------------*/
-/*	light data                                                 */
-/*-------------------------------------------------------------*/
-static Lights1 light_motos_basedata_A[]={
-	ShapeColor_motos_basedata_A(228,131,0),
-	ShapeColor_motos_basedata_A(76,76,98),
-	ShapeColor_motos_basedata_A(13,28,48),
-	ShapeColor_motos_basedata_A(15,54,111),
-	ShapeColor_motos_basedata_A(255,0,0),
-	ShapeColor_motos_basedata_A(255,255,255),
-};
+Lights1 _mesh_f3d_material_005_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFE, 0xFE, 0xFE, 0x28, 0x28, 0x28);
+
+Lights1 _mesh_motos_skinc_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFE, 0xFE, 0xFE, 0x28, 0x28, 0x28);
+
+Lights1 _mesh_motos_skinB_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFE, 0xFE, 0xFE, 0x28, 0x28, 0x28);
+
+Lights1 _mesh_motos_face_lights = gdSPDefLights1(
+	0x7F, 0x7F, 0x7F,
+	0xFE, 0xFE, 0xFE, 0x28, 0x28, 0x28);
+
+
 
 /*-------------------------------------------------------------*/
 /*	texture data                                               */
@@ -390,8 +399,6 @@ static Vtx vtx_motos_head_2[] = {
 
 static Gfx gfx_motos_LhandB_0[] = {
 	gs_Tani_LoadTextureImage2(motos_skinC_txt, G_IM_FMT_RGBA, G_IM_SIZ_16b, 32, 32, 0, 7),
-	gsSPLight((&light_motos_basedata_A[5].l[0]),1 ),
-	gsSPLight((&light_motos_basedata_A[5].a   ),2 ),
 	gsSPVertex(&vtx_motos_LhandB_0[0], 13, 0), 
 	gsSP1Triangle( 0, 1, 2, 0),
 	gsSP1Triangle( 3, 4, 5, 0),
@@ -429,8 +436,6 @@ const Gfx RCP_motos_LhandB[] = {
 
 static Gfx gfx_motos_LhandA_0[] = {
 	gs_Tani_LoadTextureImage2(motos_skinD_txt, G_IM_FMT_RGBA, G_IM_SIZ_16b, 32, 32, 0, 7),
-	gsSPLight((&light_motos_basedata_A[5].l[0]),1 ),
-	gsSPLight((&light_motos_basedata_A[5].a   ),2 ),
 	gsSPVertex(&vtx_motos_LhandA_0[0],  3, 0), 
 	gsSP1Triangle( 0, 1, 2, 0),
 	gsSPEndDisplayList() 
@@ -468,8 +473,6 @@ const Gfx RCP_motos_LhandA[] = {
 
 static Gfx gfx_motos_RhandA_0[] = {
 	gs_Tani_LoadTextureImage2(motos_skinC_txt, G_IM_FMT_RGBA, G_IM_SIZ_16b, 32, 32, 0, 7),
-	gsSPLight((&light_motos_basedata_A[5].l[0]),1 ),
-	gsSPLight((&light_motos_basedata_A[5].a   ),2 ),
 	gsSPVertex(&vtx_motos_RhandA_0[0], 13, 0), 
 	gsSP1Triangle( 0, 1, 2, 0),
 	gsSP1Triangle( 3, 4, 5, 0),
@@ -508,8 +511,6 @@ const Gfx RCP_motos_RhandA[] = {
 static Gfx gfx_motos_RhandB_0[] = {
 	gs_Tani_LoadTextureImage2(motos_skinD_txt, G_IM_FMT_RGBA, G_IM_SIZ_16b, 32, 32, 0, 7),
 
-	gsSPLight((&light_motos_basedata_A[5].l[0]),1 ),
-	gsSPLight((&light_motos_basedata_A[5].a   ),2 ),
 
 	gsSPVertex(&vtx_motos_RhandB_0[0],  3, 0), 
 	gsSP1Triangle( 0, 1, 2, 0),
@@ -549,8 +550,6 @@ const Gfx RCP_motos_RhandB[] = {
 
 static Gfx gfx_motos_Lfoot_0[] = {
 	gs_Tani_LoadTextureImage2(motos_skinD_txt, G_IM_FMT_RGBA, G_IM_SIZ_16b, 32, 32, 0, 7),
-	gsSPLight((&light_motos_basedata_A[5].l[0]),1 ),
-	gsSPLight((&light_motos_basedata_A[5].a   ),2 ),
 	gsSPVertex(&vtx_motos_Lfoot[0],  6, 0), 
 	gsSP1Triangle( 0, 1, 2, 0),
 	gsSP1Triangle( 0, 3, 1, 0),
@@ -605,8 +604,6 @@ const Gfx RCP_motos_Lfoot[] = {
 };
 static Gfx gfx_motos_Rfoot_0[] = {
 	gs_Tani_LoadTextureImage2(motos_skinC_txt, G_IM_FMT_RGBA, G_IM_SIZ_16b, 32, 32, 0, 7),
-	gsSPLight((&light_motos_basedata_A[5].l[0]),1 ),
-	gsSPLight((&light_motos_basedata_A[5].a   ),2 ),
 	gsSPVertex(&vtx_motos_Rfoot[0], 15, 0), 
 	gsSP1Triangle( 0, 1, 2, 0),
 	gsSP1Triangle( 3, 4, 5, 0),
@@ -661,8 +658,6 @@ const Gfx RCP_motos_Rfoot[] = {
 };
 static Gfx gfx_motos_head_0[] = {
 	gs_Tani_LoadTextureImage2(motos_skinC_txt, G_IM_FMT_RGBA, G_IM_SIZ_16b, 32, 32, 0, 7),
-	gsSPLight((&light_motos_basedata_A[5].l[0]),1 ),
-	gsSPLight((&light_motos_basedata_A[5].a   ),2 ),
 	gsSPVertex(&vtx_motos_head_0[0], 15, 0), 
 	gsSP1Triangle( 0, 1, 2, 0),
 	gsSP1Triangle( 3, 4, 5, 0),
@@ -721,4 +716,350 @@ const Gfx RCP_motos_head[] = {
 	gsDPSetCombineMode(G_CC_SHADE, G_CC_SHADE),
 	gsSPEndDisplayList() 
 };
+
+Vtx _mesh_RCP_motos_head_mesh_vtx_0[9] = {
+	{{{61, -53, -42},0, {547, 985},{0x5C, 0xBA, 0xCC, 0xFE}}},
+	{{{61, 0, -62},0, {547, 985},{0x67, 0x0, 0xB5, 0xFE}}},
+	{{{83, 0, 0},0, {547, 985},{0x7F, 0x0, 0x0, 0xFE}}},
+	{{{61, 55, -42},0, {547, 985},{0x67, 0x3D, 0xD6, 0xFE}}},
+	{{{61, 55, 1},0, {547, 985},{0x67, 0x4A, 0x0, 0xFE}}},
+	{{{61, 55, 43},0, {547, 985},{0x67, 0x3D, 0x2A, 0xFE}}},
+	{{{61, 0, 63},0, {547, 985},{0x67, 0x0, 0x4B, 0xFE}}},
+	{{{61, -53, 43},0, {547, 985},{0x5F, 0xBC, 0x32, 0xFE}}},
+	{{{61, -53, 0},0, {547, 985},{0x69, 0xB8, 0x0, 0xFE}}},
+};
+
+Gfx _mesh_RCP_motos_head_mesh_tri_0[] = {
+	gsSPVertex(_mesh_RCP_motos_head_mesh_vtx_0 + 0, 9, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(1, 3, 2, 0),
+	gsSP1Triangle(4, 2, 3, 0),
+	gsSP1Triangle(4, 5, 2, 0),
+	gsSP1Triangle(5, 6, 2, 0),
+	gsSP1Triangle(6, 7, 2, 0),
+	gsSP1Triangle(8, 2, 7, 0),
+	gsSP1Triangle(8, 0, 2, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx _mesh_RCP_motos_head_mesh_vtx_1[40] = {
+	{{{31, -2, 90},0, {2, 482},{0x2B, 0xFB, 0x77, 0xFE}}},
+	{{{61, -53, 43},0, {1660, -24},{0x5F, 0xBC, 0x32, 0xFE}}},
+	{{{61, 0, 63},0, {285, -25},{0x67, 0x0, 0x4B, 0xFE}}},
+	{{{31, -66, 52},0, {1971, 482},{0x20, 0x9E, 0x4B, 0xFE}}},
+	{{{0, -67, 54},0, {2005, 990},{0x8, 0x9C, 0x4E, 0xFE}}},
+	{{{0, 0, 93},0, {-6, 990},{0xA, 0xFE, 0x7F, 0xFE}}},
+	{{{31, -2, -89},0, {2, 482},{0x2A, 0xF9, 0x88, 0xFE}}},
+	{{{61, 55, -42},0, {1660, -24},{0x67, 0x3D, 0xD6, 0xFE}}},
+	{{{61, 0, -62},0, {285, -25},{0x67, 0x0, 0xB5, 0xFE}}},
+	{{{46, 66, -51},0, {1801, 232},{0x3E, 0x59, 0xBE, 0xFE}}},
+	{{{31, 68, -55},0, {1971, 482},{0x18, 0x61, 0xB1, 0xFE}}},
+	{{{0, 0, -92},0, {-6, 990},{0xA, 0xFC, 0x81, 0xFE}}},
+	{{{0, 72, -58},0, {2005, 990},{0x12, 0x63, 0xB3, 0xFE}}},
+	{{{61, 55, 43},0, {285, -25},{0x67, 0x3D, 0x2A, 0xFE}}},
+	{{{31, -2, 90},0, {1971, 482},{0x2B, 0xFB, 0x77, 0xFE}}},
+	{{{61, 0, 63},0, {1660, -24},{0x67, 0x0, 0x4B, 0xFE}}},
+	{{{46, 66, 52},0, {151, 233},{0x40, 0x57, 0x43, 0xFE}}},
+	{{{31, -2, 90},0, {1971, 482},{0x2B, 0xFB, 0x77, 0xFE}}},
+	{{{61, 55, 43},0, {285, -25},{0x67, 0x3D, 0x2A, 0xFE}}},
+	{{{31, 69, 56},0, {2, 482},{0x1A, 0x62, 0x4D, 0xFE}}},
+	{{{0, 0, 93},0, {2005, 990},{0xA, 0xFE, 0x7F, 0xFE}}},
+	{{{0, 73, 58},0, {-6, 990},{0x12, 0x64, 0x4C, 0xFE}}},
+	{{{31, -2, -89},0, {1971, 482},{0x2A, 0xF9, 0x88, 0xFE}}},
+	{{{61, 0, -62},0, {1660, -24},{0x67, 0x0, 0xB5, 0xFE}}},
+	{{{61, -53, -42},0, {285, -25},{0x5C, 0xBA, 0xCC, 0xFE}}},
+	{{{31, -66, -48},0, {2, 482},{0x1D, 0x9D, 0xB6, 0xFE}}},
+	{{{0, -67, -50},0, {-6, 990},{0x8, 0x9B, 0xB3, 0xFE}}},
+	{{{0, 0, -92},0, {2005, 990},{0xA, 0xFC, 0x81, 0xFE}}},
+	{{{0, -82, 0},0, {1000, 990},{0x1, 0x81, 0xFF, 0xFE}}},
+	{{{0, -67, -50},0, {2005, 990},{0x8, 0x9B, 0xB3, 0xFE}}},
+	{{{31, -66, -48},0, {1971, 482},{0x1D, 0x9D, 0xB6, 0xFE}}},
+	{{{31, -82, 0},0, {986, 487},{0x25, 0x86, 0x0, 0xFE}}},
+	{{{31, -82, 0},0, {986, 487},{0x25, 0x86, 0x0, 0xFE}}},
+	{{{31, -66, -48},0, {1971, 482},{0x1D, 0x9D, 0xB6, 0xFE}}},
+	{{{61, -53, -42},0, {1660, -24},{0x5C, 0xBA, 0xCC, 0xFE}}},
+	{{{61, -53, 0},0, {973, -18},{0x69, 0xB8, 0x0, 0xFE}}},
+	{{{61, -53, 43},0, {285, -25},{0x5F, 0xBC, 0x32, 0xFE}}},
+	{{{31, -66, 52},0, {2, 482},{0x20, 0x9E, 0x4B, 0xFE}}},
+	{{{0, -82, 0},0, {1000, 990},{0x1, 0x81, 0xFF, 0xFE}}},
+	{{{0, -67, 54},0, {-6, 990},{0x8, 0x9C, 0x4E, 0xFE}}},
+};
+
+Gfx _mesh_RCP_motos_head_mesh_tri_1[] = {
+	gsSPVertex(_mesh_RCP_motos_head_mesh_vtx_1 + 0, 16, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 3, 1, 0),
+	gsSP1Triangle(4, 3, 0, 0),
+	gsSP1Triangle(4, 0, 5, 0),
+	gsSP1Triangle(6, 7, 8, 0),
+	gsSP1Triangle(6, 9, 7, 0),
+	gsSP1Triangle(6, 10, 9, 0),
+	gsSP1Triangle(11, 10, 6, 0),
+	gsSP1Triangle(11, 12, 10, 0),
+	gsSP1Triangle(13, 14, 15, 0),
+	gsSPVertex(_mesh_RCP_motos_head_mesh_vtx_1 + 16, 16, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 3, 1, 0),
+	gsSP1Triangle(3, 4, 1, 0),
+	gsSP1Triangle(3, 5, 4, 0),
+	gsSP1Triangle(6, 7, 8, 0),
+	gsSP1Triangle(6, 8, 9, 0),
+	gsSP1Triangle(10, 6, 9, 0),
+	gsSP1Triangle(10, 11, 6, 0),
+	gsSP1Triangle(12, 13, 14, 0),
+	gsSP1Triangle(12, 14, 15, 0),
+	gsSPVertex(_mesh_RCP_motos_head_mesh_vtx_1 + 32, 8, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSP1Triangle(4, 0, 3, 0),
+	gsSP1Triangle(4, 5, 0, 0),
+	gsSP1Triangle(5, 6, 0, 0),
+	gsSP1Triangle(5, 7, 6, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx _mesh_RCP_motos_head_mesh_vtx_2[11] = {
+	{{{31, 68, -55},0, {2, 482},{0x18, 0x61, 0xB1, 0xFE}}},
+	{{{0, 72, -58},0, {-6, 990},{0x12, 0x63, 0xB3, 0xFE}}},
+	{{{0, 84, 1},0, {1000, 990},{0xC, 0x7E, 0xFF, 0xFE}}},
+	{{{31, 81, 1},0, {986, 487},{0x29, 0x78, 0x0, 0xFE}}},
+	{{{31, 69, 56},0, {1971, 482},{0x1A, 0x62, 0x4D, 0xFE}}},
+	{{{0, 73, 58},0, {2005, 990},{0x12, 0x64, 0x4C, 0xFE}}},
+	{{{46, 66, 52},0, {1801, 232},{0x40, 0x57, 0x43, 0xFE}}},
+	{{{61, 55, 43},0, {1660, -24},{0x67, 0x3D, 0x2A, 0xFE}}},
+	{{{61, 55, 1},0, {973, -18},{0x67, 0x4A, 0x0, 0xFE}}},
+	{{{61, 55, -42},0, {285, -25},{0x67, 0x3D, 0xD6, 0xFE}}},
+	{{{46, 66, -51},0, {151, 233},{0x3E, 0x59, 0xBE, 0xFE}}},
+};
+
+Gfx _mesh_RCP_motos_head_mesh_tri_2[] = {
+	gsSPVertex(_mesh_RCP_motos_head_mesh_vtx_2 + 0, 11, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(2, 3, 0, 0),
+	gsSP1Triangle(2, 4, 3, 0),
+	gsSP1Triangle(5, 4, 2, 0),
+	gsSP1Triangle(4, 6, 3, 0),
+	gsSP1Triangle(7, 3, 6, 0),
+	gsSP1Triangle(7, 8, 3, 0),
+	gsSP1Triangle(9, 3, 8, 0),
+	gsSP1Triangle(9, 10, 3, 0),
+	gsSP1Triangle(3, 10, 0, 0),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat__mesh_motos_skinc[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPTileSync(),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, motos_skinC_txt),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
+	gsDPLoadSync(),
+	gsDPLoadBlock(7, 0, 0, 1023, 256),
+	gsDPPipeSync(),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 124),
+	gsSPSetLights1(_mesh_motos_skinc_lights),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat__mesh_motos_skinB[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPTileSync(),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, motos_skinB_txt),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 6, 0),
+	gsDPLoadSync(),
+	gsDPLoadBlock(7, 0, 0, 2047, 128),
+	gsDPPipeSync(),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 16, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 6, 0),
+	gsDPSetTileSize(0, 0, 0, 252, 124),
+	gsSPSetLights1(_mesh_motos_skinB_lights),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat__mesh_motos_face[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPTileSync(),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, motos_eye_txt),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 6, 0),
+	gsDPLoadSync(),
+	gsDPLoadBlock(7, 0, 0, 2047, 128),
+	gsDPPipeSync(),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 16, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 6, 0),
+	gsDPSetTileSize(0, 0, 0, 252, 124),
+	gsSPSetLights1(_mesh_motos_face_lights),
+	gsSPEndDisplayList(),
+};
+
+Gfx _mesh_RCP_motos_head_mesh[] = {
+	gsSPDisplayList(mat__mesh_motos_skinc),
+	gsSPDisplayList(_mesh_RCP_motos_head_mesh_tri_0),
+	gsSPDisplayList(mat__mesh_motos_skinB),
+	gsSPDisplayList(_mesh_RCP_motos_head_mesh_tri_1),
+	gsSPDisplayList(mat__mesh_motos_face),
+	gsSPDisplayList(_mesh_RCP_motos_head_mesh_tri_2),
+	gsDPPipeSync(),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPClearGeometryMode(G_TEXTURE_GEN),
+	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
+	gsSPTexture(65535, 65535, 0, 0, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx _mesh_RCP_motos_Lfoot_mesh_mesh_vtx_0[10] = {
+	{{{72, 9, 54},0, {773, 1030},{0x4C, 0x1C, 0x62, 0xFE}}},
+	{{{-34, -12, 32},0, {9, 779},{0xB1, 0xB0, 0x3C, 0xFE}}},
+	{{{24, -30, 36},0, {361, 867},{0x1, 0x95, 0x44, 0xFE}}},
+	{{{-29, 35, 54},0, {173, 944},{0xD6, 0x44, 0x63, 0xFE}}},
+	{{{-53, 41, 4},0, {57, 489},{0xA0, 0x53, 0x0, 0xFE}}},
+	{{{100, 2, 4},0, {980, 511},{0x7F, 0x5, 0x0, 0xFE}}},
+	{{{24, -30, -30},0, {369, 103},{0x3, 0x93, 0xBF, 0xFE}}},
+	{{{72, 9, -47},0, {783, -27},{0x4E, 0x1C, 0xA0, 0xFE}}},
+	{{{-29, 35, -47},0, {182, 31},{0xD5, 0x46, 0x9F, 0xFE}}},
+	{{{-34, -12, -26},0, {15, 176},{0xAF, 0xB1, 0xC6, 0xFE}}},
+};
+
+Gfx _mesh_RCP_motos_Lfoot_mesh_mesh_tri_0[] = {
+	gsSPVertex(_mesh_RCP_motos_Lfoot_mesh_mesh_vtx_0 + 0, 10, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 3, 1, 0),
+	gsSP1Triangle(4, 3, 0, 0),
+	gsSP1Triangle(4, 0, 5, 0),
+	gsSP1Triangle(5, 0, 2, 0),
+	gsSP1Triangle(6, 5, 2, 0),
+	gsSP1Triangle(6, 7, 5, 0),
+	gsSP1Triangle(8, 7, 6, 0),
+	gsSP1Triangle(8, 6, 9, 0),
+	gsSP1Triangle(4, 8, 9, 0),
+	gsSP1Triangle(1, 4, 9, 0),
+	gsSP1Triangle(4, 1, 3, 0),
+	gsSP1Triangle(4, 7, 8, 0),
+	gsSP1Triangle(4, 5, 7, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx _mesh_RCP_motos_Lfoot_mesh_mesh_vtx_1[4] = {
+	{{{24, -30, 36},0, {994, -26},{0x1, 0x95, 0x44, 0xFE}}},
+	{{{-34, -12, -26},0, {22, 959},{0xAF, 0xB1, 0xC6, 0xFE}}},
+	{{{24, -30, -30},0, {-42, -22},{0x3, 0x93, 0xBF, 0xFE}}},
+	{{{-34, -12, 32},0, {936, 957},{0xB1, 0xB0, 0x3C, 0xFE}}},
+};
+
+Gfx _mesh_RCP_motos_Lfoot_mesh_mesh_tri_1[] = {
+	gsSPVertex(_mesh_RCP_motos_Lfoot_mesh_mesh_vtx_1 + 0, 4, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 3, 1, 0),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat__mesh_f3d_material_004[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPTileSync(),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 1, motos_skinD_txt),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
+	gsDPLoadSync(),
+	gsDPLoadBlock(7, 0, 0, 1023, 256),
+	gsDPPipeSync(),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 124),
+	gsSPSetLights1(_mesh_f3d_material_004_lights),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat__mesh_f3d_material_005[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPTileSync(),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 32, motos_skinA_txt),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 7, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPLoadSync(),
+	gsDPLoadTile(7, 0, 0, 124, 120),
+	gsDPPipeSync(),
+	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0, G_TX_CLAMP | G_TX_NOMIRROR, 5, 0),
+	gsDPSetTileSize(0, 0, 0, 124, 120),
+	gsSPSetLights1(_mesh_f3d_material_005_lights),
+	gsSPEndDisplayList(),
+};
+
+Gfx _mesh_RCP_motos_Lfoot_mesh_mesh[] = {
+	gsSPDisplayList(mat__mesh_f3d_material_004),
+	gsSPDisplayList(_mesh_RCP_motos_Lfoot_mesh_mesh_tri_0),
+	gsSPDisplayList(mat__mesh_f3d_material_005),
+	gsSPDisplayList(_mesh_RCP_motos_Lfoot_mesh_mesh_tri_1),
+	gsDPPipeSync(),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPClearGeometryMode(G_TEXTURE_GEN),
+	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
+	gsSPTexture(65535, 65535, 0, 0, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx _mesh_RCP_motos_Rfoot_mesh_mesh_vtx_0[10] = {
+	{{{72, 9, 49},0, {773, 1030},{0x4C, 0x1C, 0x62, 0xFE}}},
+	{{{-34, -12, 27},0, {9, 779},{0xB1, 0xB0, 0x3C, 0xFE}}},
+	{{{24, -30, 31},0, {361, 867},{0x1, 0x95, 0x44, 0xFE}}},
+	{{{-29, 35, 49},0, {173, 944},{0xD6, 0x44, 0x63, 0xFE}}},
+	{{{-53, 41, -1},0, {57, 489},{0xA0, 0x53, 0x0, 0xFE}}},
+	{{{100, 2, -1},0, {980, 511},{0x7F, 0x5, 0x0, 0xFE}}},
+	{{{24, -30, -35},0, {369, 103},{0x3, 0x93, 0xBF, 0xFE}}},
+	{{{72, 9, -52},0, {783, -27},{0x4E, 0x1C, 0xA0, 0xFE}}},
+	{{{-29, 35, -52},0, {182, 31},{0xD5, 0x46, 0x9F, 0xFE}}},
+	{{{-34, -12, -31},0, {15, 176},{0xAF, 0xB1, 0xC6, 0xFE}}},
+};
+
+Gfx _mesh_RCP_motos_Rfoot_mesh_mesh_tri_0[] = {
+	gsSPVertex(_mesh_RCP_motos_Rfoot_mesh_mesh_vtx_0 + 0, 10, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 3, 1, 0),
+	gsSP1Triangle(4, 3, 0, 0),
+	gsSP1Triangle(4, 0, 5, 0),
+	gsSP1Triangle(5, 0, 2, 0),
+	gsSP1Triangle(6, 5, 2, 0),
+	gsSP1Triangle(6, 7, 5, 0),
+	gsSP1Triangle(8, 7, 6, 0),
+	gsSP1Triangle(8, 6, 9, 0),
+	gsSP1Triangle(4, 8, 9, 0),
+	gsSP1Triangle(1, 4, 9, 0),
+	gsSP1Triangle(4, 1, 3, 0),
+	gsSP1Triangle(4, 7, 8, 0),
+	gsSP1Triangle(4, 5, 7, 0),
+	gsSPEndDisplayList(),
+};
+
+Vtx _mesh_RCP_motos_Rfoot_mesh_mesh_vtx_1[4] = {
+	{{{24, -30, 31},0, {994, -26},{0x1, 0x95, 0x44, 0xFE}}},
+	{{{-34, -12, -31},0, {22, 959},{0xAF, 0xB1, 0xC6, 0xFE}}},
+	{{{24, -30, -35},0, {-42, -22},{0x3, 0x93, 0xBF, 0xFE}}},
+	{{{-34, -12, 27},0, {936, 957},{0xB1, 0xB0, 0x3C, 0xFE}}},
+};
+
+Gfx _mesh_RCP_motos_Rfoot_mesh_mesh_tri_1[] = {
+	gsSPVertex(_mesh_RCP_motos_Rfoot_mesh_mesh_vtx_1 + 0, 4, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 3, 1, 0),
+	gsSPEndDisplayList(),
+};
+
+Gfx _mesh_RCP_motos_Rfoot_mesh_mesh[] = {
+	gsSPDisplayList(mat__mesh_f3d_material_004),
+	gsSPDisplayList(_mesh_RCP_motos_Rfoot_mesh_mesh_tri_0),
+	gsSPDisplayList(mat__mesh_f3d_material_005),
+	gsSPDisplayList(_mesh_RCP_motos_Rfoot_mesh_mesh_tri_1),
+	gsDPPipeSync(),
+	gsSPSetGeometryMode(G_LIGHTING),
+	gsSPClearGeometryMode(G_TEXTURE_GEN),
+	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
+	gsSPTexture(65535, 65535, 0, 0, 0),
+	gsSPEndDisplayList(),
+};
+
+
+
 #pragma GCC diagnostic pop

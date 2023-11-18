@@ -205,5 +205,33 @@ extern const Gfx RCP_motos_body[];
 extern const Gfx RCP_motos_leg[];
 extern const Gfx RCP_motos_arm[];
 extern const struct Animation *const motos_seg8_anims_0801DA4C[];
+extern Lights1 _mesh_motos_skinc_lights;
+extern Lights1 _mesh_motos_skinB_lights;
+extern Lights1 _mesh_motos_face_lights;
+extern u64 _mesh_motos_skinc_rgba16_rgba16[];
+extern u64 _mesh_motos_skinb_rgba16_rgba16[];
+extern u64 _mesh_motos_face_rgba16_rgba16[];
+extern Vtx _mesh_RCP_motos_head_mesh_vtx_0[9];
+extern Gfx _mesh_RCP_motos_head_mesh_tri_0[];
+extern Vtx _mesh_RCP_motos_head_mesh_vtx_1[40];
+extern Gfx _mesh_RCP_motos_head_mesh_tri_1[];
+extern Vtx _mesh_RCP_motos_head_mesh_vtx_2[11];
+extern Gfx _mesh_RCP_motos_head_mesh_tri_2[];
+extern Gfx mat__mesh_motos_skinc[];
+extern Gfx mat__mesh_motos_skinB[];
+extern Gfx mat__mesh_motos_face[];
+extern Gfx _mesh_RCP_motos_head_mesh[];extern Lights1 _mesh_f3d_material_004_lights;
+extern Lights1 _mesh_f3d_material_005_lights;
+extern u64 _mesh_motos_skind_rgba16_rgba16[];
+extern u64 _mesh_motos_skina_rgba16_rgba16[];
+extern Vtx _mesh_RCP_motos_Rfoot_mesh_mesh_vtx_0[10];
+extern Gfx _mesh_RCP_motos_Rfoot_mesh_mesh_tri_0[];
+extern Vtx _mesh_RCP_motos_Rfoot_mesh_mesh_vtx_1[4];
+extern Gfx _mesh_RCP_motos_Rfoot_mesh_mesh_tri_1[];
+extern Gfx mat__mesh_f3d_material_004[];
+extern Gfx mat__mesh_f3d_material_005[];
+extern Gfx _mesh_RCP_motos_Rfoot_mesh_mesh[];
+extern Gfx _mesh_RCP_motos_Lfoot_mesh_mesh[];
+
 
 #endif

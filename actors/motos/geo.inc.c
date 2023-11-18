@@ -84,7 +84,7 @@ Hierarchy RCP_HmsEnemymotos_basedata_A[] = {
                hmsBegin()
                   hmsJoint(RM_SURF,NULL,71,0,0)  /* jnt38_3(17) */
                   hmsBegin()
-                     hmsJoint(RM_SURF,RCP_motos_Lfoot,0,0,0)  /* cube2(6) */
+                     hmsJoint(RM_SURF,_mesh_RCP_motos_Lfoot_mesh_mesh,0,0,0)  /* cube2(6) */
                   hmsEnd()
                   hmsJoint(RM_SURF, NULL,0,0,0)  /* L_foot_sprite(7) */
 				  hmsBegin()
@@ -105,7 +105,7 @@ Hierarchy RCP_HmsEnemymotos_basedata_A[] = {
                hmsBegin()
                   hmsJoint(RM_SURF,NULL,71,0,0)  /* jnt40_3(18) */
                   hmsBegin()
-                     hmsJoint(RM_SURF,RCP_motos_Rfoot,0,0,0)  /* cube7(8) */
+                     hmsJoint(RM_SURF,_mesh_RCP_motos_Rfoot_mesh_mesh,0,0,0)  /* cube7(8) */
                   hmsEnd()
                   hmsJoint(RM_SURF,NULL,0,0,0)  /* R_foot_sprite(9) */
 				  hmsBegin()
@@ -121,7 +121,7 @@ Hierarchy RCP_HmsEnemymotos_basedata_A[] = {
          hmsBegin()
             hmsJoint(RM_SURF,NULL,0,0,0)  /* jnt41_1(19) */
             hmsBegin()
-               hmsJoint(RM_SURF,RCP_motos_head,0,0,0)  /* sphere3(10) */
+               hmsJoint(RM_SURF,_mesh_RCP_motos_head_mesh,0,0,0)  /* sphere3(10) */
             hmsEnd()
          hmsEnd()
       hmsEnd()
