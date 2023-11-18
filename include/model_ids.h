@@ -459,7 +459,7 @@
 #define MODEL_STAR                        0x7A        // star_geo
 // 0x7B used to be MODEL_TTM_SLIDE_EXIT_PODIUM, but i moved it to ttm 0x3B
 #define MODEL_WOODEN_SIGNPOST             0x7C        // wooden_signpost_geo
-#define MODEL_UNKNOWN_7D                  0x7D        // referenced in macro presets. Unknown usage
+#define MODEL_MOTOS                       0x7D        // referenced in macro presets. Unknown usage
 // find me
 #define MODEL_CANNON_BARREL               0x7F        // cannon_barrel_geo
 #define MODEL_CANNON_BASE                 0x80        // cannon_base_geo
@@ -519,7 +519,7 @@
 #define MODEL_TRAMPOLINE                  0xB5        // springboard_top_geo (unused)
 #define MODEL_TRAMPOLINE_CENTER           0xB6        // springboard_spring_geo (unused)
 #define MODEL_TRAMPOLINE_BASE             0xB7        // springboard_bottom_geo (unused)
-#define MODEL_UNKNOWN_B8                  0xB8        // referenced in special presets as a static object. Unknown usage
+#define MODEL_DRY_BONES                   0xB8        // referenced in special presets as a static object. Unknown usage
 #define MODEL_FISH                        0xB9        // fish_geo - fish without shadow, used
 #define MODEL_FISH_SHADOW                 0xBA        // fish_shadow_geo - fish with shadow, unused
 #define MODEL_BUTTERFLY                   0xBB        // butterfly_geo

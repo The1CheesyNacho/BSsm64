@@ -64,7 +64,7 @@ MIO0_OBJ_FILES := $(MIO0_FILES:.mio0=.mio0.o)
 # --------------------------------------
 
 # Actor Directories
-KOOPA_DIRS       := koopa_flag poundable_pole koopa piranha_plant whomp chain_ball chain_chomp
+KOOPA_DIRS       := koopa_flag poundable_pole koopa piranha_plant whomp chain_ball chain_chomp dry_bones
 CAPSWITCH_DIRS   := capswitch springboard
 CHILLYCHIEF_DIRS := chillychief moneybag
 BULLY_DIRS       := bully blargg
@@ -78,10 +78,10 @@ BUBBA_DIRS       := bubba wiggler wiggler_body_part lakitu_enemy spiny_egg spiny
 SKEETER_DIRS     := skeeter seaweed water_mine cyan_fish bub water_ring treasure_chest
 KLEPTO_DIRS      := klepto eyerok pokey tornado
 SEA_DIRS         := clam_shell manta sushi unagi whirlpool
-AMP_DIRS         := blue_coin_switch amp cannon_lid cannon_base cannon_barrel chuckya purple_switch checkerboard_platform heart flyguy breakable_box exclamation_box goomba bobomb metal_box exclamation_box_outline test_platform koopa_shell
-MOLE_DIRS        := monty_mole_hole monty_mole smoke ukiki fwoosh
+AMP_DIRS         := blue_coin_switch amp cannon_lid cannon_base cannon_barrel chuckya purple_switch checkerboard_platform heart flyguy breakable_box exclamation_box motos  goomba bobomb metal_box exclamation_box_outline test_platform koopa_shell
+MOLE_DIRS        := monty_mole_hole monty_mole smoke ukiki fwoosh 
 LAKITU_DIRS      := lakitu_cameraman toad mips boo_castle quin
-PEACH_DIRS       := bird peach yoshi
+PEACH_DIRS       := bird peach yoshi 
 BOWSER_DIRS      := bowser_flame impact_ring yellow_sphere bowser bomb impact_smoke
 MARIO_DIRS       := mario luigi king_boo wario wario_apparition waluigi king_mips bubble walk_smoke burn_smoke stomp_smoke water_wave sparkle water_splash white_particle_small sparkle_animation
 

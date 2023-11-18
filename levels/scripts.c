@@ -145,6 +145,7 @@ const LevelScript level_main_scripts_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_DIRT_ANIMATION,          dirt_animation_geo),
     LOAD_MODEL_FROM_GEO(MODEL_CARTOON_STAR,            cartoon_star_geo),
     LOAD_MODEL_FROM_GEO(MODEL_STATUE,                  statue_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_MOTOS,                   RCP_HmsEnemymotos_basedata_A),
 #ifdef PORT_MOP_OBJS
     LOAD_MODEL_FROM_GEO(MODEL_MOP_NOTEBLOCK,                Noteblock_MOP),
     LOAD_MODEL_FROM_GEO(MODEL_MOP_CHECKPOINT_FLAG,          Checkpoint_Flap_MOP),
@@ -397,6 +398,7 @@ const LevelScript script_func_global_15[] = {
     LOAD_MODEL_FROM_GEO(MODEL_WHOMP,                   whomp_geo),
     LOAD_MODEL_FROM_GEO(MODEL_KOOPA_WITH_SHELL,        koopa_with_shell_geo),
     LOAD_MODEL_FROM_GEO(MODEL_KOOPA_WITHOUT_SHELL,     koopa_without_shell_geo),
+    LOAD_MODEL_FROM_GEO(MODEL_DRY_BONES,               dry_bones_with_shell_geo),
     LOAD_MODEL_FROM_GEO(MODEL_METALLIC_BALL,           metallic_ball_geo),
     LOAD_MODEL_FROM_GEO(MODEL_CHAIN_CHOMP,             chain_chomp_geo),
     LOAD_MODEL_FROM_GEO(MODEL_KOOPA_FLAG,              koopa_flag_geo),

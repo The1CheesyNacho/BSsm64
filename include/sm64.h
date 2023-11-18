@@ -13,6 +13,7 @@
 #include "mario_geo_switch_case_ids.h"
 #include "surface_terrains.h"
 #include "macros.h"
+#include "convert_hms_to_geo_layouts.h"
 
 // Misc tweaks defines usually changed in binary roms
 #ifdef RM2C

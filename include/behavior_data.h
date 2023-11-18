@@ -616,6 +616,7 @@ extern const BehaviorScript bhvLuisNpc[];
 extern const BehaviorScript bhvPushableStatue[];
 extern const BehaviorScript bhv2DPhysics[];
 extern const BehaviorScript bhvLegacyScrollTexture[];
+extern const BehaviorScript bhvMotos[];
 
 #ifdef PORT_MOP_OBJS
 #include "src/extras/mop/include_behaviors.h"

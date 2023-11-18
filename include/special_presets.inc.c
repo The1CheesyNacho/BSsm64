@@ -21,7 +21,7 @@ static struct SpecialPreset sSpecialObjectPresets[] = {
     { special_null_start,                         SPTYPE_YROT_NO_PARAMS,     0x00, MODEL_NONE, NULL },
     { special_yellow_coin,                        SPTYPE_NO_YROT_OR_PARAMS,  0x00, MODEL_YELLOW_COIN, bhvYellowCoin },
     { special_yellow_coin_2,                      SPTYPE_NO_YROT_OR_PARAMS,  0x00, MODEL_YELLOW_COIN, bhvYellowCoin },
-    { special_unknown_3,                          SPTYPE_NO_YROT_OR_PARAMS,  0x00, MODEL_UNKNOWN_B8, bhvStaticObject },
+    { special_unknown_3,                          SPTYPE_NO_YROT_OR_PARAMS,  0x00, MODEL_DRY_BONES, bhvStaticObject },
     { special_boo,                                SPTYPE_NO_YROT_OR_PARAMS,  0x00, MODEL_BOO, bhvCourtyardBooTriplet },
     { special_unknown_5,                          SPTYPE_NO_YROT_OR_PARAMS,  0x00, MODEL_UNKNOWN_AC, bhvCastleFloorTrap },
     { special_lll_moving_octagonal_mesh_platform, SPTYPE_NO_YROT_OR_PARAMS,  0x00, MODEL_LLL_MOVING_OCTAGONAL_MESH_PLATFORM, bhvLLLMovingOctagonalMeshPlatform },
