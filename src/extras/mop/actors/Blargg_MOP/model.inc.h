@@ -4,5 +4,4 @@
 extern const Gfx blargg_000_offset_001_mesh[];
 extern const Gfx blargg_000_offset_002_mesh[];
 extern const Gfx blargg_000_offset_004_mesh[];
-extern const Gfx blargg_material_revert_render_settings[];
 #endif

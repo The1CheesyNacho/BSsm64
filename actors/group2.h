@@ -5,13 +5,9 @@
 
 // blargg
 extern const GeoLayout blargg_geo[];
-#ifdef PORT_MOP_OBJS
-#include "src/extras/mop/actors/Blargg_MOP/model.inc.h"
-#else
 extern const Gfx blargg_seg5_dl_050058D0[];
 extern const Gfx blargg_seg5_dl_05005A60[];
 extern const Gfx blargg_seg5_dl_05005D00[];
-#endif
 extern const struct Animation *const blargg_seg5_anims_0500616C[];
 
 // bully
@@ -32,5 +28,7 @@ extern const Gfx bully_seg5_dl_05003EA8[];
 extern const Gfx bully_seg5_dl_05003F80[];
 extern const Gfx bully_seg5_dl_05003FC8[];
 extern const struct Animation *const bully_seg5_anims_0500470C[];
+
+#include "blargg/geo_header.h"
 
 #endif
