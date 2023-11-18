@@ -381,10 +381,11 @@
 #define /*0x108*/ oCheepCheepUnk108 OBJECT_FIELD_F32(0x20)
 
 /* Chuckya */
-#define /*0x088*/ oChuckyaUnk88  OBJECT_FIELD_S32(0x00)
-#define /*0x0F8*/ oChuckyaUnkF8  OBJECT_FIELD_S32(0x1C)
-#define /*0x0FC*/ oChuckyaUnkFC  OBJECT_FIELD_S32(0x1D)
-#define /*0x100*/ oChuckyaUnk100 OBJECT_FIELD_S32(0x1E)
+#define /*0x088*/ oChuckyaUnk88   OBJECT_FIELD_S32(0x00)
+#define /*0x0F8*/ oChuckyaUnkF8   OBJECT_FIELD_S32(0x1C)
+#define /*0x0FC*/ oChuckyaUnkFC   OBJECT_FIELD_S32(0x1D)
+#define /*0x100*/ oChuckyaUnk100  OBJECT_FIELD_S32(0x1E)
+#define /*0x104*/ oChuckyaIsMotos OBJECT_FIELD_U32(0x1F)
 
 /* Clam */
 #define /*0x0F4*/ oClamUnkF4 OBJECT_FIELD_S32(0x1B)

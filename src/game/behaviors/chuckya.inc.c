@@ -225,8 +225,16 @@ void chuckya_act_3(void) {
     }
 }
 
+u8 check_if_lava() {
+    struct Surface* surface;
+    find_floor(o->oPosX, o->oPosY + 100, o->oPosZ, &floor);
+    if (surface == NULL) return FALSE;
+    return surface->type == SURFACE_BURNING;
+}
+
 void chuckya_act_2(void) {
-    if (o->oMoveFlags & (OBJ_MOVE_HIT_WALL | OBJ_MOVE_MASK_IN_WATER | OBJ_MOVE_LANDED)) {
+    if (( o->oChuckyaIsMotos && o->oMoveFlags & (OBJ_MOVE_LANDED) && check_if_lava()) ||
+        (!o->oChuckyaIsMotos && o->oMoveFlags & (OBJ_MOVE_HIT_WALL | OBJ_MOVE_MASK_IN_WATER | OBJ_MOVE_LANDED))) {
         obj_mark_for_deletion(o);
         obj_spawn_loot_yellow_coins(o, 5, 20.0f);
         spawn_mist_particles_with_sound(SOUND_OBJ_CHUCKYA_DEATH);
