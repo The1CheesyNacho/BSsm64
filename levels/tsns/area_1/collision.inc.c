@@ -1,4 +1,4 @@
-const Collision tsss_area_1_collision[] = {
+const Collision tsns_area_1_collision[] = {
 	COL_INIT(),
 	COL_VERTEX_INIT(8),
 	COL_VERTEX(400, 100, -400),

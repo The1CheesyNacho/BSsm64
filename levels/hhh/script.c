@@ -16,14 +16,14 @@
 /* Fast64 end persistent block [includes] */
 
 #include "make_const_nonconst.h"
-#include "levels/et/header.h"
+#include "levels/hhh/header.h"
 
 /* Fast64 begin persistent block [scripts] */
 /* Fast64 end persistent block [scripts] */
 
-const LevelScript level_et_entry[] = {
+const LevelScript level_hhh_entry[] = {
 	INIT_LEVEL(),
-	LOAD_MIO0(0x7, _et_segment_7SegmentRomStart, _et_segment_7SegmentRomEnd), 
+	LOAD_MIO0(0x7, _hhh_segment_7SegmentRomStart, _hhh_segment_7SegmentRomEnd), 
 	LOAD_MIO0(0xa, _water_skybox_mio0SegmentRomStart, _water_skybox_mio0SegmentRomEnd), 
 	ALLOC_LEVEL_POOL(),
 	MARIO(MODEL_MARIO, 0x00000001, bhvMario),
@@ -31,15 +31,15 @@ const LevelScript level_et_entry[] = {
 	/* Fast64 begin persistent block [level commands] */
 	/* Fast64 end persistent block [level commands] */
 
-	AREA(1, et_area_1),
+	AREA(1, hhh_area_1),
 		WARP_NODE(0x0A, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF0, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF1, LEVEL_BOB, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		OBJECT(MODEL_NONE, 0, 200, 0, 0, 0, 0, 0x000A0000, bhvSpinAirborneWarp),
 		MARIO_POS(0x01, 0, 0, 200, 0),
-		TERRAIN(et_area_1_collision),
-		MACRO_OBJECTS(et_area_1_macro_objs),
-		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_GRASS),
+		TERRAIN(hhh_area_1_collision),
+		MACRO_OBJECTS(hhh_area_1_macro_objs),
+		Shhh_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_GRASS),
 		TERRAIN_TYPE(TERRAIN_GRASS),
 		/* Fast64 begin persistent block [area commands] */
 		/* Fast64 end persistent block [area commands] */
