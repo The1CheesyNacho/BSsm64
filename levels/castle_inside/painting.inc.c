@@ -1194,6 +1194,23 @@ static const Gfx inside_castle_seg7_painting_dl_070232F0[] = {
     gsSPEndDisplayList(),
 };
 
+// 0x070232F0 - 0x07023350
+static const Gfx inside_castle_seg7_painting_dl_tsns[] = {
+    gsSPDisplayList(inside_castle_seg7_dl_07021A48),
+    gsSPVertex(inside_castle_seg7_vertex_07021818, 8, 0),
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, inside_castle_seg7_texture_03320800),
+    gsDPLoadSync(),
+    gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 64 * 32 - 1, CALC_DXT(64, G_IM_SIZ_16b_BYTES)),
+    gsSPDisplayList(inside_castle_seg7_dl_07021A18),
+    gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, inside_castle_seg7_texture_02020800),
+    gsDPLoadSync(),
+    gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 64 * 32 - 1, CALC_DXT(64, G_IM_SIZ_16b_BYTES)),
+    gsSPDisplayList(inside_castle_seg7_dl_07021A30),
+    gsSPDisplayList(inside_castle_seg7_dl_07021AA0),
+    gsSPEndDisplayList(),
+};
+
+
 // 0x07023350 - 0x070233B0
 static const Gfx inside_castle_seg7_painting_dl_07023350[] = {
     gsSPDisplayList(inside_castle_seg7_dl_07021A48),
@@ -1350,6 +1367,10 @@ ALIGNED8 static const Texture *const inside_castle_seg7_painting_textures_070236
 
 ALIGNED8 static const Texture *const inside_castle_seg7_painting_textures_07023618[] = {
     inside_castle_seg7_texture_07020800, inside_castle_seg7_texture_0701F800,
+};
+
+ALIGNED8 static const Texture *const inside_castle_seg7_painting_textures_tsns[] = {
+    inside_castle_seg7_texture_02020800, inside_castle_seg7_texture_03320800,
 };
 
 // 0x07023620 - 0x07023698
@@ -1728,4 +1749,31 @@ struct Painting thi_huge_painting = {
     /* Alpha */ 0xFF,
     /* Mario Below */  0x00, 0x00, 0x00, /* Whether or not Mario is below the painting */
     /* Size */  1638.4f,
+};
+
+// 0x07023C38 - 0x07023CB0
+struct Painting tsns_painting = {
+    /* id */ 0x000E,
+    /* Image Count */ 0x02,
+    /* Texture Type */ PAINTING_IMAGE,
+    /* Floor Status */ 0x00, 0x00, 0x00 /* which of the painting's nearby special floors Mario's on */,
+    /* Ripple Status */ 0x00,
+    /* Rotation */      0.0f,     90.0f,
+    /* Position */ -459, 1331, 1767 ,
+    /*                         curr   passive     entry */
+    /* Ripple Magnitude */     0.0f,    20.0f,    80.0f,
+    /* Ripple Decay */         1.0f,  0.9608f,  0.9524f,
+    /* Ripple Rate */          0.0f,    0.24f,    0.14f,
+    /* Ripple Dispersion */    0.0f,    40.0f,    30.0f,
+    /* Curr Ripple Timer */    0.0f,
+    /* Curr Ripple x, y */     0.0f,    0.0f,
+    /* Normal DList */ inside_castle_seg7_painting_dl_tsns,
+    /* Texture Maps */ inside_castle_seg7_painting_texture_maps_07022518,
+    /* Textures */     inside_castle_seg7_painting_textures_tsns,
+    /* Texture w, h */ 64, 32,
+    /* Ripple DList */ inside_castle_seg7_painting_dl_07021AC0,
+    /* Ripple Trigger */ RIPPLE_TRIGGER_PROXIMITY,
+    /* Alpha */ 0xFF,
+    /* Mario Below */  0x00, 0x00, 0x00, /* Whether or not Mario is below the painting */
+    /* Size */  400.4f,
 };

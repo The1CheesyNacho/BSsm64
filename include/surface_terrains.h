@@ -80,9 +80,6 @@
 #define SURFACE_PAINTING_WOBBLE_B5           0x00B5 // Painting wobble (SSL Left)
 #define SURFACE_PAINTING_WOBBLE_B6           0x00B6 // Painting wobble (SSL Middle)
 #define SURFACE_PAINTING_WOBBLE_B7           0x00B7 // Painting wobble (SSL Right)
-#define SURFACE_PAINTING_WOBBLE_B8           0x00B8 // Painting wobble (Unused - Left)
-#define SURFACE_PAINTING_WOBBLE_B9           0x00B9 // Painting wobble (Unused - Middle)
-#define SURFACE_PAINTING_WOBBLE_BA           0x00BA // Painting wobble (Unused - Right)
 #define SURFACE_PAINTING_WOBBLE_BB           0x00BB // Painting wobble (DDD - Left), makes the painting wobble if touched
 #define SURFACE_PAINTING_WOBBLE_BC           0x00BC // Painting wobble (Unused, DDD - Middle)
 #define SURFACE_PAINTING_WOBBLE_BD           0x00BD // Painting wobble (Unused, DDD - Right)
@@ -107,6 +104,12 @@
 #define SURFACE_PAINTING_WOBBLE_D0           0x00D0 // Painting wobble (HMC & CotMC - Left), makes the painting wobble if touched
 #define SURFACE_PAINTING_WOBBLE_D1           0x00D1 // Painting wobble (Unused, HMC & CotMC - Middle)
 #define SURFACE_PAINTING_WOBBLE_D2           0x00D2 // Painting wobble (Unused, HMC & CotMC - Right)
+#define SURFACE_PAINTING_WOBBLE_B8           0x00B8 // Painting wobble (Unused - Left)
+#define SURFACE_PAINTING_WOBBLE_B9           0x00B9 // Painting wobble (Unused - Middle)
+#define SURFACE_PAINTING_WOBBLE_BA           0x00BA // Painting wobble (Unused - Right)
+#define SURFACE_PAINTING_WOBBLE_TSNS1                 0x0103 // Painting wobble (Unused - Left)
+#define SURFACE_PAINTING_WOBBLE_TSNS2               0x0104 // Painting wobble (Unused - Middle)
+#define SURFACE_PAINTING_WOBBLE_TSNS3             0x0105 // Painting wobble (Unused - Right)
 #define SURFACE_PAINTING_WARP_D3             0x00D3 // Painting warp (BoB Left)
 #define SURFACE_PAINTING_WARP_D4             0x00D4 // Painting warp (BoB Middle)
 #define SURFACE_PAINTING_WARP_D5             0x00D5 // Painting warp (BoB Right)
@@ -125,9 +128,6 @@
 #define SURFACE_PAINTING_WARP_E2             0x00E2 // Painting warp (SSL Left)
 #define SURFACE_PAINTING_WARP_E3             0x00E3 // Painting warp (SSL Medium)
 #define SURFACE_PAINTING_WARP_E4             0x00E4 // Painting warp (SSL Right)
-#define SURFACE_PAINTING_WARP_E5             0x00E5 // Painting warp (Unused - Left)
-#define SURFACE_PAINTING_WARP_E6             0x00E6 // Painting warp (Unused - Medium)
-#define SURFACE_PAINTING_WARP_E7             0x00E7 // Painting warp (Unused - Right)
 #define SURFACE_PAINTING_WARP_E8             0x00E8 // Painting warp (DDD - Left)
 #define SURFACE_PAINTING_WARP_E9             0x00E9 // Painting warp (DDD - Middle)
 #define SURFACE_PAINTING_WARP_EA             0x00EA // Painting warp (DDD - Right)
@@ -149,16 +149,28 @@
 #define SURFACE_PAINTING_WARP_FA             0x00FA // Painting warp (THI Tiny - Left)
 #define SURFACE_PAINTING_WARP_FB             0x00FB // Painting warp (THI Tiny - Middle)
 #define SURFACE_PAINTING_WARP_FC             0x00FC // Painting warp (THI Tiny - Right)
-#define SURFACE_WOBBLING_WARP                0x00FD // Pool warp (HMC & DDD)
-#define SURFACE_TRAPDOOR                     0x00FF // Bowser Left trapdoor, has no action defined
+#define SURFACE_PAINTING_WARP_E5             0x00E5 // Painting warp (Unused - Left)
+#define SURFACE_PAINTING_WARP_E6             0x00E6 // Painting warp (Unused - Medium)
+#define SURFACE_PAINTING_WARP_E7             0x00E7 // Painting warp (Unused - Right)
+#define SURFACE_WOBBLING_WARP                0x00FD // Pool warp (HMC & DDD)SURFACE_DEFAULT
+#define SURFACE_PAINTING_WARP_TSNS1             0x0100 // Painting warp (Unused - Left)
+#define SURFACE_PAINTING_WARP_TSNS2             0x0101 // Painting warp (Unused - Medium)
+#define SURFACE_PAINTING_WARP_TSNS3             0x0102 // Painting warp (Unused - Right)
 
+#define SURFACE_IS_NEW_WATER(cmd)               (((cmd) == SURFACE_NEW_WATER) || ((cmd) == SURFACE_NEW_WATER_BOTTOM))
 #define SURFACE_IS_QUICKSAND(cmd)               ((((cmd) >= SURFACE_SHALLOW_QUICKSAND) && ((cmd) <= SURFACE_MOVING_QUICKSAND)) || ((cmd) == SURFACE_INSTANT_MOVING_QUICKSAND))
 #define SURFACE_IS_NOT_HARD(cmd)                (((cmd) != SURFACE_HARD) && !((cmd) >= SURFACE_HARD_SLIPPERY && ((cmd) <= SURFACE_HARD_NOT_SLIPPERY)))
-#define SURFACE_IS_PAINTING_WARP(cmd)           (((cmd) >= SURFACE_PAINTING_WARP_D3) && ((cmd) < SURFACE_WOBBLING_WARP)) // skips SURFACE_WOBBLING_WARP
+#define SURFACE_IS_PAINTING_WOBBLE(cmd)         (((cmd) >= SURFACE_PAINTING_WOBBLE_A6) && ((cmd) <= SURFACE_PAINTING_WOBBLE_TSNS3))
+#define SURFACE_IS_PAINTING_WOBBLE_LEFT(cmd)    ((((cmd) - SURFACE_PAINTING_WOBBLE_A6) % 3) == 0)
+#define SURFACE_IS_PAINTING_WOBBLE_MIDDLE(cmd)  ((((cmd) - SURFACE_PAINTING_WOBBLE_A7) % 3) == 0)
+#define SURFACE_IS_PAINTING_WOBBLE_RIGHT(cmd)   ((((cmd) - SURFACE_PAINTING_WOBBLE_A8) % 3) == 0)
+#define SURFACE_IS_PAINTING_WARP(cmd)           (((cmd) >= SURFACE_PAINTING_WARP_D3) && ((cmd) < SURFACE_PAINTING_WARP_TSNS3)) // skips SURFACE_WOBBLING_WARP
+#define SURFACE_IS_PAINTING_WARP_LEFT(cmd)      ((((cmd) - SURFACE_PAINTING_WARP_D3  ) % 3) == 0)
+#define SURFACE_IS_PAINTING_WARP_MIDDLE(cmd)    ((((cmd) - SURFACE_PAINTING_WARP_D4  ) % 3) == 0)
+#define SURFACE_IS_PAINTING_WARP_RIGHT(cmd)     ((((cmd) - SURFACE_PAINTING_WARP_D5  ) % 3) == 0)
 #define SURFACE_IS_INSTANT_WARP(cmd)            (((cmd) >= SURFACE_INSTANT_WARP_1B) && ((cmd) <= SURFACE_INSTANT_WARP_1E))
-
-// Used when NEW_WATER_SURFACES is set
-#define SURFACE_IS_NEW_WATER(cmd)               (((cmd) == SURFACE_NEW_WATER) || ((cmd) == SURFACE_NEW_WATER_BOTTOM))
+#define SURFACE_IS_WARP(cmd)                    (((cmd) == SURFACE_LOOK_UP_WARP) || ((cmd) == SURFACE_WOBBLING_WARP) || SURFACE_IS_PAINTING_WARP(cmd) || SURFACE_IS_INSTANT_WARP(cmd))
+#define SURFACE_IS_UNSAFE(cmd)                  (((cmd) == SURFACE_BURNING) || SURFACE_IS_QUICKSAND(cmd) || SURFACE_IS_WARP(cmd))
 
 #define SURFACE_CLASS_DEFAULT       0x0000
 #define SURFACE_CLASS_VERY_SLIPPERY 0x0013

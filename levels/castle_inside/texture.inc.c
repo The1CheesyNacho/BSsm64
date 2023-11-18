@@ -214,3 +214,13 @@ ALIGNED8 static const Texture inside_castle_seg7_texture_0701F800[] = {
 ALIGNED8 static const Texture inside_castle_seg7_texture_07020800[] = {
 #include "levels/castle_inside/40.rgba16.inc.c"
 };
+
+// 0x07020800 - 0x07021800
+ALIGNED8 static const Texture inside_castle_seg7_texture_02020800[] = {
+#include "levels/castle_inside/41.rgba16.inc.c"
+};
+
+// 0x07020800 - 0x07021800
+ALIGNED8 static const Texture inside_castle_seg7_texture_03320800[] = {
+#include "levels/castle_inside/42.rgba16.inc.c"
+};

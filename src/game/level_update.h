@@ -105,6 +105,9 @@ enum WarpNodes {
     WARP_NODE_28,
     WARP_NODE_29,
     WARP_NODE_2A,
+    WARP_NODE_2B,
+    WARP_NODE_2C,
+    WARP_NODE_2D,
     WARP_NODE_32 = 0x32,
     WARP_NODE_33,
     WARP_NODE_34,
@@ -112,6 +115,7 @@ enum WarpNodes {
     WARP_NODE_36,
     WARP_NODE_37,
     WARP_NODE_38,
+    WARP_NODE_39,
     WARP_NODE_3A = 0x3A,
     WARP_NODE_64 = 0x64,
     WARP_NODE_65,
@@ -122,6 +126,7 @@ enum WarpNodes {
     WARP_NODE_6B = 0x6B,
     WARP_NODE_6C,
     WARP_NODE_6D,
+    WARP_NODE_6E,
 
     // Special Warps
     WARP_NODE_SUCCESS = 0xF0,

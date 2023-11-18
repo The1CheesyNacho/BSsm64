@@ -3736,7 +3736,7 @@ const Collision inside_castle_seg7_area_1_collision[] = {
     COL_TRI_INIT(SURFACE_PAINTING_WARP_DE, 2),
     COL_TRI(173, 174, 175),
     COL_TRI(173, 176, 174),
-    COL_TRI_INIT(SURFACE_TRAPDOOR, 2),
+    COL_TRI_INIT(SURFACE_DEFAULT, 2),
     COL_TRI(77, 78, 79),
     COL_TRI(77, 79, 80),
     COL_TRI_STOP(),
