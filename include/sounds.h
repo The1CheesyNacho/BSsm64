@@ -248,6 +248,51 @@ enum SoundBank {
 #define SOUND_PEACH_BAKE_A_CAKE                  /* 0x243DFF81 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x3D, 0xFF, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
 #define SOUND_PEACH_FOR_MARIO                    /* 0x243EFF81 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x3E, 0xFF, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
 #define SOUND_PEACH_MARIO2                       /* 0x243FFF81 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x3F, 0xFF, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_YAH_WAH_HOO                                   SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x40, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_HOOHOO                       /* 0x24038080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x43, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_YAHOO                        /* 0x24048080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x44, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_UH                           /* 0x24058080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x45, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_HRMM                         /* 0x24068080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x46, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_WAH2                         /* 0x24078080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x47, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_WHOA                         /* 0x2408C080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x48, 0xC0, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_EEUH                         /* 0x24098080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x49, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_ATTACKED                     /* 0x240AFF80 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x4A, 0xFF, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_OOOF                         /* 0x240B8080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x4B, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_OOOF2                        /* 0x240BD080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x4B, 0xD0, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_HERE_WE_GO                   /* 0x240C8080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x4C, 0xFF, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_YAWNING                      /* 0x240D8080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x4D, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_SNORING1                     /* 0x240E8080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x4E, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_SNORING2                     /* 0x240F8080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x4F, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_WAAAOOOW                     /* 0x2410C080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x50, 0xC0, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_HAHA                         /* 0x24118080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x51, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_HAHA_2                       /* 0x2411F080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x51, 0xF0, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_UH2                          /* 0x2413D080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x53, 0xD0, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_UH2_2                        /* 0x24138080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x53, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_ON_FIRE                      /* 0x2414A080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x54, 0xA0, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_DYING                        /* 0x2415FF80 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x55, 0xFF, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE) // unverified
+#define SOUND_LUIGI_PANTING_COLD                 /* 0x24168080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x56, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+
+// A random number 0-2 is added to the sound ID before playing
+#define SOUND_LUIGI_PANTING                      /* 0x24188080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x58, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_COUGHING1                    /* 0x241B8080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x5B, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_COUGHING2                    /* 0x241C8080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x5C, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_COUGHING3                    /* 0x241D8080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x5D, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_PUNCH_YAH                    /* 0x241E8080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x5E, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_PUNCH_HOO                    /* 0x241F8080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x5F, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_MAMA_MIA                     /* 0x24208080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x60, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_OKEY_DOKEY                   /* 0x20210000 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x61, 0x00, 0) // unused
+#define SOUND_LUIGI_GROUND_POUND_WAH             /* 0x24228080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x62, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_DROWNING                     /* 0x2423F080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x63, 0xF0, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_PUNCH_WAH                    /* 0x24248080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x64, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+// A random number 0-4 is added to the sound ID before playing, producing one of
+// Yahoo! (60% chance), Waha! (20%), or Yippee! (20%).
+#define SOUND_LUIGI_YAHOO_WAHA_YIPPEE            /* 0x242B8080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x6B, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+
+#define SOUND_LUIGI_DOH                          /* 0x24308080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x70, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_TWIRL_BOUNCE                 /* 0x24348080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x71, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_SNORING3                     /* 0x2435FF80 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x72, 0xFF, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_SO_LONGA_BOWSER              /* 0x24368080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x73, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
+#define SOUND_LUIGI_IMA_TIRED                    /* 0x24378080 */ SOUND_ARG_LOAD(SOUND_BANK_VOICE,    0x74, 0x80, SOUND_NO_PRIORITY_LOSS | SOUND_DISCRETE)
 
 /* General Sound Effects */
 #define SOUND_GENERAL_ACTIVATE_CAP_SWITCH        /* 0x30008081 */ SOUND_ARG_LOAD(SOUND_BANK_GENERAL,  0x00, 0x80, SOUND_DISCRETE)
@@ -595,5 +640,53 @@ enum SoundBank {
 #define SOUND_OBJ2_MONTY_MOLE_APPEAR             /* 0x90678081 */ SOUND_ARG_LOAD(SOUND_BANK_OBJ2,     0x67, 0x80, SOUND_DISCRETE)
 #define SOUND_OBJ2_BOSS_DIALOG_GRUNT             /* 0x90694081 */ SOUND_ARG_LOAD(SOUND_BANK_OBJ2,     0x69, 0x40, SOUND_DISCRETE)
 #define SOUND_OBJ2_MRI_SPINNING                  /* 0x906B0081 */ SOUND_ARG_LOAD(SOUND_BANK_OBJ2,     0x6B, 0x00, SOUND_DISCRETE)
+
+#define SOUND_CHARACTER_YAH_WAH_HOO           gCharacterSounds[0]
+#define SOUND_CHARACTER_HOOHOO                gCharacterSounds[1]
+#define SOUND_CHARACTER_YAHOO                 gCharacterSounds[2]
+#define SOUND_CHARACTER_UH                    gCharacterSounds[3]
+#define SOUND_CHARACTER_HRMM                  gCharacterSounds[4]
+#define SOUND_CHARACTER_WAH2                  gCharacterSounds[5]
+#define SOUND_CHARACTER_WHOA                  gCharacterSounds[6]
+#define SOUND_CHARACTER_EEUH                  gCharacterSounds[7]
+#define SOUND_CHARACTER_ATTACKED              gCharacterSounds[8]
+#define SOUND_CHARACTER_OOOF                  gCharacterSounds[9]
+#define SOUND_CHARACTER_OOOF2                 gCharacterSounds[10]
+#define SOUND_CHARACTER_HERE_WE_GO            gCharacterSounds[11]
+#define SOUND_CHARACTER_YAWNING               gCharacterSounds[12]
+#define SOUND_CHARACTER_SNORING1              gCharacterSounds[13]
+#define SOUND_CHARACTER_SNORING2              gCharacterSounds[14]
+#define SOUND_CHARACTER_WAAAOOOW              gCharacterSounds[15]
+#define SOUND_CHARACTER_HAHA                  gCharacterSounds[16]
+#define SOUND_CHARACTER_HAHA_WATER            gCharacterSounds[17]
+#define SOUND_CHARACTER_UH_LEDGE_CLIMB_FAST   gCharacterSounds[18]
+#define SOUND_CHARACTER_UH_LONG_JUMP_LAND     gCharacterSounds[19]
+#define SOUND_CHARACTER_ON_FIRE               gCharacterSounds[20]
+#define SOUND_CHARACTER_DYING                 gCharacterSounds[21]
+#define SOUND_CHARACTER_PANTING_COLD          gCharacterSounds[22]
+#define SOUND_CHARACTER_PANTING               gCharacterSounds[23]
+#define SOUND_CHARACTER_COUGHING1             gCharacterSounds[24]
+#define SOUND_CHARACTER_COUGHING2             gCharacterSounds[25]
+#define SOUND_CHARACTER_COUGHING3             gCharacterSounds[26]
+#define SOUND_CHARACTER_PUNCH_YAH             gCharacterSounds[27]
+#define SOUND_CHARACTER_PUNCH_HOO             gCharacterSounds[28]
+#define SOUND_CHARACTER_MAMA_MIA              gCharacterSounds[29]
+#define SOUND_CHARACTER_OKEY_DOKEY            gCharacterSounds[30]
+#define SOUND_CHARACTER_GROUND_POUND_WAH      gCharacterSounds[31]
+#define SOUND_CHARACTER_DROWNING              gCharacterSounds[32]
+#define SOUND_CHARACTER_PUNCH_WAH             gCharacterSounds[33]
+#define SOUND_CHARACTER_YAHOO_WAHA_YIPPEE     gCharacterSounds[34]
+#define SOUND_CHARACTER_DOH                   gCharacterSounds[35]
+#define SOUND_CHARACTER_GAME_OVER             gCharacterSounds[36]
+#define SOUND_CHARACTER_HELLO                 gCharacterSounds[37]
+#define SOUND_CHARACTER_PRESS_START_TO_PLAY   gCharacterSounds[38]
+#define SOUND_CHARACTER_TWIRL_BOUNCE          gCharacterSounds[39]
+#define SOUND_CHARACTER_SNORING3              gCharacterSounds[40]
+#define SOUND_CHARACTER_SO_LONGA_BOWSER       gCharacterSounds[41]
+#define SOUND_CHARACTER_IMA_TIRED             gCharacterSounds[42]
+
+extern u32 gCharacterSounds[];
+extern void set_character_sound();
+
 
 #endif // SOUNDS_H
