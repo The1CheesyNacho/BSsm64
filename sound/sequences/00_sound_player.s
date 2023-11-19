@@ -8242,7 +8242,7 @@ envelope_goto 3
 
 .sound_luigi_jump_hoo:
 chan_setbank 8
-chan_setinstr 28
+chan_setinstr 0
 chan_setlayer 0, .layer_luigi_jump_hoo
 chan_end
 
@@ -8268,7 +8268,7 @@ layer_end
 
 .sound_luigi_jump_yah:
 chan_setbank 10
-chan_setinstr 29
+chan_setinstr 9
 chan_setlayer 0, .layer_luigi_jump_yah
 chan_end
 
@@ -8276,7 +8276,7 @@ chan_end
 layer_transpose -2
 .layer_luigi_jump_yah2:
 layer_portamento 0x82, 39, 200
-layer_note1 40, 0x24, 120
+layer_note1 42, 0x24, 120
 layer_end
 
 .sound_luigi_hoohoo:
