@@ -556,6 +556,8 @@ s32 act_backflip(struct MarioState *m) {
         return set_mario_action(m, ACT_GROUND_POUND, 0);
     }
 
+    if (Character == 1 && m->vel[1] < 0) return set_mario_action(m, ACT_TWIRLING, 0);
+
     play_mario_sound(m, SOUND_ACTION_TERRAIN_JUMP, SOUND_CHARACTER_YAH_WAH_HOO);
     common_air_action_step(m, ACT_BACKFLIP_LAND, MARIO_ANIM_BACKFLIP, 0);
 #ifdef RUMBLE_FEEDBACK
@@ -739,9 +741,12 @@ s32 act_twirling(struct MarioState *m) {
 
     if (m->input & INPUT_A_DOWN) {
         yawVelTarget = 0x2000;
+    } else if (m->input & INPUT_Z_DOWN) {
+        yawVelTarget = 0x800;
     } else {
         yawVelTarget = 0x1800;
     }
+
 
     m->angleVel[1] = approach_s32(m->angleVel[1], yawVelTarget, 0x200, 0x200);
     m->twirlYaw += m->angleVel[1];
@@ -756,8 +761,23 @@ s32 act_twirling(struct MarioState *m) {
     }
 
     update_lava_boost_or_twirling(m);
-
+    if (Character == 1){
     switch (perform_air_step(m, 0)) {
+        case AIR_STEP_LANDED:
+            set_mario_action(m, ACT_BACKFLIP_LAND, 0);
+            break;
+
+        case AIR_STEP_HIT_WALL:
+            mario_bonk_reflection(m, FALSE);
+            break;
+
+        case AIR_STEP_HIT_LAVA_WALL:
+            lava_boost_on_wall(m);
+            break;
+    }
+}
+else{
+        switch (perform_air_step(m, 0)) {
         case AIR_STEP_LANDED:
             set_mario_action(m, ACT_TWIRL_LAND, 0);
             break;
@@ -770,6 +790,7 @@ s32 act_twirling(struct MarioState *m) {
             lava_boost_on_wall(m);
             break;
     }
+}
 
     m->marioObj->header.gfx.angle[1] += m->twirlYaw;
 #ifdef RUMBLE_FEEDBACK

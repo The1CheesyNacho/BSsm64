@@ -1,4 +1,3 @@
-#include "src/game/texscroll.h"
 #include <PR/ultratypes.h>
 
 #include "audio/external.h"
@@ -29,7 +28,7 @@
  */
 
 // Star Selector count models printed in the act selector menu.
-static struct Object *sStarSelectorModels[6];
+static struct Object *sStarSelectorModels[8];
 
 // The act the course is loaded as, affects whether some objects spawn.
 static s8 sLoadedActNum;
@@ -439,7 +438,7 @@ s32 lvl_update_obj_and_load_act_button_actions(UNUSED s32 arg, UNUSED s32 unused
         }
     }
 
-    area_update_objects(); scroll_textures();
+    area_update_objects();
     sActSelectorMenuTimer++;
     return sLoadedActNum;
 }

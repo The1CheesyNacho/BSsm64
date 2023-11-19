@@ -20,7 +20,7 @@
 #define PEDRO_SPOT_FIX (1 || COLLISION_FIXES)
 
 // Push Mario out of sloped ceilings instead of stopping or knocking.
-#define BETTER_CEILING_HANDLING (1 || COLLISION_FIXES)
+#define BETTER_CEILING_HANDLING (0)
 
 // Adds margins to celling surfaces (except hangable ones).
 #define CEILING_MARGINS (1 || COLLISION_FIXES)
@@ -29,7 +29,7 @@
 #define BETTER_FIND_WALL_COLLISION (1 || COLLISION_FIXES)
 
 // Improves resolve and return wall checks, along with some fixes.
-#define BETTER_RESOLVE_WALL_COLLISION (1 || COLLISION_FIXES)
+#define BETTER_RESOLVE_WALL_COLLISION (0)
 
 // Adds water collision surfaces.
 #define WATER_SURFACES (1 || COLLISION_FIXES)

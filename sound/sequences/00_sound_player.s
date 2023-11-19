@@ -8431,7 +8431,7 @@ layer_end
 
 .sound_luigi_waaaooow:
 chan_setbank 8
-chan_setinstr 34
+chan_setinstr 35
 chan_setlayer 0, .layer_luigi_waaaooow
 chan_end
 
@@ -8464,7 +8464,7 @@ layer_end
 
 .sound_luigi_on_fire:
 chan_setbank 8
-chan_setinstr 35
+chan_setinstr 36
 chan_setlayer 0, .layer_luigi_on_fire
 chan_end
 
@@ -8602,7 +8602,7 @@ layer_end
 
 .sound_luigi_mama_mia:
 chan_setbank 10
-chan_setinstr 33
+chan_setinstr 34
 chan_setlayer 0, .layer_luigi_mama_mia
 chan_end
 
@@ -8669,9 +8669,10 @@ chan_end
 layer_note1 42, 0x5a, 97
 layer_end
 
+
 .sound_luigi_doh:
 chan_setbank 8
-chan_setinstr 32
+chan_setinstr 33
 chan_setlayer 0, .layer_luigi_doh
 chan_end
 
@@ -8681,7 +8682,7 @@ chan_end
 
 .sound_luigi_twirl_bounce:
 chan_setbank 8
-chan_setinstr 20
+chan_setinstr 33
 chan_setlayer 0, .layer_luigi_twirl_bounce
 chan_end
 

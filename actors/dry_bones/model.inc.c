@@ -9,20 +9,20 @@ UNUSED static const Lights1 dry_bones_lights_unused1 = gdSPDefLights1(
 
 // 0x060025A0
 static const Lights1 dry_bones_seg6_lights_060025A0 = gdSPDefLights1(
-    0x00, 0x59, 0x00,
-    0x00, 0xb2, 0x00, 0x28, 0x28, 0x28
+    0x57, 0x68, 0x6b,
+    0x9a, 0xb5, 0xba, 0x28, 0x28, 0x28
 );
 
 // 0x060025B8
 static const Lights1 dry_bones_seg6_lights_060025B8 = gdSPDefLights1(
-    0x70, 0x57, 0x00,
-    0xe0, 0xae, 0x00, 0x28, 0x28, 0x28
+    0x9a, 0x9c, 0xac,
+    0xce, 0xcf, 0xd7, 0x28, 0x28, 0x28
 );
 
 // 0x060025D0
 static const Lights1 dry_bones_seg6_lights_060025D0 = gdSPDefLights1(
-    0x7f, 0x7f, 0x7f,
-    0xff, 0xff, 0xff, 0x28, 0x28, 0x28
+    0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
@@ -33,8 +33,8 @@ UNUSED static const Lights1 dry_bones_lights_unused2 = gdSPDefLights1(
 
 // 0x06002600
 static const Lights1 dry_bones_seg6_lights_06002600 = gdSPDefLights1(
-    0x00, 0x54, 0x00,
-    0x00, 0xa9, 0x00, 0x28, 0x28, 0x28
+    0x57, 0x68, 0x6b,
+    0x9a, 0xb5, 0xba, 0x28, 0x28, 0x28
 );
 
 // 0x06002618
@@ -100,6 +100,11 @@ ALIGNED8 static const Texture dry_bones_seg6_texture_06005E48[] = {
 static const Lights1 dry_bones_seg6_lights_06006E48 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
+);
+
+static const Lights1 dry_bones_seg6_lights_06002E48 = gdSPDefLights1(
+    0x00, 0x00, 0x00,
+    0x00, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x06006E60
@@ -354,12 +359,12 @@ const Gfx dry_bones_seg6_dl_06007850[] = {
 
 // 0x06007970 - 0x06007A60
 const Gfx dry_bones_seg6_dl_06007970[] = {
-    gsSPLight(&dry_bones_seg6_lights_06006E60.l, 1),
-    gsSPLight(&dry_bones_seg6_lights_06006E60.a, 2),
+    gsSPLight(&dry_bones_seg6_lights_06002E48.l, 1),
+    gsSPLight(&dry_bones_seg6_lights_06002E48.a, 2),
     gsSPVertex(dry_bones_seg6_vertex_06007488, 3, 0),
     gsSP1Triangle( 0,  1,  2, 0x0),
-    gsSPLight(&dry_bones_seg6_lights_06006E48.l, 1),
-    gsSPLight(&dry_bones_seg6_lights_06006E48.a, 2),
+    gsSPLight(&dry_bones_seg6_lights_06002E48.l, 1),
+    gsSPLight(&dry_bones_seg6_lights_06002E48.a, 2),
     gsSPVertex(dry_bones_seg6_vertex_060074B8, 16, 0),
     gsSP2Triangles( 0,  1,  2, 0x0,  3,  4,  5, 0x0),
     gsSP2Triangles( 6,  4,  7, 0x0,  4,  6,  5, 0x0),
@@ -429,8 +434,8 @@ static const Lights1 dry_bones_seg6_lights_06007B48 = gdSPDefLights1(
 
 // 0x06007B60
 static const Lights1 dry_bones_seg6_lights_06007B60 = gdSPDefLights1(
-    0x70, 0x57, 0x00,
-    0xe0, 0xae, 0x00, 0x28, 0x28, 0x28
+    0x9a, 0x9c, 0xac,
+    0xce, 0xcf, 0xd7, 0x28, 0x28, 0x28
 );
 
 // 0x06007B78
@@ -616,8 +621,8 @@ static const Lights1 dry_bones_seg6_lights_060082C0 = gdSPDefLights1(
 
 // 0x060082D8
 static const Lights1 dry_bones_seg6_lights_060082D8 = gdSPDefLights1(
-    0x00, 0x64, 0x00,
-    0x00, 0xc8, 0x00, 0x28, 0x28, 0x28
+    0x2d, 0x33, 0x35,
+    0x90, 0xa6, 0xae, 0x28, 0x28, 0x28
 );
 
 // 0x060082F0
@@ -740,8 +745,8 @@ static const Lights1 dry_bones_seg6_lights_06008740 = gdSPDefLights1(
 
 // 0x06008758
 static const Lights1 dry_bones_seg6_lights_06008758 = gdSPDefLights1(
-    0x00, 0x64, 0x00,
-    0x00, 0xc8, 0x00, 0x28, 0x28, 0x28
+    0x2d, 0x33, 0x35,
+    0x90, 0xa6, 0xae, 0x28, 0x28, 0x28
 );
 
 // 0x06008770

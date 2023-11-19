@@ -190,21 +190,27 @@
             "ifdef": ["VERSION_US", "VERSION_EU", "VERSION_SH"],
             "release_rate": 208,
             "envelope": "envelope0",
-            "sound": "25_luigi_doh"
+            "sound": "24_luigi_yahoo"
         },
         "inst33": {
             "ifdef": ["VERSION_US", "VERSION_EU", "VERSION_SH"],
             "release_rate": 208,
             "envelope": "envelope0",
-            "sound": "26_luigi_mama_mia"
+            "sound": "25_luigi_doh"
         },
         "inst34": {
             "ifdef": ["VERSION_US", "VERSION_EU", "VERSION_SH"],
             "release_rate": 208,
             "envelope": "envelope0",
-            "sound": "27_luigi_falling"
+            "sound": "26_luigi_mama_mia"
         },
         "inst35": {
+            "ifdef": ["VERSION_US", "VERSION_EU", "VERSION_SH"],
+            "release_rate": 208,
+            "envelope": "envelope0",
+            "sound": "27_luigi_falling"
+        },
+        "inst36": {
             "ifdef": ["VERSION_US", "VERSION_EU", "VERSION_SH"],
             "release_rate": 208,
             "envelope": "envelope0",
@@ -247,6 +253,7 @@
         "inst32",
         "inst33",
         "inst34",
-        "inst35"
+        "inst35",
+        "inst36"
     ]
 }

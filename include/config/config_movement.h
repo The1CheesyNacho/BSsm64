@@ -23,7 +23,7 @@
 #define FIX_LESS_GROUND_BONKS (0 || QOL_FIXES)
 
 /// Fixes input polling by setting an initial min walking speed.
-#define FIX_INITIAL_WALKING_SPEED (0 || QOL_FIXES)
+#define FIX_INITIAL_WALKING_SPEED (1 || QOL_FIXES)
 
 /// Fixes slideVel position being slightly off/asymmetric.
 #define FIX_SLIDE_VEL_UPDATE_SLIDING (0 || QOL_FIXES)
@@ -38,7 +38,7 @@
 #define FIX_WATER_PLUNGE_UPWARP (0 || QOL_FIXES || COLLISION_FIXES)
 
 /// Fixes fake ledge grab on steep slopes.
-#define FIX_LEDGE_GRAB_STEEP_SLOPES (0 || QOL_FIXES)
+#define FIX_LEDGE_GRAB_STEEP_SLOPES (1 || QOL_FIXES)
 
 /// Fixes eating inputs on landing actions.
 #define FIX_ACTION_LAND_EAT_INPUT (0 || QOL_FIXES)
@@ -53,7 +53,7 @@
 #define BETTER_HANGING (0 || QOL_FEATURES)
 
 /// Improves flying so it's more responsive and smoother.
-#define BETTER_FLYING (0 || QOL_FEATURES)
+#define BETTER_FLYING (1 || QOL_FEATURES)
 
 /// Makes turning walking speed based of velocity.
 #define VELOCITY_BASED_TURN_SPEED (0 || QOL_FEATURES)
@@ -93,7 +93,7 @@
 #define FIX_LAVA_INTERACTION (0 || QOL_FIXES)
 
 /// Makes Mario's squish scale smooth rather than being instantly set.
-#define SMOOTH_SQUISH (0 || QOL_FEATURES)
+#define SMOOTH_SQUISH (1 || QOL_FEATURES)
 
 /// When Mario hits a floor underwater, his pitch approaches the floor pitch instead of instantly snapping to it.
 #define SMOOTH_PITCH_WHEN_HITTING_FLOOR_UNDERWATER (0 || QOL_FEATURES)
