@@ -152,6 +152,9 @@
 #define SURFACE_PAINTING_WARP_TSNS1          0x00FD // Painting warp (Unused - Left)
 #define SURFACE_PAINTING_WARP_TSNS2          0x00FE // Painting warp (Unused - Medium)
 #define SURFACE_PAINTING_WARP_TSNS3          0x00FF // Painting warp (Unused - Right)
+#define SURFACE_PAINTING_WARP_BBF1          0x0100 // Painting warp (Unused - Left)
+#define SURFACE_PAINTING_WARP_BBF2          0x0101 // Painting warp (Unused - Medium)
+#define SURFACE_PAINTING_WARP_BBF3          0x0102 // Painting warp (Unused - Right)
 #define SURFACE_WOBBLING_WARP                0x0103 // Pool warp (HMC & DDD)
 #define SURFACE_BAZINGA                      0x0106 
 #define SURFACE_TRAPDOOR                     0x0100 // Bowser Left trapdoor, has no action defined

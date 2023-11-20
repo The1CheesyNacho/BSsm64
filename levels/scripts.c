@@ -50,6 +50,9 @@
 #include "levels/bhb/header.h"
 #include "levels/hh/header.h"
 #include "levels/REC_ROOM/header.h"
+#include "levels/sr/header.h"
+#include "levels/ktp/header.h"
+#include "levels/sht/header.h"
 
 #include "level_headers.h"
 

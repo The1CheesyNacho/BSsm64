@@ -1,0 +1,10 @@
+extern const GeoLayout sr_area_1_geo[];
+extern const GeoLayout sr_area_1[];
+extern const Collision sr_area_1_collision[];
+extern const MacroObject sr_area_1_macro_objs[];
+extern Lights1 sr_dl_sm64_material_001_lights;
+extern Vtx sr_dl_Cube_mesh_layer_1_vtx_0[24];
+extern Gfx sr_dl_Cube_mesh_layer_1_tri_0[];
+extern Gfx mat_sr_dl_sm64_material_001[];
+extern Gfx sr_dl_Cube_mesh_layer_1[];
+extern Gfx sr_dl_material_revert_render_settings[];
