@@ -432,8 +432,6 @@ s32 mario_get_floor_class(struct MarioState *m) {
             case SURFACE_VERY_SLIPPERY:
             case SURFACE_ICE:
             case SURFACE_HARD_VERY_SLIPPERY:
-            case SURFACE_NOISE_VERY_SLIPPERY_73:
-            case SURFACE_NOISE_VERY_SLIPPERY_74:
             case SURFACE_NOISE_VERY_SLIPPERY:
             case SURFACE_NO_CAM_COL_VERY_SLIPPERY:
                 floorClass = SURFACE_CLASS_VERY_SLIPPERY;
@@ -510,8 +508,6 @@ u32 mario_get_terrain_sound_addend(struct MarioState *m) {
                 case SURFACE_VERY_SLIPPERY:
                 case SURFACE_ICE:
                 case SURFACE_HARD_VERY_SLIPPERY:
-                case SURFACE_NOISE_VERY_SLIPPERY_73:
-                case SURFACE_NOISE_VERY_SLIPPERY_74:
                 case SURFACE_NOISE_VERY_SLIPPERY:
                 case SURFACE_NO_CAM_COL_VERY_SLIPPERY:
                     floorSoundType = 3;

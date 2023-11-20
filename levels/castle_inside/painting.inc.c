@@ -97,6 +97,14 @@ static const Gfx inside_castle_seg7_painting_dl_07021AC0[] = {
     gsSPEndDisplayList(),
 };
 
+// 0x07021AC0 - 0x07021AE0
+static const Gfx funny_seg7_painting_dl_07021AC0[] = {
+    gsDPTileSync(),
+    gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 16, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 5, G_TX_NOLOD, G_TX_CLAMP, 6, G_TX_NOLOD),
+    gsDPSetTileSize(0, 0, 0, (64 - 1) << G_TEXTURE_IMAGE_FRAC, (32 - 1) << G_TEXTURE_IMAGE_FRAC),
+    gsSPEndDisplayList(),
+};
+
 // 0x07021AE0 - 0x07021FFA
 static const PaintingData inside_castle_seg7_painting_texture_map_bottom_07021AE0[] = {
     85, // num mappings
@@ -557,8 +565,8 @@ static const PaintingData inside_castle_seg7_painting_texture_map_top_07021FFC[]
 
 // 0x07022518
 static const PaintingData *const inside_castle_seg7_painting_texture_maps_07022518[] = {
-    inside_castle_seg7_painting_texture_map_bottom_07021AE0,
     inside_castle_seg7_painting_texture_map_top_07021FFC,
+    inside_castle_seg7_painting_texture_map_bottom_07021AE0,
 };
 
 UNUSED static const u64 castle_inside_unused_0 = 0x0;
@@ -1751,7 +1759,7 @@ struct Painting thi_huge_painting = {
     /* Size */  1638.4f,
 };
 
-// 0x07023C38 - 0x07023CB0
+// 0x07023620 - 0x07023698
 struct Painting tsns_painting = {
     /* id */ 0x000E,
     /* Image Count */ 0x02,
@@ -1771,9 +1779,9 @@ struct Painting tsns_painting = {
     /* Texture Maps */ inside_castle_seg7_painting_texture_maps_07022518,
     /* Textures */     inside_castle_seg7_painting_textures_tsns,
     /* Texture w, h */ 64, 32,
-    /* Ripple DList */ inside_castle_seg7_painting_dl_07021AC0,
+    /* Ripple DList */ funny_seg7_painting_dl_07021AC0,
     /* Ripple Trigger */ RIPPLE_TRIGGER_PROXIMITY,
     /* Alpha */ 0xFF,
     /* Mario Below */  0x00, 0x00, 0x00, /* Whether or not Mario is below the painting */
-    /* Size */  400.4f,
+    /* Size */  364.0f,
 };
