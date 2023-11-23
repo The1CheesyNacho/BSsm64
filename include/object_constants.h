@@ -18,6 +18,16 @@
 #define ACTIVE_FLAG_UNK9                   (1 <<  9) // 0x0200
 #define ACTIVE_FLAG_UNK10                  (1 << 10) // 0x0400
 
+	/* Blargg */
+	/* Animations */
+#define UNBABA_ANIM_SWIM 0
+#define UNBABA_ANIM_ATTACK 1	
+
+/* oAction */
+#define UNBABA_ACT_IDLE 0
+#define UNBABA_ACT_SWIM 1
+#define UNBABA_ACT_ATTACK 2
+
 /* respawnInfo */
 #define RESPAWN_INFO_DONT_RESPAWN 0xFF
 

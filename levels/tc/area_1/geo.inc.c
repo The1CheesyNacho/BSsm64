@@ -4,6 +4,7 @@ const GeoLayout tc_area_1_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, tc_dl_Cube_mesh_layer_1),
+		GEO_DISPLAY_LIST(LAYER_ALPHA, tc_dl_Cube_mesh_layer_4),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -14,7 +15,7 @@ const GeoLayout tc_area_1[] = {
 		GEO_OPEN_NODE(),
 			GEO_NODE_ORTHO(100.0000),
 			GEO_OPEN_NODE(),
-				GEO_BACKGROUND(BACKGROUND_OCEAN_SKY, geo_skybox_main),
+				GEO_BACKGROUND_COLOR(0x0001),
 			GEO_CLOSE_NODE(),
 		GEO_CLOSE_NODE(),
 		GEO_ZBUFFER(1),
@@ -30,6 +31,7 @@ const GeoLayout tc_area_1[] = {
 			GEO_CLOSE_NODE(),
 		GEO_CLOSE_NODE(),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, tc_dl_material_revert_render_settings),
+		GEO_DISPLAY_LIST(LAYER_ALPHA, tc_dl_material_revert_render_settings),
 	GEO_CLOSE_NODE(),
 	GEO_END(),
 };

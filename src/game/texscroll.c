@@ -14,9 +14,14 @@
 
 
 #include "src/game/texscroll/ppf_texscroll.inc.c"
+#include "src/game/texscroll/tc_texscroll.inc.c"
 void scroll_textures() {
 	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_ppf_segment_7SegmentRomStart)) {
 		scroll_textures_ppf();
+	}
+
+	if(SCROLL_CONDITION(sSegmentROMTable[0x7] == (uintptr_t)_tc_segment_7SegmentRomStart)) {
+		scroll_textures_tc();
 	}
 
 }

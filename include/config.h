@@ -60,6 +60,10 @@
 
 #define BORDER_HEIGHT 0
 
+// Leave at 1 to keep the game single player.
+// Set it up to 4 to allow up to 4 players to play simultaneously.
+#define NUM_PLAYERS 4
+
 // Stack Size Defines
 #define IDLE_STACKSIZE 0x800
 #define STACKSIZE 0x2000

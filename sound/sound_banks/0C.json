@@ -253,6 +253,12 @@
             [187, 0],
             [32700, 0],
             "hang"
+        ],
+        "envelope42": [
+            [2, 32700],
+            [1, 32700],
+            [32700, 29430],
+            "hang"
         ]
     },
     "instruments": {
@@ -597,6 +603,13 @@
             "sound": "2B",
             "sound_hi": "2C"
         },
+        "bowser organ": {
+            "release_rate": 19,
+            "normal_range_hi": 50,
+            "envelope": "envelope42",
+            "sound":"34b_organ",
+            "sound_hi": "34c_organ_lq"
+        },
         "percussion": [
             {"release_rate": 10, "pan": 62, "envelope": "envelope11", "sound": {"sample": "06_kick_drum_1", "tuning": 0.210224}},
             {"release_rate": 10, "pan": 62, "envelope": "envelope11", "sound": {"sample": "06_kick_drum_1", "tuning": 0.2227245}},
@@ -723,6 +736,7 @@
         "Low Bell",
         "High Bell",
         "Harmonica",
-        "Percussion Loop"
+        "Percussion Loop",
+        "bowser organ"
     ]
 }

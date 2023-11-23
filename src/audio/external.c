@@ -366,6 +366,7 @@ u8 sBackgroundMusicDefaultVolume[] = {
     80,  // SEQ_EVENT_CUTSCENE_VICTORY
     70,  // SEQ_EVENT_CUTSCENE_ENDING
     65,  // SEQ_MENU_FILE_SELECT
+    65,  // SEQ_MENU_FILE_SELECT
     0,   // SEQ_EVENT_CUTSCENE_LAKITU (not in JP)
 };
 

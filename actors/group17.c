@@ -30,3 +30,5 @@ UNUSED static const u64 binid_4 = 4;
 #include "scuttlebug/anims/data.inc.c"
 #include "scuttlebug/anims/table.inc.c"
 UNUSED static const u64 binid_5 = 5;
+
+#include "pargg/model.inc.c"

@@ -531,7 +531,7 @@
 #define MODEL_SEAWEED                     0xC1        // seaweed_geo
 #define MODEL_AMP                         0xC2        // dAmpGeo
 #define MODEL_BOBOMB_BUDDY                0xC3        // bobomb_buddy_geo
-// find me
+#define MODEL_PARGG                       0xC4        // bobomb_buddy_geo
 // find me
 // find me
 #define MODEL_SSL_TOX_BOX                 0xC7        // ssl_geo_000630
