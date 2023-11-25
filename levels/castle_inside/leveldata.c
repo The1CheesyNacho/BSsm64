@@ -85,3 +85,7 @@
 #include "levels/castle_inside/water_level_pillar/collision.inc.c"
 #include "levels/castle_inside/areas/3/trajectory.inc.c"
 #include "levels/castle_inside/areas/3/movtext.inc.c"
+#include "levels/castle_inside/areas/4/collision.inc.c"
+#include "levels/castle_inside/areas/4/macro.inc.c"
+#include "levels/castle_inside/areas/4/spline.inc.c"
+#include "levels/castle_inside/areas/4/1/model.inc.c"

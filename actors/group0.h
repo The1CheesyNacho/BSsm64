@@ -359,4 +359,6 @@ extern const Gfx white_particle_small_unused_dl[];
 
 #include "statue/geo_header.h"
 
+#include "cat/geo_header.h"
+
 #endif

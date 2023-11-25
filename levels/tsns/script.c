@@ -24,27 +24,24 @@
 const LevelScript level_tsns_entry[] = {
 	INIT_LEVEL(),
 	LOAD_MIO0(0x7, _tsns_segment_7SegmentRomStart, _tsns_segment_7SegmentRomEnd), 
-	LOAD_MIO0(0xa, _water_skybox_mio0SegmentRomStart, _water_skybox_mio0SegmentRomEnd), 
+	LOAD_MIO0(0xa, _bits_skybox_mio0SegmentRomStart, _bits_skybox_mio0SegmentRomEnd), 
 	ALLOC_LEVEL_POOL(),
-	MARIO(MODEL_MARIO, 0x00000001, bhvMario),
+	MARIO(MODEL_MARIO, 0x00000001, bhvMario), 
 
 	/* Fast64 begin persistent block [level commands] */
 	/* Fast64 end persistent block [level commands] */
 
 	AREA(1, tsns_area_1),
-        WARP_NODE(/*id*/ WARP_NODE_0A,      /*destLevel*/ LEVEL_TSNS,    /*destArea*/ 1, /*destNode*/ WARP_NODE_0A, /*flags*/ WARP_NO_CHECKPOINT),
-        WARP_NODE(/*id*/ WARP_NODE_0B,      /*destLevel*/ LEVEL_TSNS,    /*destArea*/ 1, /*destNode*/ WARP_NODE_0C, /*flags*/ WARP_NO_CHECKPOINT),
-        WARP_NODE(/*id*/ WARP_NODE_0C,      /*destLevel*/ LEVEL_TSNS,    /*destArea*/ 1, /*destNode*/ WARP_NODE_0B, /*flags*/ WARP_NO_CHECKPOINT),
-        WARP_NODE(/*id*/ WARP_NODE_0D,      /*destLevel*/ LEVEL_TSNS,    /*destArea*/ 1, /*destNode*/ WARP_NODE_0E, /*flags*/ WARP_NO_CHECKPOINT),
-        WARP_NODE(/*id*/ WARP_NODE_0E,      /*destLevel*/ LEVEL_TSNS,    /*destArea*/ 1, /*destNode*/ WARP_NODE_0D, /*flags*/ WARP_NO_CHECKPOINT),
-        WARP_NODE(/*id*/ WARP_NODE_SUCCESS, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 1, /*destNode*/ 0x39, /*flags*/ WARP_NO_CHECKPOINT),
-        WARP_NODE(/*id*/ WARP_NODE_DEATH,   /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 1, /*destNode*/ 0x6E, /*flags*/ WARP_NO_CHECKPOINT),
+		WARP_NODE(0x0A, LEVEL_TSNS, 0x01, 0x0A, WARP_NO_CHECKPOINT),
+		WARP_NODE(0xF0, LEVEL_CASTLE, 0x02, 0x0A, WARP_NO_CHECKPOINT),
+		WARP_NODE(0xF1, LEVEL_CASTLE, 0x02, 0x0A, WARP_NO_CHECKPOINT),
 		OBJECT(MODEL_NONE, 0, 200, 0, 0, 0, 0, 0x000A0000, bhvSpinAirborneWarp),
 		MARIO_POS(0x01, 0, 0, 200, 0),
+		OBJECT(MODEL_STAR, -8, 324, -55, 0, 0, 0, 0x000A0000, bhvStar),
 		TERRAIN(tsns_area_1_collision),
 		MACRO_OBJECTS(tsns_area_1_macro_objs),
-		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_GRASS),
-		TERRAIN_TYPE(TERRAIN_GRASS),
+		SET_BACKGROUND_MUSIC(0x00, SEQ_EVENT_PIRANHA_PLANT),
+		TERRAIN_TYPE(TERRAIN_SAND),
 		/* Fast64 begin persistent block [area commands] */
 		/* Fast64 end persistent block [area commands] */
 	END_AREA(),
