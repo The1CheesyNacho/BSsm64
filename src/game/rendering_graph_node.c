@@ -14,8 +14,6 @@
 #include "config.h"
 #include "config/config_world.h"
 
-u8 gNumPlayers =0;
-
 /**
  * This file contains the code that processes the scene graph for rendering.
  * The scene graph is responsible for drawing everything except the HUD / text boxes.
@@ -345,11 +343,7 @@ void geo_process_perspective(struct GraphNodePerspective *node) {
         u16 perspNorm;
         Mtx *mtx = alloc_display_list(sizeof(*mtx));
 
-        sGeoAspectRatio = (f32) gCurGraphNodeRoot->width / (f32) gCurGraphNodeRoot->height;
-
-      if (gNumPlayers == 2) {
-                sGeoAspectRatio /= 2.0f;
-        }     
+        sGeoAspectRatio = (f32) gCurGraphNodeRoot->width / (f32) gCurGraphNodeRoot->height;   
 
         // Only "adjust" aspect radio on N64, so on PC targets EU still looks fine.
 #if defined(VERSION_EU) && defined(TARGET_N64)
