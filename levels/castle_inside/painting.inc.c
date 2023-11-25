@@ -565,9 +565,16 @@ static const PaintingData inside_castle_seg7_painting_texture_map_top_07021FFC[]
 
 // 0x07022518
 static const PaintingData *const inside_castle_seg7_painting_texture_maps_07022518[] = {
+    inside_castle_seg7_painting_texture_map_bottom_07021AE0,
+    inside_castle_seg7_painting_texture_map_top_07021FFC,
+};
+
+// 0x07022518
+static const PaintingData *const inside_castle_seg7_painting_texture_maps_tsns[] = {
     inside_castle_seg7_painting_texture_map_top_07021FFC,
     inside_castle_seg7_painting_texture_map_bottom_07021AE0,
 };
+
 
 UNUSED static const u64 castle_inside_unused_0 = 0x0;
 
@@ -1776,7 +1783,7 @@ struct Painting tsns_painting = {
     /* Curr Ripple Timer */    0.0f,
     /* Curr Ripple x, y */     0.0f,    0.0f,
     /* Normal DList */ inside_castle_seg7_painting_dl_tsns,
-    /* Texture Maps */ inside_castle_seg7_painting_texture_maps_07022518,
+    /* Texture Maps */ inside_castle_seg7_painting_texture_maps_tsns,
     /* Textures */     inside_castle_seg7_painting_textures_tsns,
     /* Texture w, h */ 64, 32,
     /* Ripple DList */ funny_seg7_painting_dl_07021AC0,

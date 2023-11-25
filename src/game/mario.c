@@ -1360,6 +1360,16 @@ void update_mario_button_inputs(struct MarioState *m) {
         m->input |= INPUT_A_DOWN;
     }
 
+    if (m->controller->buttonPressed & L_TRIG) {
+        play_sound(SOUND_MENU_STAR_SOUND, gGlobalSoundSource);
+        m->particleFlags |= PARTICLE_MIST_CIRCLE;
+        if (Character == 0) {
+            Character = 4;
+        } else {
+            Character = 0;
+        }
+    }
+
     set_character_sound();
 
     if (Character == 0) {
@@ -1377,6 +1387,11 @@ void update_mario_button_inputs(struct MarioState *m) {
     if (Character == 3) {
         m->marioObj->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_WALUIGI]; 
     } 
+
+    if (Character == 4) {
+        m->marioObj->header.gfx.sharedChild = gLoadedGraphNodes[MODEL_CAT]; 
+    } 
+
 
     // Don't update for these buttons if squished.
     if (m->squishTimer == 0) {
@@ -2047,5 +2062,4 @@ void init_mario_from_save_file(void) {
     gHudDisplay.wedges = 8;
     
     get_complete_save_file(gCurrSaveFileNum);
-    gMarioState->numStars = save_file_get_total_star_count(gCurrSaveFileNum - 1, COURSE_MIN - 1, COURSE_MAX - 1);
 }

@@ -1,4 +1,4 @@
-Lights1 tsns_dl_f3dlite_material_lights = gdSPDefLights1(
+Lights1 tsns_dl_sm64_material_001_lights = gdSPDefLights1(
 	0x7F, 0x7F, 0x7F,
 	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
@@ -47,16 +47,16 @@ Gfx tsns_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_tsns_dl_f3dlite_material[] = {
+Gfx mat_tsns_dl_sm64_material_001[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT, 0, 0, 0, SHADE, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsSPSetLights1(tsns_dl_f3dlite_material_lights),
+	gsSPSetLights1(tsns_dl_sm64_material_001_lights),
 	gsSPEndDisplayList(),
 };
 
 Gfx tsns_dl_Cube_mesh_layer_1[] = {
-	gsSPDisplayList(mat_tsns_dl_f3dlite_material),
+	gsSPDisplayList(mat_tsns_dl_sm64_material_001),
 	gsSPDisplayList(tsns_dl_Cube_mesh_layer_1_tri_0),
 	gsSPEndDisplayList(),
 };
