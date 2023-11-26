@@ -34,6 +34,8 @@ TARGET_N3DS ?= 0
 # Build for Nintendo Switch
 TARGET_SWITCH ?= 0
 
+DISCORDRPC ?= 0
+
 # Compiler to use for N64 (and other targets if required)
 #   gcc - uses the GNU C Compiler
 #   clang - uses clang C/C++ frontend for LLVM

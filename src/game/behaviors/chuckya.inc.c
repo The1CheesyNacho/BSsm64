@@ -227,7 +227,7 @@ void chuckya_act_3(void) {
 
 u8 check_if_lava() {
     struct Surface* surface;
-    find_floor(o->oPosX, o->oPosY + 100, o->oPosZ, &floor);
+    find_floor(o->oPosX, o->oPosY + 100, o->oPosZ, &surface);
     if (surface == NULL) return FALSE;
     return surface->type == SURFACE_BURNING;
 }
