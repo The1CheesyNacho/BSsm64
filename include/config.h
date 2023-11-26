@@ -58,7 +58,7 @@
 #define SCREEN_WIDTH 320
 #define SCREEN_HEIGHT 240
 
-#define BORDER_HEIGHT 0
+#define BORDER_HEIGHT 8
 
 // Leave at 1 to keep the game single player.
 // Set it up to 4 to allow up to 4 players to play simultaneously.

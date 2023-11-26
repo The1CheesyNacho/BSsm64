@@ -1234,11 +1234,7 @@ Come on in here...\n\
 
 // unused
 DEFINE_DIALOG(DIALOG_099, 1, 5, 95, 200, _("\
-Eh he he...\n\
-You're mine, now, hee hee!\n\
-I'll pass right through\n\
-this wall. Can you do\n\
-that? Heh, heh, heh!"))
+Fuck you"))
 
 DEFINE_DIALOG(DIALOG_100, 1, 3, 95, 200, _("\
 Ukkiki...Wakkiki...kee kee!\n\

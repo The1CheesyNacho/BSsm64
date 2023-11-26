@@ -22,3 +22,4 @@
 #include "waluigi/geo.inc.c"
 #include "statue/geo.inc.c"
 #include "cat/geo.inc.c"
+#include "wario_apparition/geo.inc.c"

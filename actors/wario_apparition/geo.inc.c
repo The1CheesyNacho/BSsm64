@@ -1,0 +1,28 @@
+#include "src/game/envfx_snow.h"
+
+const GeoLayout wario_apparition_geo[] = {
+	GEO_NODE_START(),
+	GEO_OPEN_NODE(),
+		GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, 0, -87, 8, 19, 0, 0),
+		GEO_OPEN_NODE(),
+			GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, wario_apparition_Bone_mesh_layer_1),
+			GEO_OPEN_NODE(),
+				GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, -5, 214, -45, 86, 19, 55),
+				GEO_OPEN_NODE(),
+					GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, wario_apparition_Brow1_mesh_layer_1),
+				GEO_CLOSE_NODE(),
+				GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, -5, 214, -45, -22, -54, -86),
+				GEO_OPEN_NODE(),
+					GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, wario_apparition_Brow2_mesh_layer_1),
+				GEO_CLOSE_NODE(),
+				GEO_DISPLAY_LIST(LAYER_OPAQUE, wario_apparition_mouth2_skinned_mesh_layer_1),
+				GEO_TRANSLATE_ROTATE(LAYER_OPAQUE, 0, 65, 0, 115, 0, 0),
+				GEO_OPEN_NODE(),
+					GEO_ANIMATED_PART(LAYER_OPAQUE, 0, 0, 0, wario_apparition_mouth2_mesh_layer_1),
+				GEO_CLOSE_NODE(),
+			GEO_CLOSE_NODE(),
+		GEO_CLOSE_NODE(),
+		GEO_DISPLAY_LIST(LAYER_OPAQUE, wario_apparition_material_revert_render_settings),
+	GEO_CLOSE_NODE(),
+	GEO_END(),
+};

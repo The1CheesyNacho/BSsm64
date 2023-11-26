@@ -37,3 +37,4 @@
 #include "statue/model.inc.c"
 #include "statue/collision.inc.c"
 #include "cat/model.inc.c"
+#include "wario_apparition/model.inc.c"

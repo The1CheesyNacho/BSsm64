@@ -373,6 +373,48 @@ extern Gfx mat_2b_dl_Material_012_f3d[];
 extern Gfx _2b_dl_Cube_002_mesh_layer_1[];
 extern Gfx _2b_dl_Cube_002_mesh_layer_4[];
 extern Gfx _2b_dl_material_revert_render_settings[];
+extern Lights1 fgtdrd6thy_f3dlite_material_012_lights;
+extern Lights1 fgtdrd6thy_f3dlite_material_013_lights;
+extern Lights1 fgtdrd6thy_f3dlite_material_014_lights;
+extern Lights1 fgtdrd6thy_f3dlite_material_015_lights;
+extern Lights1 fgtdrd6thy_f3dlite_material_016_lights;
+extern Lights1 fgtdrd6thy_f3dlite_material_017_lights;
+extern Lights1 fgtdrd6thy_f3dlite_material_018_lights;
+extern Lights1 fgtdrd6thy_f3dlite_material_019_lights;
+extern Vtx fgtdrd6thy_Object_mesh_vtx_0[8];
+extern Gfx fgtdrd6thy_Object_mesh_tri_0[];
+extern Vtx fgtdrd6thy_Object_mesh_vtx_1[20];
+extern Gfx fgtdrd6thy_Object_mesh_tri_1[];
+extern Vtx fgtdrd6thy_Object_mesh_vtx_2[51];
+extern Gfx fgtdrd6thy_Object_mesh_tri_2[];
+extern Vtx fgtdrd6thy_Object_mesh_vtx_3[145];
+extern Gfx fgtdrd6thy_Object_mesh_tri_3[];
+extern Vtx fgtdrd6thy_Object_mesh_vtx_4[186];
+extern Gfx fgtdrd6thy_Object_mesh_tri_4[];
+extern Vtx fgtdrd6thy_Object_mesh_vtx_5[16];
+extern Gfx fgtdrd6thy_Object_mesh_tri_5[];
+extern Vtx fgtdrd6thy_Object_mesh_vtx_6[4];
+extern Gfx fgtdrd6thy_Object_mesh_tri_6[];
+extern Vtx fgtdrd6thy_Object_mesh_vtx_7[95];
+extern Gfx fgtdrd6thy_Object_mesh_tri_7[];
+extern Gfx mat_fgtdrd6thy_f3dlite_material_012[];
+extern Gfx mat_revert_fgtdrd6thy_f3dlite_material_012[];
+extern Gfx mat_fgtdrd6thy_f3dlite_material_013[];
+extern Gfx mat_revert_fgtdrd6thy_f3dlite_material_013[];
+extern Gfx mat_fgtdrd6thy_f3dlite_material_014[];
+extern Gfx mat_revert_fgtdrd6thy_f3dlite_material_014[];
+extern Gfx mat_fgtdrd6thy_f3dlite_material_015[];
+extern Gfx mat_revert_fgtdrd6thy_f3dlite_material_015[];
+extern Gfx mat_fgtdrd6thy_f3dlite_material_016[];
+extern Gfx mat_revert_fgtdrd6thy_f3dlite_material_016[];
+extern Gfx mat_fgtdrd6thy_f3dlite_material_017[];
+extern Gfx mat_revert_fgtdrd6thy_f3dlite_material_017[];
+extern Gfx mat_fgtdrd6thy_f3dlite_material_018[];
+extern Gfx mat_revert_fgtdrd6thy_f3dlite_material_018[];
+extern Gfx mat_fgtdrd6thy_f3dlite_material_019[];
+extern Gfx mat_revert_fgtdrd6thy_f3dlite_material_019[];
+extern Gfx fgtdrd6thy_Object_mesh[];
+
 
 
 

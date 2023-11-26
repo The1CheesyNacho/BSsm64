@@ -361,4 +361,6 @@ extern const Gfx white_particle_small_unused_dl[];
 
 #include "cat/geo_header.h"
 
+#include "wario_apparition/geo_header.h"
+
 #endif

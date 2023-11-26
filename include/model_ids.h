@@ -487,7 +487,7 @@
 #define MODEL_SPARKLES                    0x95        // sparkles_geo
 #define MODEL_SMOKE                       0x96        // smoke_geo
 // find me
-// find me
+#define MODEL_WARIO_ASPARGUS              0x98        // smoke_geo
 // find me
 // find me
 // find me
