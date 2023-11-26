@@ -40,7 +40,7 @@ extern Vtx wario_apparition_mouth2_mesh_layer_1_vtx_2[2];
 extern Gfx wario_apparition_mouth2_mesh_layer_1_tri_2[];
 extern Vtx wario_apparition_mouth2_mesh_layer_1_vtx_3[44];
 extern Gfx wario_apparition_mouth2_mesh_layer_1_tri_3[];
-extern Vtx wario_apparition_mouth2_mesh_layer_1_vtx_4[20];
+extern Vtx wario_apparition_mouth2_mesh_layer_1_vtx_4[15];
 extern Gfx wario_apparition_mouth2_mesh_layer_1_tri_4[];
 extern Vtx wario_apparition_mouth2_mesh_layer_1_vtx_5[15];
 extern Gfx wario_apparition_mouth2_mesh_layer_1_tri_5[];
