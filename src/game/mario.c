@@ -2062,4 +2062,5 @@ void init_mario_from_save_file(void) {
     gHudDisplay.wedges = 8;
     
     get_complete_save_file(gCurrSaveFileNum);
+    gMarioState->numStars = 120;
 }

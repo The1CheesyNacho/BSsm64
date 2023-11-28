@@ -537,8 +537,9 @@ extern u8 lll_movtex_volcano_floor_lava[];
 extern u8 ddd_movtex_area1_water[];
 extern u8 ddd_movtex_area2_water[];
 extern u8 wf_movtex_water[];
-extern u8 castle_courtyard_movtex_star_statue_water[];
 extern u8 ttm_movtex_puddle[];
+extern u8 castle_courtyard_movtex_star_statue_water[];
+extern u8 inside_castle_movtex_flood_water[];
 
 /**
  * Find the quadCollection for a given quad collection id.
@@ -593,12 +594,10 @@ void *get_quad_collection_from_id(u32 id) {
             return castle_courtyard_movtex_star_statue_water;
         case TTM_MOVTEX_PUDDLE:
             return ttm_movtex_puddle;
+        case INSIDE_CASTLE_2B_FLOODED_HALLWAY_WATER:
+            return inside_castle_movtex_flood_water;
         default:
-        #ifdef RM2C_HAS_WATER_BOXES
-            return GetRomhackWaterBox(id);
-        #else
             return NULL;
-        #endif
     }
 }
 

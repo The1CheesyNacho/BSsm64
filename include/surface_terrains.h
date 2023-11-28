@@ -95,9 +95,6 @@
 #define SURFACE_PAINTING_WOBBLE_C7           0x00C7 // Painting wobble (Unused, TTC - Left)
 #define SURFACE_PAINTING_WOBBLE_C8           0x00C8 // Painting wobble (Unused, TTC - Middle)
 #define SURFACE_PAINTING_WOBBLE_C9           0x00C9 // Painting wobble (Unused, TTC - Right)
-#define SURFACE_PAINTING_WOBBLE_CA           0x00CA // Painting wobble (Unused, SL - Left)
-#define SURFACE_PAINTING_WOBBLE_CB           0x00CB // Painting wobble (Unused, SL - Middle)
-#define SURFACE_PAINTING_WOBBLE_CC           0x00CC // Painting wobble (Unused, SL - Right)
 #define SURFACE_PAINTING_WOBBLE_CD           0x00CD // Painting wobble (THI Huge - Left)
 #define SURFACE_PAINTING_WOBBLE_CE           0x00CE // Painting wobble (THI Huge - Middle)
 #define SURFACE_PAINTING_WOBBLE_CF           0x00CF // Painting wobble (THI Huge - Right)
@@ -107,6 +104,9 @@
 #define SURFACE_PAINTING_WOBBLE_TSNS1        0x0004 
 #define SURFACE_PAINTING_WOBBLE_TSNS2        0x0073 
 #define SURFACE_PAINTING_WOBBLE_TSNS3        0x0074 
+#define SURFACE_PAINTING_WOBBLE_TC1          0x00CA 
+#define SURFACE_PAINTING_WOBBLE_TC2          0x00CB 
+#define SURFACE_PAINTING_WOBBLE_TC3          0x00CC 
 #define SURFACE_PAINTING_WARP_D3             0x00D3 // Painting warp (BoB Left)
 #define SURFACE_PAINTING_WARP_D4             0x00D4 // Painting warp (BoB Middle)
 #define SURFACE_PAINTING_WARP_D5             0x00D5 // Painting warp (BoB Right)
@@ -155,7 +155,10 @@
 #define SURFACE_PAINTING_WARP_BBF1          0x0100 // Painting warp (Unused - Left)
 #define SURFACE_PAINTING_WARP_BBF2          0x0101 // Painting warp (Unused - Medium)
 #define SURFACE_PAINTING_WARP_BBF3          0x0102 // Painting warp (Unused - Right)
-#define SURFACE_WOBBLING_WARP                0x0103 // Pool warp (HMC & DDD)
+#define SURFACE_PAINTING_WARP_TC1          0x0103 // Painting warp (Unused - Left)
+#define SURFACE_PAINTING_WARP_TC2          0x0104 // Painting warp (Unused - Medium)
+#define SURFACE_PAINTING_WARP_TC3          0x0105 // Painting warp (Unused - Right)
+#define SURFACE_WOBBLING_WARP                0x0200 // Pool warp (HMC & DDD)
 #define SURFACE_BAZINGA                      0x0106 
 #define SURFACE_TRAPDOOR                     0x0100 // Bowser Left trapdoor, has no action defined
 
